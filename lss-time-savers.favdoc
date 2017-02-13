@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<Favorites xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <folders>
+    <Folder>
+      <name>Github</name>
+      <folders />
+      <favorites>
+        <Favorite>
+          <name>Repo</name>
+          <absolutePath>https://github.com/yannduran/time-savers</absolutePath>
+          <viewKind>External Document</viewKind>
+        </Favorite>
+        <Favorite>
+          <name>Page</name>
+          <absolutePath>http://yannduran.github.io/time-savers</absolutePath>
+          <viewKind>External Document</viewKind>
+        </Favorite>
+      </favorites>
+    </Folder>
+    <Folder>
+      <name>Solution</name>
+      <folders />
+      <favorites>
+        <Favorite>
+          <name>CHANGELOG</name>
+          <path>CHANGELOG.md</path>
+          <absolutePath>D:\dev\yd\time-savers\vs\CHANGELOG.md</absolutePath>
+          <position>
+            <line>19</line>
+            <column>45</column>
+            <lineHash>YjQzlRcrKz/DXhdh34i3B3hL0j9ghzQJ20TW08zhoys=</lineHash>
+          </position>
+        </Favorite>
+        <Favorite>
+          <name>README</name>
+          <path>README.md</path>
+          <absolutePath>D:\dev\yd\time-savers\vs\README.md</absolutePath>
+          <position>
+            <line>24</line>
+            <column>1</column>
+            <lineHash>wmMzQghKPpfHYPr9TF61/eUaSocz7CkWKTveVyXLDbo=</lineHash>
+          </position>
+        </Favorite>
+        <Favorite>
+          <name>index.md</name>
+          <path>docs\index.md</path>
+          <absolutePath>D:\dev\yd\time-savers\vs\docs\index.md</absolutePath>
+          <position>
+            <line>1</line>
+            <column>1</column>
+            <lineHash>ThJT74XiklqUpU2roecFZV6Zqt35DU1NB8bHu2lnLw0=</lineHash>
+          </position>
+        </Favorite>
+        <Favorite>
+          <name>appveyor.yml</name>
+          <path>appveyor.yml</path>
+          <absolutePath>D:\dev\yd\time-savers\vs\appveyor.yml</absolutePath>
+          <position>
+            <line>5</line>
+            <column>8</column>
+            <lineHash>570oxLGscGkMAJ3GIjOlahvfWfYZF7Cmtk/Tjs5wXBE=</lineHash>
+          </position>
+        </Favorite>
+      </favorites>
+    </Folder>
+    <Folder>
+      <name>Project</name>
+      <folders />
+      <favorites>
+        <Favorite>
+          <name>Package.vsct</name>
+          <path>src\Package.vsct</path>
+          <absolutePath>d:\dev\yd\time-savers\vs\src\Package.vsct</absolutePath>
+          <position>
+            <line>66</line>
+            <column>52</column>
+            <lineHash>nCGQUONQCXn6e1sTwZKmuDQGdtFsfs6lwDqHNnKmxB4=</lineHash>
+          </position>
+        </Favorite>
+        <Favorite>
+          <name>Package.class</name>
+          <path>src\Package.class.cs</path>
+          <absolutePath>d:\dev\yd\time-savers\vs\src\Package.class.cs</absolutePath>
+          <position>
+            <line>25</line>
+            <column>13</column>
+            <lineHash>ZNJGqMGQN2eVmC2DFd4XQMZLdVrsk1D4Dw5bHzLputI=</lineHash>
+          </position>
+        </Favorite>
+        <Favorite>
+          <name>Package.const</name>
+          <path>src\Package.const.cs</path>
+          <absolutePath>D:\dev\yd\time-savers\vs\src\Package.const.cs</absolutePath>
+        </Favorite>
+        <Favorite>
+          <name>VSIX Manifest</name>
+          <path>src\source.extension.vsixmanifest</path>
+          <absolutePath>D:\dev\yd\time-savers\vs\src\source.extension.vsixmanifest</absolutePath>
+        </Favorite>
+      </favorites>
+    </Folder>
+    <Folder>
+      <name>CI</name>
+      <folders />
+      <favorites>
+        <Favorite>
+          <name>Appveyor</name>
+          <absolutePath>https://ci.appveyor.com/project/YannDuran/time-savers</absolutePath>
+          <viewKind>External Document</viewKind>
+        </Favorite>
+        <Favorite>
+          <name>VSIX Gallery</name>
+          <absolutePath>http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/</absolutePath>
+          <viewKind>External Document</viewKind>
+        </Favorite>
+      </favorites>
+    </Folder>
+    <Folder>
+      <name>Extension</name>
+      <folders />
+      <favorites>
+        <Favorite>
+          <name>VS Gallery</name>
+          <absolutePath>https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd</absolutePath>
+          <viewKind>External Document</viewKind>
+        </Favorite>
+      </favorites>
+    </Folder>
+  </folders>
+  <favorites />
+</Favorites>

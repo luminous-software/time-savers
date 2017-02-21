@@ -16,7 +16,6 @@ namespace Luminous.TimeSavers
     using Commands.SolutionNode;
     using Commands.ProjectNode;
     using Commands.Developer;
-    using InsertGuid.ToolWindows;
     using Options;
     using Events;
 
@@ -29,7 +28,6 @@ namespace Luminous.TimeSavers
 
     [ProvideAutoLoad(NoSolution)]
     [ProvideAutoLoad(SolutionExists)]
-    [ProvideToolWindow(typeof(InsertGuidToolWindow))]
 
     [ProvideOptionPage(typeof(GeneralDialogPage), Name, General, 0, 0, !SupportsAutomation)]
     [ProvideOptionPage(typeof(BuildDialogPage), Name, Build, 0, 0, !SupportsAutomation)]

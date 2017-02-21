@@ -1,12 +1,9 @@
-﻿using Microsoft.VisualStudio;
-using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudio.Shell.Interop;
+﻿using Microsoft.VisualStudio.Shell;
 
 namespace Luminous.TimeSavers.Commands.Insert
 {
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
-    using InsertGuid.ToolWindows;
     using System;
 
     internal sealed class InsertGuidCommand : DynamicCommand

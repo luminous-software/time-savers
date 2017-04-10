@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26206.0
+VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08B276AF-9E6A-4DD9-994F-964CFD71AC29}"
 	ProjectSection(SolutionItems) = preProject
@@ -13,13 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers.Pkg", "src\pkg\Luminous.TimeSavers.Pkg.csproj", "{A2A22BAD-F136-4409-B37D-1E070E373E3D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers.InsertGuid", "src\insert-guid\Luminous.TimeSavers.InsertGuid.csproj", "{7D39A2DF-7EE6-4EBF-A93C-9625EECDAC7B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.Code.Core", "..\lss-code\src\core\Luminous.Code.Core.csproj", "{10E97CA5-13C8-4525-A972-C18677070838}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.Code.VisualStudio", "..\lss-code\src\vs\Luminous.Code.VisualStudio.csproj", "{997E3F68-01CE-44CE-A9D5-87EB01665B46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers", "src\pkg\Luminous.TimeSavers.csproj", "{A2A22BAD-F136-4409-B37D-1E070E373E3D}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -31,14 +29,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A2A22BAD-F136-4409-B37D-1E070E373E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2A22BAD-F136-4409-B37D-1E070E373E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2A22BAD-F136-4409-B37D-1E070E373E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2A22BAD-F136-4409-B37D-1E070E373E3D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7D39A2DF-7EE6-4EBF-A93C-9625EECDAC7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D39A2DF-7EE6-4EBF-A93C-9625EECDAC7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D39A2DF-7EE6-4EBF-A93C-9625EECDAC7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D39A2DF-7EE6-4EBF-A93C-9625EECDAC7B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{10E97CA5-13C8-4525-A972-C18677070838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{10E97CA5-13C8-4525-A972-C18677070838}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10E97CA5-13C8-4525-A972-C18677070838}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,6 +37,10 @@ Global
 		{997E3F68-01CE-44CE-A9D5-87EB01665B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{997E3F68-01CE-44CE-A9D5-87EB01665B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{997E3F68-01CE-44CE-A9D5-87EB01665B46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2A22BAD-F136-4409-B37D-1E070E373E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2A22BAD-F136-4409-B37D-1E070E373E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2A22BAD-F136-4409-B37D-1E070E373E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2A22BAD-F136-4409-B37D-1E070E373E3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

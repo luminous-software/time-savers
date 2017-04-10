@@ -27,15 +27,18 @@ Any features that have a checkmark are ready to be tested by downloading the lat
 These are the changes to each version that has been released
 on the official Visual Studio extension gallery.
 
-### v2.1 - 2017-02-??
+### v2.1.0 - 2017-02-10
   - [x] Renamed extension
     - from *Time Savers*
-    - to *Luminius Time Savers*  
+    - to *Luminous Time Savers*  
+  - [x] Changed lower level code packages
+    - from YD.Code.Core, YD.Code.VisualStudio
+    - to Luminous Code.Core, LuminousCode.VisualStudio
 
 ### v2.0.5 - 2017-02-04
   - [x] Added VS 2017 support
 
-### v1.1 - 2016-11-08
+### v1.1.0 - 2016-11-08
   - [x] Added *Reopen Start Page* (when solution is closed)
   - [x] Renamed extension
       - from *Visual Studio Time Savers*

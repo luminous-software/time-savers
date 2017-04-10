@@ -1,17 +1,23 @@
 # Luminous Time Savers
 
-[![Build status](https://ci.appveyor.com/api/projects/status/la50f40vw7qys7b3?svg=true)](https://ci.appveyor.com/project/YannDuran/time-savers)
+[![Build status][appveyor]][time-savers]
 
-Download this extension from the [VS Gallery](https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd)
-or get the [CI build](http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/).
+Download this extension from the [VS Gallery][gallery]
+or get the [CI build][ci-build].
 
-See the [changelog](https://github.com/yannduran/time-savers/blob/master/CHANGELOG.md)
+See the [changelog]
 for changes and the roadmap for the future.
+
+[appveyor]: https://ci.appveyor.com/api/projects/status/la50f40vw7qys7b3?svg=true
+[time-savers]: https://ci.appveyor.com/project/YannDuran/time-savers
+[gallery]: https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
+[changelog]: https://github.com/yannduran/time-savers/blob/master/CHANGELOG.md
+[ci-build]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
 
 ---
 
-- If you **like** this extension, please show your support by rating or reviewing it.
-It only takes a couple of seconds.
+- *If you **like** this extension, please show your support by rating or reviewing it.
+It only takes a couple of seconds.*
 
 - *If for some reason you **didn't like** it, or have any **suggestions** for improving it,
 just let me know via the **Q&A** section.*
@@ -93,24 +99,12 @@ as the XML file that makes it easy to read in a browser.
 >- *%APPDATA%* represents the value in the APPDATA environment variable
 >- *version* represents the current Visual Studio version (ie 14.0 2015)
 
-toolbar | main menu | context menu
-:---:   | :---:     | :---:
-yes     | yes       | yes
-
 #### Cancel Build
 A convenient way to cancel a running build/rebuild.
-
-toolbar | main menu | context menu
-:---:   | :---:     | :---:
-yes     | yes       | yes
 
 #### Close Solution
 Close the solution.
 This command is missing from the solution node in Visual Studio for some unknown reason.
-
-toolbar | main menu | context menu | solution node
-:---:   | :---:     | :---:        | :---:
-yes     | yes       | yes          | yes
 
 #### Diagnostic Log
 Open the most recent MSBuild diagnostic log file.
@@ -120,101 +114,45 @@ Open the most recent MSBuild diagnostic log file.
 >- *%LOCALAPPDATA%* represents the value in the *LOCALAPPDATA* environment variable
 >- *guid* represents a random guid value
 
-toolbar | main menu | context menu
-:---:   | :---:     | :---:
-yes     | yes       | yes
-
 #### Edit Project
 Open a project's *csproj* file in an xml editor.
-
-toolbar | main menu | context menu | project node
-:---:   | :---:     | :---:        | :---:
-yes     | yes       | yes          | yes
 
 #### Edit Solution
 Open a solution's *.sln* file in an xml editor.
 
-toolbar | main menu | context menu
-:---:   | :---:     | :---:
-yes     | yes       | yes
-
 #### Extensions and Updates
 A convenient way to open the *Extensions and Updates* dialog.
-
-toolbar | main menu | context menu
-:---:   | :---:     | :---:
-yes     | yes       | yes
 
 #### Insert Guid(s)
 Insert a single guid, or multiple guids directly into your code without the use of any **external** tool.
 
-toolbar | main menu | context menu | shortcut
-:---:   | :---:     | :---:        | :---:
-no      | yes       | yes          | Shift-Alt-I, Shift-Alt-G
-
 #### Keyboard Options
 Open the *Tools* | *Options* dialog at the *Environment* | *Keyboard* node.
 
-toolbar | main menu | context menu
-:---:   | :---:     | :---:
-yes     | yes       | yes
-
 #### Path Variables
 Display the current set of Windows paths variable values.
-
-toolbar | main menu | context menu
-:---:   | :---:     | :---:
-yes     | yes       | yes
 
 #### Rebuild Project
 A convenient way to rebuild the just the current project
 (either a selected project, or the project to which the active code document belongs).
 
-toolbar | main menu | context menu | shortcut
-:---:   | :---:     | :---:        | :---:
-yes     | yes       | yes          | Ctrl-Alt-9
-
 #### Rebuild Solution
 A convenient way to rebuild the whole solution.
-
-toolbar | main menu | context menu | shortcut
-:---:   | :---:     | :---:        | :---:
-yes     | yes       | yes          | Ctrl-Alt-0
 
 #### Reopen Start Page
 Automatically reopen the *Start Page* when the solution is closed.
 
-toolbar | main menu | context menu
-:---:   | :---:     | :---:
-no      | no        | no
-
 #### Restart Visual Studio
 Unlock Visual Studio's built-in ability to restart itself.
-
-toolbar | main menu | context menu
-:---:   | :---:     | :---:
-yes     | yes       | yes
 
 #### Restart Visual Studio as Administrator
 Restart Visual Studio as administrator (elevated session).
 
-toolbar | main menu | context menu
-:---:   | :---:     | :---:
-yes     | yes       | yes
-
 #### Time Savers Options
 Open the *Tools* | *Options* dialog at the *Time Savers* node.
 
-toolbar | main menu | context menu
-:---:   | :---:     | :---:
-yes     | yes       | yes
-
 #### Time Savers Options
 Open the *Tools* | *Options* dialog at the *Environment* | *Time Savers* node.
-
-toolbar | main menu | context menu
-:---:   | :---:     | :---:
-yes     | yes       | yes
 
 ## Contribute
 Check out the [contribution guidelines](https://github.com/yannduran/time-savers/blob/master/CONTRIBUTING.md)
@@ -225,7 +163,7 @@ For cloning and building this project yourself, make sure to install the
 extension for Visual Studio which enables some features used by this project.
 
 ## License
-[Apache 2.0](LICENSE)
+[MIT](LICENSE)
 
 <div style="text-align:center">
     <img src="art/lss-vsip.png" />

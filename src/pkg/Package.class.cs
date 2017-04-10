@@ -23,7 +23,7 @@ namespace Luminous.TimeSavers
     using static PackageGuids;
     using static Vsix;
 
-    [InstalledProductRegistration("110", "112", Version, IconResourceID = 400)]
+    [InstalledProductRegistration(Name, Description, Version, IconResourceID = 400)]
     [Guid(PackageString)]
 
     [ProvideAutoLoad(NoSolution)]
@@ -124,10 +124,9 @@ namespace Luminous.TimeSavers
         //TODO: move to framework
         private void AdviseSolutionEvents(IVsSolutionEvents vsSolutionEvents)
         {
-            uint solutionEventsCookie;
             var vsSolution = GetGlobalService<SVsSolution, IVsSolution>();
 
-            vsSolution.AdviseSolutionEvents(vsSolutionEvents, out solutionEventsCookie);
+            vsSolution.AdviseSolutionEvents(vsSolutionEvents, out uint solutionEventsCookie);
         }
 
         //***

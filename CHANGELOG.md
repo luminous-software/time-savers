@@ -27,7 +27,7 @@ Any features that have a checkmark are ready to be tested by downloading the lat
 These are the changes to each version that has been released
 on the official Visual Studio extension gallery.
 
-### v2.1.0 - 2017-02-10
+### v2.2 - 2017-02-13
   - [x] Renamed extension
     - from *Time Savers*
     - to *Luminous Time Savers*  

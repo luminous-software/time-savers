@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd" Version="2.2" Language="en-US" Publisher="Luminous Software Solutions" />
+    <Identity Id="049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd" Version="2.2.0.1" Language="en-US" Publisher="Luminous Software Solutions" />
     <DisplayName>Luminous Time Savers</DisplayName>
     <Description xml:space="preserve">Time Savers =&gt; { developerProductivity++; }</Description>
     <MoreInfo>https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd</MoreInfo>

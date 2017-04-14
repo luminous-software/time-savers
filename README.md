@@ -1,18 +1,12 @@
 # Luminous Time Savers
 
-[![Build status][appveyor]][time-savers]
+[![Build status][appveyor]][time-savers-appveyor]
 
-Download this extension from the [VS Gallery][gallery]
+Download this extension from the [Visual Studio Marketplace][time-savers-marketplace]
 or get the [CI build][ci-build].
 
 See the [changelog]
 for changes and the roadmap for the future.
-
-[appveyor]: https://ci.appveyor.com/api/projects/status/la50f40vw7qys7b3?svg=true
-[time-savers]: https://ci.appveyor.com/project/YannDuran/time-savers
-[gallery]: https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
-[changelog]: https://github.com/yannduran/time-savers/blob/master/CHANGELOG.md
-[ci-build]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
 
 ---
 
@@ -155,7 +149,7 @@ Open the *Tools* | *Options* dialog at the *Time Savers* node.
 Open the *Tools* | *Options* dialog at the *Environment* | *Time Savers* node.
 
 ## Contribute
-Check out the [contribution guidelines](https://github.com/yannduran/time-savers/blob/master/CONTRIBUTING.md)
+Check out the [contribution guidelines][contributing]
 if you want to contribute to this project.
 
 For cloning and building this project yourself, make sure to install the
@@ -168,3 +162,11 @@ extension for Visual Studio which enables some features used by this project.
 <div style="text-align:center">
     <img src="art/lss-vsip.png" />
 </div>
+
+[appveyor]: https://ci.appveyor.com/api/projects/status/la50f40vw7qys7b3?svg=true
+[time-savers-appveyor]: https://ci.appveyor.com/project/luminous-software/time-savers
+[time-savers-gallery]: https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
+[time-savers-marketplace]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
+[changelog]: https://github.com/luminous-software/time-savers/blob/master/CHANGELOG.md
+[ci-build]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
+[contributing]: https://github.com/luminous-software/time-savers/blob/master/.github/CONTRIBUTING.md

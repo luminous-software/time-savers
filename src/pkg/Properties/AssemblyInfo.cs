@@ -11,7 +11,7 @@ using Luminous.TimeSavers;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-//[assembly: AssemblyVersion(Vsix.Version)]
-//[assembly: AssemblyFileVersion(Vsix.Version)]
+[assembly: AssemblyVersion(Vsix.Version)]
+[assembly: AssemblyFileVersion(Vsix.Version)]
 
 [assembly: ComVisible(false)]

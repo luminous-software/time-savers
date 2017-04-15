@@ -2,13 +2,12 @@
 #    environment configuration
 #---------------------------------#
 
-image: Visual Studio 2015
+image: Visual Studio 2017
 
 version: 1.0.0.{build}
 
 branches:
   only:
-  - develop
   - master
 
 # called at very beginning, before cloning repo

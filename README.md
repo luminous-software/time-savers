@@ -153,7 +153,7 @@ Check out the [contribution guidelines][contributing]
 if you want to contribute to this project.
 
 For cloning and building this project yourself, make sure to install the
-[Extensibility Tools 2015](https://visualstudiogallery.msdn.microsoft.com/ab39a092-1343-46e2-b0f1-6a3f91155aa6)
+[Extensibility Tools 2015][extensibility-tools]
 extension for Visual Studio which enables some features used by this project.
 
 ## License
@@ -170,3 +170,4 @@ extension for Visual Studio which enables some features used by this project.
 [changelog]: https://github.com/luminous-software/time-savers/blob/master/CHANGELOG.md
 [ci-build]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
 [contributing]: https://github.com/luminous-software/time-savers/blob/master/.github/CONTRIBUTING.md
+[extensibility-tools]: https://visualstudiogallery.msdn.microsoft.com/ab39a092-1343-46e2-b0f1-6a3f91155aa6

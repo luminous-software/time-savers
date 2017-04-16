@@ -22,7 +22,7 @@ namespace Luminous.TimeSavers.Commands.Build
         //---
 
         protected override bool CanExecute
-        => (base.CanExecute && BuildOptions.RebuildProjectCommandEnabled);
+        => base.CanExecute && BuildOptions.RebuildProjectCommandEnabled;
 
         protected override bool IsActive
             => base.IsActive && SolutionHasProjects && SolutionIsNotBuilding;// && ProjectSelected();

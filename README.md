@@ -1,12 +1,19 @@
 # Luminous Time Savers
 
-[![Build status][appveyor]][time-savers-appveyor]
+![VSTS Badge][vsts-badge-url]
+[![Build status][appveyor-status]][appveyor-url]
 
-Download this extension from the [Visual Studio Marketplace][time-savers-marketplace]
-or get the [CI build][ci-build].
+Download this extension from the [Visual Studio Marketplace][marketplace-url]
+or get the [CI build][ci-build-url].
 
-See the [changelog]
+See the [changelog-url]
 for changes and the roadmap for the future.
+
+[appveyor]: https://ci.appveyor.com/api/projects/status/la50f40vw7qys7b3?svg=true
+[time-savers]: https://ci.appveyor.com/project/YannDuran/time-savers
+[gallery]: https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
+[changelog]: https://github.com/yannduran/time-savers/blob/master/CHANGELOG.md
+[ci-build]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
 
 ---
 
@@ -56,8 +63,7 @@ And of course you can add your own keyboard shortcut to any of the **Time Savers
 
 ## Features
 
-A more in-depth description of the features listed below
-[can be found here](https://luminous-software.github.io/time-savers/),
+A more in-depth description of the features listed below [can be found here][features-url],
 including a comparison of the steps required both with and without the extension installed,
 as well as images of the features in action.
 
@@ -149,11 +155,11 @@ Open the *Tools* | *Options* dialog at the *Time Savers* node.
 Open the *Tools* | *Options* dialog at the *Environment* | *Time Savers* node.
 
 ## Contribute
-Check out the [contribution guidelines][contributing]
+Check out the [contribution guidelines][contributing-url]
 if you want to contribute to this project.
 
 For cloning and building this project yourself, make sure to install the
-[Extensibility Tools 2015][extensibility-tools]
+[Extensibility Tools 2015](https://visualstudiogallery.msdn.microsoft.com/ab39a092-1343-46e2-b0f1-6a3f91155aa6)
 extension for Visual Studio which enables some features used by this project.
 
 ## License
@@ -163,11 +169,14 @@ extension for Visual Studio which enables some features used by this project.
     <img src="art/lss-vsip.png" />
 </div>
 
-[appveyor]: https://ci.appveyor.com/api/projects/status/la50f40vw7qys7b3?svg=true
-[time-savers-appveyor]: https://ci.appveyor.com/project/luminous-software/time-savers
-[time-savers-gallery]: https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
-[time-savers-marketplace]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
-[changelog]: https://github.com/luminous-software/time-savers/blob/master/CHANGELOG.md
-[ci-build]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
-[contributing]: https://github.com/luminous-software/time-savers/blob/master/.github/CONTRIBUTING.md
-[extensibility-tools]: https://visualstudiogallery.msdn.microsoft.com/ab39a092-1343-46e2-b0f1-6a3f91155aa6
+[vsts-badge-url]: https://lumiinus.visualstudio.com/_apis/public/build/definitions/c31b2195-e4da-4ad9-a64c-e1712d313703/15/badge
+[appveyor-status]: https://ci.appveyor.com/api/projects/status/tsf4rxwtgtcub741?svg=true
+[appveyor-url]: https://ci.appveyor.com/project/luminous-software/time-savers
+[gallery-url]: https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
+[marketplace-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
+[features-url]: https://luminous-software.solutions/time-savers/
+[changelog-url]: https://github.com/luminous-software/time-savers/blob/master/CHANGELOG.md
+[ci-build-url]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
+[contributing-url]: https://github.com/luminous-software/time-savers/blob/master/.github/CONTRIBUTING.md
+[extensibility-tools-url]: https://visualstudiogallery.msdn.microsoft.com/ab39a092-1343-46e2-b0f1-6a3f91155aa6
+

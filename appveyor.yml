@@ -25,9 +25,9 @@ init:
 
 #  runs after cloning repo
 install:
-#  - ps: Vsix-UpdateBuildVersion
-#  - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
-#  - ps: Vsix-TokenReplacement src\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
+  - ps: Vsix-UpdateBuildVersion
+  - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
+  - ps: Vsix-TokenReplacement src\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
 
 nuget:
   account_feed: true
@@ -63,8 +63,8 @@ build_script:
 #---------------------------------#
 
 before_test:
-  - echo Before Tests (echo)
-  - ps: Write-Host "Before Tests (ps)"
+#  - echo Before Tests (echo)
+#  - ps: Write-Host "Before Tests (ps)"
 
 after_test:
 

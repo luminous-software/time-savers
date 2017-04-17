@@ -4,7 +4,7 @@
 
 image: Visual Studio 2017
 
-version: 1.0.0.{build}
+version: 2.2.0.3
 
 branches:
   only:
@@ -25,7 +25,6 @@ init:
 
 #  runs after cloning repo
 install:
-  - ps: Vsix-UpdateBuildVersion
   - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
   - ps: Vsix-TokenReplacement src\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
 

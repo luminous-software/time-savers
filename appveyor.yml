@@ -26,7 +26,7 @@ init:
 #  runs after cloning repo
 install:
   - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
-  - ps: Vsix-TokenReplacement src\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
+  - ps: Vsix-TokenReplacement src\pkg\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
 
 nuget:
   account_feed: true

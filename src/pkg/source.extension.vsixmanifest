@@ -7,7 +7,7 @@
     <MoreInfo>https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd</MoreInfo>
     <License>Resources\LICENSE</License>
     <ReleaseNotes>https://github.com/luminous-software/time-savers/blob/master/CHANGELOG.md</ReleaseNotes>
-    <Icon>Resources\package.ico</Icon>
+    <Icon>Resources\icon.png</Icon>
     <PreviewImage>Resources\preview.png</PreviewImage>
     <Tags>time savers, visual studio, productivity, luminous, yannduran, yd</Tags>
   </Metadata>

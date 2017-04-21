@@ -2,9 +2,9 @@
 #    environment configuration
 #---------------------------------#
 
-image: Visual Studio 2017
+image: Visual Studio 2017 RC
 
-version: 2.2.0.3
+version: 1.0.0.{build}
 
 branches:
   only:
@@ -24,9 +24,6 @@ init:
 #    secure: FW3tJ3fMncxvs58/ifSP7w==
 
 #  runs after cloning repo
-install:
-  - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
-  - ps: Vsix-TokenReplacement src\pkg\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
 
 nuget:
   account_feed: true
@@ -49,12 +46,14 @@ build:
   verbosity: minimal
 
 before_build:
-  - nuget restore -verbosity quiet
+  - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
+  - ps: Vsix-TokenReplacement src\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
 
 after_build:
   - ps: Vsix-PushArtifacts | Vsix-PublishToGallery
 
 build_script:
+  - nuget restore -verbosity quiet
   - msbuild /p:configuration=Release /p:DeployExtension=false /p:ZipPackageCompressionLevel=normal /v:m
 
 #---------------------------------#

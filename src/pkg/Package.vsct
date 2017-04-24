@@ -180,6 +180,8 @@
         <Icon guid="ImageCatalogGuid" id="InsertSpan"/>
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DontCache</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
         <Strings>
           <CommandName>InsertGuid</CommandName>
           <CanonicalName>InsertGuid</CanonicalName>
@@ -358,6 +360,10 @@
       <Parent guid="PackageCommandSet" id="PackageToolbar" />
     </CommandPlacement>
 
+    <CommandPlacement guid="PackageCommandSet" id="InsertGroup" priority="0x0500">
+      <Parent guid="PackageCommandSet" id="PackageToolbar" />
+    </CommandPlacement>
+
     <CommandPlacement guid="PackageCommandSet" id="VisualStudioGroup" priority="0x0800">
       <Parent guid="PackageCommandSet" id="PackageToolbar" />
     </CommandPlacement>
@@ -369,40 +375,6 @@
     <CommandPlacement guid="PackageCommandSet" id="OptionsGroup" priority="0x0900">
       <Parent guid="PackageCommandSet" id="PackageToolbar" />
     </CommandPlacement>
-
-    <!--~~~ MainMenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-    <!--<CommandPlacement guid="PackageCommandSet" id="SolutionGroup" priority="0x0B00">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="PackageCommandSet" id="ProjectGroup" priority="0x0C00">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="PackageCommandSet" id="InsertGroup" priority="0x0A00">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="PackageCommandSet" id="BuildGroup" priority="0x0300">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="PackageCommandSet" id="DeveloperCommands" priority="0x0400">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="PackageCommandSet" id="VisualStudioGroup" priority="0x0800">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="PackageCommandSet" id="RestartCommands" priority="0x0900">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="PackageCommandSet" id="OptionsCommands" priority="0x0900">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>-->
 
     <!--~~~ PackageMenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 

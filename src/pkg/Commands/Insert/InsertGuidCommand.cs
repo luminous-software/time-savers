@@ -1,12 +1,12 @@
-﻿using Microsoft.VisualStudio.Shell;
+﻿using System;
+using Microsoft.VisualStudio.Shell;
 
 namespace Luminous.TimeSavers.Commands.Insert
 {
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
-    using System;
 
-    internal sealed class InsertGuidCommand : DynamicCommand
+    internal sealed class InsertGuidCommand : InsertCommand
     {
         //***
 
@@ -21,6 +21,10 @@ namespace Luminous.TimeSavers.Commands.Insert
             => Instantiate(new InsertGuidCommand(package));
 
         //---
+
+        protected override bool CanExecute
+            => base.CanExecute; //&& InsertOptions.InsertCommandEnabled;
+
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()

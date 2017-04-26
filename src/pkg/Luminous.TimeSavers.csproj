@@ -58,6 +58,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Commands\Insert\InsertCommand.cs" />
     <Compile Include="Commands\TimeSaversCommand.cs" />
     <Compile Include="Commands\Build\BuildCommand.cs" />
     <Compile Include="Commands\Developer\ActivityLogCommand.cs" />
@@ -120,6 +121,7 @@
     <Content Include="source.extension.ico">
       <DependentUpon>source.extension.vsixmanifest</DependentUpon>
     </Content>
+    <None Include="app.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

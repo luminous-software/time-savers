@@ -6,7 +6,7 @@ namespace Luminous.TimeSavers.Commands.Insert
     using Luminous.Code.VisualStudio.Packages;
     using System;
 
-    internal sealed class InsertGuidCommand : DynamicCommand
+    internal sealed class InsertGuidCommand : InsertCommand
     {
         //***
 

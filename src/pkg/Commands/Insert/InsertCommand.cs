@@ -1,10 +1,6 @@
-﻿//temp for testing
-using static Microsoft.VisualStudio.Shell.Interop.UIContextGuids80;
-
-namespace Luminous.TimeSavers.Commands.Insert
+﻿namespace Luminous.TimeSavers.Commands.Insert
 {
     using Luminous.Code.VisualStudio.Packages;
-    using Luminous.TimeSavers.Options;
 
     internal abstract class InsertCommand : TimeSaversCommand
     {
@@ -13,24 +9,18 @@ namespace Luminous.TimeSavers.Commands.Insert
         //protected BuildDialogPage InsertOptions
         //    => ((PackageClass)Package).InsertOptions;
 
-        //!!!
+        //---M
 
         protected InsertCommand(PackageBase package, int id) : base(package, id)
         { }
 
-        //!!!
+        //---M
 
         protected override bool CanExecute
             => base.CanExecute; //&& InsertOptions.InsertCommandsEnabled;
 
-        protected override bool IsActive
-            => base.IsActive && IsCodeWindow;
-
-
-        //temp for testing
-
-        protected bool IsCodeWindow
-            => ContextIsActive(CodeWindow);
+        //protected override bool IsActive
+        //    => base.IsActive && InCodeWindow;
 
 
         //***

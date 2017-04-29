@@ -19,8 +19,8 @@
         protected override bool CanExecute
             => base.CanExecute; //&& InsertOptions.InsertCommandsEnabled;
 
-        //protected override bool IsActive
-        //    => base.IsActive && InCodeWindow;
+        protected override bool IsActive
+            => base.IsActive && (Package.GetSelectedItemCount() == 1); //&& InCodeWindow;
 
 
         //***

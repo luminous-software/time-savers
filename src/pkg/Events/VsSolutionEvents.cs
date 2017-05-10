@@ -11,6 +11,8 @@ namespace Luminous.TimeSavers.Events
     {
         private readonly bool _reopenStartPageEnabed;
 
+        const string ViewStartPage = "View.StartPage";
+
         //***
 
         //!!!
@@ -24,10 +26,9 @@ namespace Luminous.TimeSavers.Events
 
         int IVsSolutionEvents.OnAfterCloseSolution(object pUnkReserved)
         {
-            var dte = PackageBase.GetGlobalService<DTE, DTE2>();
 
             if (_reopenStartPageEnabed)
-                dte?.ExecuteCommand("View.StartPage");
+                PackageClass.Instance?.ExecuteCommand(ViewStartPage);
 
             return VSConstants.S_OK;
         }

@@ -58,6 +58,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Commands\Insert\InsertCommand.cs" />
     <Compile Include="Commands\TimeSaversCommand.cs" />
     <Compile Include="Commands\Build\BuildCommand.cs" />
     <Compile Include="Commands\Developer\ActivityLogCommand.cs" />
@@ -117,6 +118,7 @@
     <Content Include="source.extension.ico">
       <DependentUpon>source.extension.vsixmanifest</DependentUpon>
     </Content>
+    <None Include="app.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -145,11 +147,11 @@
       <HintPath>..\..\packages\EnvDTE80.8.0.1\lib\net10\EnvDTE80.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Luminous.Code.Core, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Luminous.Code.Core.1.0.2.0\lib\net462\Luminous.Code.Core.dll</HintPath>
+    <Reference Include="Luminous.Code.Core, Version=1.0.2.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Luminous.Code.Core.1.0.2.5\lib\net462\Luminous.Code.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Luminous.Code.VisualStudio, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Luminous.Code.VisualStudio.1.0.2.0\lib\net462\Luminous.Code.VisualStudio.dll</HintPath>
+    <Reference Include="Luminous.Code.VisualStudio, Version=1.0.2.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Luminous.Code.VisualStudio.1.0.2.5\lib\net462\Luminous.Code.VisualStudio.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Build.Framework" />
     <Reference Include="Microsoft.CSharp" />
@@ -253,8 +255,8 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="SetDebugProperties, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SetDebugProperties.1.0.0.0\lib\net462\SetDebugProperties.dll</HintPath>
+    <Reference Include="SetDebugProperties, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SetDebugProperties.1.1.1.0\lib\net45\SetDebugProperties.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />

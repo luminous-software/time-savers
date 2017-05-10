@@ -9,12 +9,6 @@ or get the [CI build][ci-build-url].
 See the [changelog-url]
 for changes and the roadmap for the future.
 
-[appveyor]: https://ci.appveyor.com/api/projects/status/la50f40vw7qys7b3?svg=true
-[time-savers]: https://ci.appveyor.com/project/YannDuran/time-savers
-[gallery]: https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
-[changelog]: https://github.com/yannduran/time-savers/blob/master/CHANGELOG.md
-[ci-build]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
-
 ---
 
 - *If you **like** this extension, please show your support by rating or reviewing it.
@@ -25,7 +19,7 @@ just let me know via the **Q&A** section.*
 
 ---
 
-### *Time Savers* Toolbar
+### Time Savers Toolbar
 This extension adds a new toolbar.
 Because it's usually far easier to click a toolbar button than to have to go hunting for
 the command you want in a menu somewhere,
@@ -37,7 +31,7 @@ and select *Time Savers*.
 Like all other Visual Studio toolbars, you can remove any commands that you feel you don't need,
 or even add new commands to it.
 
-### *Time Savers* Menu
+### Time Savers Menu
 For those people who prefer a menu to a toolbar this extension also adds a new menu to
 Visual Studio's main menu bar. All commands are available via this menu.
 
@@ -159,24 +153,35 @@ Check out the [contribution guidelines][contributing-url]
 if you want to contribute to this project.
 
 For cloning and building this project yourself, make sure to install the
-[Extensibility Tools 2015](https://visualstudiogallery.msdn.microsoft.com/ab39a092-1343-46e2-b0f1-6a3f91155aa6)
+[Extensibility Tools 2015][extensibility-tools-url]
 extension for Visual Studio which enables some features used by this project.
 
 ## License
-[MIT](LICENSE)
+[MIT][license-url]
+
 
 <div style="text-align:center">
-    <img src="art/lss-vsip.png" />
+    <img src="https://i1.visualstudiogallery.msdn.s-msft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/image/file/262824/1/lss-vsip.png"/>
 </div>
 
 [vsts-badge-url]: https://lumiinus.visualstudio.com/_apis/public/build/definitions/c31b2195-e4da-4ad9-a64c-e1712d313703/15/badge
+
 [appveyor-status]: https://ci.appveyor.com/api/projects/status/tsf4rxwtgtcub741?svg=true
 [appveyor-url]: https://ci.appveyor.com/project/luminous-software/time-savers
-[gallery-url]: https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
+
 [marketplace-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
-[features-url]: https://luminous-software.solutions/time-savers/
+[gallery-url]: https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
+
+[features-url]: https://luminous-software.solutions/extensions-vs/#time-savers
+
+[changelog]: https://github.com/yannduran/time-savers/blob/master/CHANGELOG.md
 [changelog-url]: https://github.com/luminous-software/time-savers/blob/master/CHANGELOG.md
+
+[ci-build]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
 [ci-build-url]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
+
 [contributing-url]: https://github.com/luminous-software/time-savers/blob/master/.github/CONTRIBUTING.md
 [extensibility-tools-url]: https://visualstudiogallery.msdn.microsoft.com/ab39a092-1343-46e2-b0f1-6a3f91155aa6
+
+[license-url]: https://github.com/luminous-software/time-savers/blob/master/LICENSE
 

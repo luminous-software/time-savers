@@ -18,6 +18,7 @@ namespace Luminous.TimeSavers
     using Commands.Developer;
     using Options;
     using Events;
+    using UI.PathVariables;
 
     using static PackageConstants;
     using static PackageGuids;
@@ -29,6 +30,9 @@ namespace Luminous.TimeSavers
     [ProvideAutoLoad(NoSolution)]
     [ProvideAutoLoad(SolutionExists)]
 
+    //YD ProvideProfile - for persistence?
+
+    [ProvideToolWindow(typeof(PathVariablesToolWindow))]
     [ProvideOptionPage(typeof(GeneralDialogPage), Name, General, 0, 0, !SupportsAutomation)]
     [ProvideOptionPage(typeof(BuildDialogPage), Name, Build, 0, 0, !SupportsAutomation)]
     [ProvideOptionPage(typeof(DeveloperDialogPage), Name, Developer, 0, 0, !SupportsAutomation)]

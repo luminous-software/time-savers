@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Luminous.TimeSavers.UI.PathVariables"
     xmlns:shell="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
+    xmlns:dd="urn:gong-wpf-dragdrop"
 
     Background="{DynamicResource ToolWindowBackgroundBrushKey}"
     Foreground="{DynamicResource ToolWindowTextBrushKey}"
@@ -29,6 +30,15 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <ListBox x:Name="VariablesList"/>
+        <ListBox x:Name="VariablesList"
+            Grid.Column="0"
+            Grid.Row="0"
+            ItemsSource="{Binding VariablesSource}"
+            dd:DragDrop.IsDragSource="True"
+            dd:DragDrop.IsDropTarget="True"
+            Background="{DynamicResource ToolWindowBackgroundBrushKey}"
+            Foreground="{DynamicResource ToolWindowTextBrushKey}"
+            />
+
     </Grid>
 </UserControl>

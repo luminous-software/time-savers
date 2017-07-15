@@ -13,6 +13,8 @@
     d:DesignHeight="300" d:DesignWidth="300"
     x:Name="PathVariablesToolWindowControl">
 
+    <!--Background="{DynamicResource {x:Static shell:EnvironmentColors.ToolWindowBackgroundBrushKey}}"-->
+
     <!--<UserControl.DataContext>
     <local:PathVariablesViewModel />
     </UserControl.DataContext>-->

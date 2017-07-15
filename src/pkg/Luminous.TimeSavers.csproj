@@ -160,6 +160,9 @@
     <Reference Include="EnvDTE90, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
+    <Reference Include="GongSolutions.Wpf.DragDrop, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\gong-wpf-dragdrop.1.1.0\lib\net46\GongSolutions.Wpf.DragDrop.dll</HintPath>
+    </Reference>
     <Reference Include="Luminous.Code.Core, Version=1.0.2.5, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Luminous.Code.Core.1.0.2.5\lib\net462\Luminous.Code.Core.dll</HintPath>
     </Reference>

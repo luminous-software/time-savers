@@ -21,7 +21,14 @@
 
 
     <Grid>
-        <StackPanel Orientation="Vertical">
-        </StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <ListBox x:Name="VariablesList"/>
     </Grid>
 </UserControl>

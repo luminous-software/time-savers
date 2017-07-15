@@ -10,7 +10,7 @@ namespace Luminous.TimeSavers
     /// <summary>
     /// Helper class that exposes all GUIDs used across VS Package.
     /// </summary>
-    internal static partial class PackageGuids
+    internal sealed partial class PackageGuids
     {
         public const string PackageString = "6359da17-6477-4e9c-8e73-7d05ea8a33a1";
         public const string InsertGuidToolWindowString = "776cdc3d-f8f4-4819-8141-cf5938c4cd7d";

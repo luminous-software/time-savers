@@ -4,8 +4,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Luminous.TimeSavers.UI.PathVariables"
-    Background="{DynamicResource VsBrush.Window}"
-    Foreground="{DynamicResource VsBrush.WindowText}"
+    xmlns:shell="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
+
+    Background="{DynamicResource ToolWindowBackgroundBrushKey}"
+    Foreground="{DynamicResource ToolWindowTextBrushKey}"
+
     mc:Ignorable="d"
     d:DesignHeight="300" d:DesignWidth="300"
     x:Name="PathVariablesToolWindowControl">

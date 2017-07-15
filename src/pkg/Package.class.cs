@@ -4,6 +4,7 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 
 using static Microsoft.VisualStudio.Shell.Interop.UIContextGuids80;
+using static Microsoft.VisualStudio.Shell.VsDockStyle;
 
 namespace Luminous.TimeSavers
 {
@@ -18,7 +19,6 @@ namespace Luminous.TimeSavers
     using Commands.Developer;
     using Options;
     using Events;
-    using UI.PathVariables;
 
     using static PackageConstants;
     using static PackageGuids;
@@ -32,7 +32,8 @@ namespace Luminous.TimeSavers
 
     //YD ProvideProfile - for persistence?
 
-    [ProvideToolWindow(typeof(PathVariablesToolWindow))]
+    [ProvideToolWindow(typeof(UI.PathVariables.ToolWindowPane), Style = Tabbed)]
+
     [ProvideOptionPage(typeof(GeneralDialogPage), Name, General, 0, 0, !SupportsAutomation)]
     [ProvideOptionPage(typeof(BuildDialogPage), Name, Build, 0, 0, !SupportsAutomation)]
     [ProvideOptionPage(typeof(DeveloperDialogPage), Name, Developer, 0, 0, !SupportsAutomation)]

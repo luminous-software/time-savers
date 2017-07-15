@@ -15,7 +15,7 @@
     <OldToolsVersion>14.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>
@@ -110,12 +110,10 @@
     <Compile Include="source.extension.cs">
       <DependentUpon>source.extension.vsixmanifest</DependentUpon>
     </Compile>
-    <Compile Include="UI\PathVariables\PathVariablesModel.cs" />
-    <Compile Include="UI\PathVariables\PathVariablesToolWindow.cs" />
-    <Compile Include="UI\PathVariables\PathVariablesToolWindowControl.xaml.cs">
-      <DependentUpon>PathVariablesToolWindowControl.xaml</DependentUpon>
+    <Compile Include="UI\PathVariables\ToolWindowControl.xaml.cs">
+      <DependentUpon>ToolWindowControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\PathVariables\PathVariablesViewModel.cs" />
+    <Compile Include="UI\PathVariables\ToolWindowPane.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\..\LICENSE">
@@ -270,16 +268,12 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="ReachFramework" />
     <Reference Include="SetDebugProperties, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\SetDebugProperties.1.1.1.0\lib\net45\SetDebugProperties.dll</HintPath>
     </Reference>
     <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Syncfusion.Data.WPF, Version=15.2460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
-    <Reference Include="Syncfusion.SfGrid.WPF, Version=15.2460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
-    <Reference Include="Syncfusion.Shared.Wpf, Version=15.2460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -311,7 +305,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="UI\PathVariables\PathVariablesToolWindowControl.xaml">
+    <Page Include="UI\PathVariables\ToolWindowControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

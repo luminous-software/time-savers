@@ -2,9 +2,9 @@
 {
     using System.Windows.Controls;
 
-    public partial class PathVariablesToolWindowControl : UserControl
+    public partial class ToolWindowControl : UserControl
     {
-        public PathVariablesToolWindowControl()
+        public ToolWindowControl()
         {
             InitializeComponent();
         }

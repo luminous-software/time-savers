@@ -2,7 +2,6 @@
 {
     using System;
     using System.Runtime.InteropServices;
-    using Microsoft.VisualStudio.Shell;
 
     using static PackageGuids;
 
@@ -12,7 +11,7 @@
         public ToolWindowPane() : base(null)
         {
             Caption = "Path Variables";
-            Content = new PathVariablesToolWindowControl();
+            Content = new ToolWindowControl();
         }
 
         public override void OnToolWindowCreated()

@@ -114,6 +114,8 @@
       <DependentUpon>ToolWindowControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\PathVariables\ToolWindowPane.cs" />
+    <Compile Include="UI\PathVariables\ViewModel.cs" />
+    <Compile Include="UI\ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\..\LICENSE">

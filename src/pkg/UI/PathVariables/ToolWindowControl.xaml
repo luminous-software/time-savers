@@ -1,8 +1,10 @@
 ﻿<UserControl x:Class="Luminous.TimeSavers.UI.PathVariables.ToolWindowControl"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+
     xmlns:local="clr-namespace:Luminous.TimeSavers.UI.PathVariables"
     xmlns:shell="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
     xmlns:dd="urn:gong-wpf-dragdrop"
@@ -16,9 +18,9 @@
 
     <!--Background="{DynamicResource {x:Static shell:EnvironmentColors.ToolWindowBackgroundBrushKey}}"-->
 
-    <!--<UserControl.DataContext>
-    <local:PathVariablesViewModel />
-    </UserControl.DataContext>-->
+    <UserControl.DataContext>
+        <local:ViewModel />
+    </UserControl.DataContext>
 
 
     <Grid>

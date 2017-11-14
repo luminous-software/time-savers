@@ -35,12 +35,12 @@
         <ListBox x:Name="VariablesList"
             Grid.Column="0"
             Grid.Row="0"
-            ItemsSource="{Binding VariablesSource}"
-            dd:DragDrop.IsDragSource="True"
+            ItemsSource="{Binding Items}"
+            />
+    </Grid>
+</UserControl>
+<!--dd:DragDrop.IsDragSource="True"
             dd:DragDrop.IsDropTarget="True"
             Background="{DynamicResource ToolWindowBackgroundBrushKey}"
             Foreground="{DynamicResource ToolWindowTextBrushKey}"
-            />
-
-    </Grid>
-</UserControl>
+            />-->

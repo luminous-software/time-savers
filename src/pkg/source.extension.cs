@@ -13,6 +13,6 @@ namespace Luminous.TimeSavers
         public const string Language = "en-US";
         public const string Version = "2.2.0.3";
         public const string Author = "Luminous Software Solutions";
-        public const string Tags = "time savers, visual studio, productivity, luminous, yannduran, yd";
+        public const string Tags = "time savers,visual studio,productivity,luminous,timesavers,yannduran,yd";
     }
 }

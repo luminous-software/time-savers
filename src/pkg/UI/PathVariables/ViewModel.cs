@@ -1,6 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace Luminous.TimeSavers.UI.PathVariables
+namespace Luminous.TimeSavers.UI.PathVariables.ViewModels
 {
     public class ViewModel : ViewModelBase
     {
@@ -10,6 +10,5 @@ namespace Luminous.TimeSavers.UI.PathVariables
         {
             Items = new ItemData();
         }
-
     }
 }

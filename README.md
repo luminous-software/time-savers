@@ -6,16 +6,15 @@
 Download this extension from the [Visual Studio Marketplace][marketplace-url]
 or get the [CI build][ci-build-url].
 
-See the [changelog][changelog-url]
-for changes and the roadmap for the future.
+See the [changelog][changelog-url] for changes and the roadmap for the future.
 
 ---
 
-- If you **like** this extension, please show your support by rating or reviewing it.
+- If you **like** this extension, please show your support by ***rating*** or ***reviewing*** it.
 It only takes a couple of seconds.
 
-- If for some reason you **didn't like** it, or have any **suggestions** for improving it,
-just let me know via the **Q&A** section.
+- If you **didn't like** it for some reason, or have any **suggestions** for improving it,
+just let me know via the ***Q&A*** section.
 
 ---
 

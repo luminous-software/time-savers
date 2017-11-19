@@ -3,11 +3,14 @@ using Microsoft.VisualStudio.Shell;
 
 using static System.Environment;
 
+//FEATURE: 392 Editable Path Grid
+
 namespace Luminous.TimeSavers.Commands.Developer
 {
     using Luminous.Code.Exceptions.ExceptionExtensions;
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
+    using Luminous.TimeSavers.UI.PathVariables;
 
     internal sealed class PathVariablesCommand : DynamicCommand
     {
@@ -32,7 +35,7 @@ namespace Luminous.TimeSavers.Commands.Developer
 
         //---
 
-        private CommandResult ExecuteCommand()
+        private CommandResult _ExecuteCommand()
         {
             try
             {
@@ -62,6 +65,10 @@ namespace Luminous.TimeSavers.Commands.Developer
             }
         }
 
+        private CommandResult ExecuteCommand()
+        {
+            return Package.ShowToolWindow<ToolWindowPane>();
+        }
         //***
     }
 }

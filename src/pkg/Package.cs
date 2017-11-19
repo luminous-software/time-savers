@@ -6,7 +6,7 @@
 namespace Luminous.TimeSavers
 {
     using System;
-    
+
     /// <summary>
     /// Helper class that exposes all GUIDs used across VS Package.
     /// </summary>

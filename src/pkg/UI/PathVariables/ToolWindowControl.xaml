@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="Luminous.TimeSavers.UI.PathVariables.ToolWindowControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+
+    xmlns:viewModels="clr-namespace:Luminous.TimeSavers.UI.PathVariables.ViewModels"
+    xmlns:shell="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
+    xmlns:dd="urn:gong-wpf-dragdrop"
+
+    Background="{DynamicResource ToolWindowBackgroundBrushKey}"
+    Foreground="{DynamicResource ToolWindowTextBrushKey}"
+
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="300"
+    x:Name="PathVariablesToolWindowControl">
+
+    <!--Background="{DynamicResource {x:Static shell:EnvironmentColors.ToolWindowBackgroundBrushKey}}"-->
+
+    <UserControl.DataContext>
+        <viewModels:ViewModel />
+    </UserControl.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <ListBox Grid.Column="0" Grid.Row="0"
+            x:Name="VariablesList"
+            ItemsSource="{Binding Items}"
+            />
+    </Grid>
+</UserControl>
+<!--dd:DragDrop.IsDragSource="True"
+            dd:DragDrop.IsDropTarget="True"
+            Background="{DynamicResource ToolWindowBackgroundBrushKey}"
+            Foreground="{DynamicResource ToolWindowTextBrushKey}"
+            />-->

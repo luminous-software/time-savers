@@ -1,6 +1,6 @@
 ﻿using System;
 
-using Luminous.Code.Core;
+using Luminous.Code.MVVM;
 
 namespace Luminous.TimeSavers.BrowserControl.ToolWindow
 {

@@ -2,9 +2,11 @@
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
+using orientation = Microsoft.VisualStudio.Shell.ToolWindowOrientation;
 
 using static Microsoft.VisualStudio.Shell.Interop.UIContextGuids80;
 using static Microsoft.VisualStudio.Shell.VsDockStyle;
+using static EnvDTE.Constants;
 
 namespace Luminous.TimeSavers
 {
@@ -32,8 +34,8 @@ namespace Luminous.TimeSavers
 
     //YD ProvideProfile - for persistence?
 
-    [ProvideToolWindow(typeof(UI.PathVariables.ToolWindowPane), Style = Tabbed)]
-    [ProvideToolWindow(typeof(UI.BrowserWindow.ToolWindowPane), Style = Tabbed)]
+    [ProvideToolWindow(typeof(UI.PathVariables.ToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
+    [ProvideToolWindow(typeof(UI.BrowserWindow.ToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
 
     [ProvideOptionPage(typeof(GeneralDialogPage), Name, General, 0, 0, supportsAutomation: false)]
     [ProvideOptionPage(typeof(BuildDialogPage), Name, Build, 0, 0, supportsAutomation: false)]

@@ -108,11 +108,13 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BrowserWindow\BrowserWindowToolWindow.xaml.cs">
-      <DependentUpon>BrowserWindowToolWindow.xaml</DependentUpon>
+    <Compile Include="BrowserWindow\BrowserWindow.ToolWindow.xaml.cs">
+      <DependentUpon>BrowserWindow.ToolWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BrowserWindow\BrowserWindowToolWindowPane.cs" />
-    <Compile Include="BrowserWindow\BrowserWindowViewModel.cs" />
+    <Compile Include="BrowserWindow\BrowserWindow.ToolWindowPane.cs">
+      <DependentUpon>BrowserWindow.ViewModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrowserWindow\BrowserWindow.ViewModel.cs" />
     <Compile Include="Guids.cs" />
     <Compile Include="NotificationObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -122,9 +124,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="BrowserWindow\BrowserWindowToolWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="BrowserWindow\BrowserWindow.ToolWindow.xaml">
       <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+      <DependentUpon>BrowserWindow.ViewModel.cs</DependentUpon>
     </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <Extern href="stdidcmd.h"/>
-  <Extern href="vsshlids.h"/>
-  <Include href="KnownImageIds.vsct"/>
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h" />
+  <Include href="KnownImageIds.vsct" />
 
   <Commands package="Package">
     <!--
@@ -29,7 +29,7 @@
       <!--~~~ Package Menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Menu guid="PackageCommandSet" id="PackageMenu" type="Menu" priority="0x4000">
-        <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS"/>
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS" />
         <CommandFlag>AlwaysCreate</CommandFlag>
         <Strings>
           <ButtonText>Time Savers</ButtonText>
@@ -82,7 +82,7 @@
       <!--~~~ Code Editor ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="PackageCommandSet" id="CodeEditorGroup" priority="0x0000">
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN" />
       </Group>
 
       <!--~~~ Solution ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -111,7 +111,7 @@
 
       <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-      <Group guid="PackageCommandSet" id="VisualStudioGroup"/>
+      <Group guid="PackageCommandSet" id="VisualStudioGroup" />
 
       <!--~~~ Restart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -134,7 +134,7 @@
 
       <Button guid="PackageCommandSet" id="EditSolutionCommand" type="Button" priority="0x0010">
         <Parent guid="PackageCommandSet" id="SolutionGroup" />
-        <Icon guid="ImageCatalogGuid" id="Solution"/>
+        <Icon guid="ImageCatalogGuid" id="Solution" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -147,7 +147,7 @@
 
       <Button guid="PackageCommandSet" id="CloseSolutionCommand" type="Button" priority="0x0020">
         <Parent guid="PackageCommandSet" id="SolutionGroup" />
-        <Icon guid="ImageCatalogGuid" id="CloseSolution"/>
+        <Icon guid="ImageCatalogGuid" id="CloseSolution" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -162,7 +162,7 @@
 
       <Button guid="PackageCommandSet" id="EditProjectCommand" type="Button" priority="0x0010">
         <Parent guid="PackageCommandSet" id="ProjectGroup" />
-        <Icon guid="ImageCatalogGuid" id="CSProjectNode"/>
+        <Icon guid="ImageCatalogGuid" id="CSProjectNode" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -177,7 +177,7 @@
 
       <Button guid="PackageCommandSet" id="InsertGuidCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="InsertGroup" />
-        <Icon guid="ImageCatalogGuid" id="InsertSpan"/>
+        <Icon guid="ImageCatalogGuid" id="InsertSpan" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>DontCache</CommandFlag>
@@ -194,7 +194,7 @@
 
       <Button guid="PackageCommandSet" id="RebuildProjectCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="BuildGroup" />
-        <Icon guid="ImageCatalogGuid" id="BuildSelection"/>
+        <Icon guid="ImageCatalogGuid" id="BuildSelection" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>DontCache</CommandFlag>
@@ -208,7 +208,7 @@
 
       <Button guid="PackageCommandSet" id="RebuildSolutionCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="BuildGroup" />
-        <Icon guid="ImageCatalogGuid" id="BuildSolution"/>
+        <Icon guid="ImageCatalogGuid" id="BuildSolution" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>DontCache</CommandFlag>
@@ -222,7 +222,7 @@
 
       <Button guid="PackageCommandSet" id="CancelBuildCommand" type="Button" priority="0x0002">
         <Parent guid="PackageCommandSet" id="BuildGroup" />
-        <Icon guid="ImageCatalogGuid" id="CancelBuild"/>
+        <Icon guid="ImageCatalogGuid" id="CancelBuild" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>DontCache</CommandFlag>
@@ -238,7 +238,7 @@
 
       <Button guid="PackageCommandSet" id="ActivityLogCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="DeveloperCommands" />
-        <Icon guid="ImageCatalogGuid" id="TriggerActionListActive"/>
+        <Icon guid="ImageCatalogGuid" id="TriggerActionListActive" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>FixMenuController</CommandFlag>
@@ -252,7 +252,7 @@
 
       <Button guid="PackageCommandSet" id="DiagnosticLogCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="DeveloperCommands" />
-        <Icon guid="ImageCatalogGuid" id="LogError"/>
+        <Icon guid="ImageCatalogGuid" id="LogError" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -265,7 +265,7 @@
 
       <Button guid="PackageCommandSet" id="PathVariablesCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="DeveloperCommands" />
-        <Icon guid="ImageCatalogGuid" id="DataList"/>
+        <Icon guid="ImageCatalogGuid" id="DataList" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -280,7 +280,7 @@
 
       <Button guid="PackageCommandSet" id="ExtensionsAndUpdatesCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="VisualStudioGroup" />
-        <Icon guid="ImageCatalogGuid" id="CSExtension"/>
+        <Icon guid="ImageCatalogGuid" id="CSExtension" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -295,7 +295,7 @@
 
       <Button guid="PackageCommandSet" id="TimeSaversOptionsCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="OptionsCommands" />
-        <Icon guid="ImageCatalogGuid" id="Settings"/>
+        <Icon guid="ImageCatalogGuid" id="Settings" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>FixMenuController</CommandFlag>
@@ -309,7 +309,7 @@
 
       <Button guid="PackageCommandSet" id="KeyboardOptionsCommand" type="Button" priority="0x0002">
         <Parent guid="PackageCommandSet" id="OptionsCommands" />
-        <Icon guid="ImageCatalogGuid" id="Keyboard"/>
+        <Icon guid="ImageCatalogGuid" id="Keyboard" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -324,7 +324,7 @@
 
       <Button guid="PackageCommandSet" id="RestartNormalCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="RestartCommands" />
-        <Icon guid="ImageCatalogGuid" id="VisualStudio"/>
+        <Icon guid="ImageCatalogGuid" id="VisualStudio" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>FixMenuController</CommandFlag>
@@ -337,7 +337,7 @@
 
       <Button guid="PackageCommandSet" id="RestartElevatedCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="RestartCommands" />
-        <Icon guid="ImageCatalogGuid" id="VisualStudioExpressWindowsPhone"/>
+        <Icon guid="ImageCatalogGuid" id="VisualStudioExpressWindowsPhone" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -431,12 +431,12 @@
 
   <KeyBindings>
     <KeyBinding guid="PackageCommandSet" id="RebuildProjectCommand" editor="guidVSStd97"
-                mod1="Control Alt" key1="9"/>
+                mod1="Control Alt" key1="9" />
     <KeyBinding guid="PackageCommandSet" id="RebuildSolutionCommand" editor="guidVSStd97"
-                mod1="Control Alt" key1="0"/>
+                mod1="Control Alt" key1="0" />
 
     <KeyBinding guid="PackageCommandSet" id="InsertGuidCommand" editor="GUID_TextEditorFactory"
-                mod1="Control Alt" key1="I" mod2="Control Alt" key2="G"/>
+                mod1="Control Alt" key1="I" mod2="Control Alt" key2="G" />
   </KeyBindings>
 
   <Symbols>
@@ -485,6 +485,12 @@
 
       <IDSymbol name="InsertGuidCommand" value="0x0A05" />
 
+      <!--~~~ General ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <IDSymbol name="GeneralGroup" value="0x0210" />
+
+      <IDSymbol name="BrowserWindowCommand" value="0x0217" />
+
       <!--~~~ Build ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <IDSymbol name="BuildGroup" value="0x0310" />
@@ -499,9 +505,9 @@
       <IDSymbol name="DeveloperDropdown" value="0x0701" />
       <IDSymbol name="DeveloperCommands" value="0x0702" />
 
-      <IDSymbol name="ActivityLogCommand" value="0x0705"/>
-      <IDSymbol name="DiagnosticLogCommand" value="0x0706"/>
-      <IDSymbol name="PathVariablesCommand" value="0x0707"/>
+      <IDSymbol name="ActivityLogCommand" value="0x0705" />
+      <IDSymbol name="DiagnosticLogCommand" value="0x0706" />
+      <IDSymbol name="PathVariablesCommand" value="0x0707" />
 
       <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 

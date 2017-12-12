@@ -109,16 +109,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NotificationObject.cs" />
-    <Compile Include="ToolWindow.Guids.cs" />
-    <Compile Include="ToolWindow.Pane.cs" />
-    <Compile Include="ToolWindow.ViewModel.cs" />
+    <Compile Include="Guids.cs" />
+    <Compile Include="ToolWindowPane.cs" />
+    <Compile Include="ViewModel.cs" />
     <Compile Include="ViewModelBase.cs" />
-    <Page Include="ToolWindow.Control.xaml">
+    <Page Include="ToolWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="ToolWindow.Control.xaml.cs">
-      <DependentUpon>ToolWindow.Control.xaml</DependentUpon>
+    <Compile Include="ToolWindow.xaml.cs">
+      <DependentUpon>ToolWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

@@ -1,17 +1,18 @@
-﻿namespace Luminous.TimeSavers.BrowserControl.ToolWindow
-{
-    using System;
-    using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
+using shell = Microsoft.VisualStudio.Shell;
 
+namespace Luminous.TimeSavers.BrowserControl
+{
     using static Guids;
 
     [Guid(ToolWindowGuidString)]
-    internal class ToolWindowPane : Microsoft.VisualStudio.Shell.ToolWindowPane
+    public class ToolWindowPane : shell.ToolWindowPane
     {
         public ToolWindowPane() : base(null)
         {
             Caption = "Browser";
-            Content = new ToolWindowControl();
+            Content = new ToolWindow();
         }
 
         public override void OnToolWindowCreated()

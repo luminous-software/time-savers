@@ -2,7 +2,7 @@
 
 using Luminous.Code.MVVM;
 
-namespace Luminous.TimeSavers.BrowserControl.ToolWindow
+namespace Luminous.TimeSavers.BrowserControl
 {
     public class ViewModel : ViewModelBase
     {

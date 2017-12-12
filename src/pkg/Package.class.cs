@@ -65,6 +65,7 @@ namespace Luminous.TimeSavers
             base.Initialize();
 
             InstantiateInsertCommands();
+            InstantiateGeneralCommands();
             InstantiateBuildCommands();
             InstantiateDeveloperCommands();
             InstantiateVisualStudioCommands();
@@ -111,6 +112,11 @@ namespace Luminous.TimeSavers
             ActivityLogCommand.Instantiate(this);
             DiagnosticLogCommand.Instantiate(this);
             PathVariablesCommand.Instantiate(this);
+        }
+
+        private void InstantiateGeneralCommands()
+        {
+            BrowserWindowCommand.Instantiate(this);
         }
 
         private void InstantiateBuildCommands()

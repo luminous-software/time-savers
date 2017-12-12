@@ -49,7 +49,7 @@ namespace Luminous.TimeSavers
         public const int InsertGroup = 0x0A00;
         public const int InsertGuidCommand = 0x0A05;
         public const int GeneralGroup = 0x0210;
-        public const int BrowserWindowCommand = 0x0217;
+        public const int BrowserWindowCommand = 0x0215;
         public const int BuildGroup = 0x0310;
         public const int RebuildProjectCommand = 0x0315;
         public const int RebuildSolutionCommand = 0x0316;

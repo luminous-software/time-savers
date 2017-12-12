@@ -97,6 +97,10 @@
 
       <Group guid="PackageCommandSet" id="InsertGroup" priority="0x0000" />
 
+      <!--~~~ General ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Group guid="PackageCommandSet" id="GeneralGroup" priority="0x0000" />
+
       <!--~~~ Build ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="PackageCommandSet" id="BuildGroup" priority="0x0000" />
@@ -187,6 +191,20 @@
           <CanonicalName>InsertGuid</CanonicalName>
           <LocCanonicalName>InsertGuid</LocCanonicalName>
           <ButtonText>Insert Guid</ButtonText>
+        </Strings>
+      </Button>
+
+      <!--~~~ General ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Button guid="PackageCommandSet" id="BrowserWindowCommand" type="Button" priority="0x0001">
+        <Parent guid="PackageCommandSet" id="GeneralGroup" />
+        <Icon guid="ImageCatalogGuid" id="ActiveEnvironment" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <CommandName>BrowserWindow</CommandName>
+          <CanonicalName>BrowserWindow</CanonicalName>
+          <LocCanonicalName>BrowserWindow</LocCanonicalName>
+          <ButtonText>Browser Window</ButtonText>
         </Strings>
       </Button>
 
@@ -352,7 +370,11 @@
   <CommandPlacements>
     <!--~~~ PackageToolbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-    <CommandPlacement guid="PackageCommandSet" id="BuildGroup" priority="0x0100">
+    <CommandPlacement guid="PackageCommandSet" id="GeneralGroup" priority="0x0100">
+      <Parent guid="PackageCommandSet" id="PackageToolbar" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="PackageCommandSet" id="BuildGroup" priority="0x0200">
       <Parent guid="PackageCommandSet" id="PackageToolbar" />
     </CommandPlacement>
 
@@ -387,6 +409,10 @@
     </CommandPlacement>
 
     <CommandPlacement guid="PackageCommandSet" id="InsertGroup" priority="0x0A00">
+      <Parent guid="PackageCommandSet" id="PackageMenu" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="PackageCommandSet" id="GeneralGroup" priority="0x0200">
       <Parent guid="PackageCommandSet" id="PackageMenu" />
     </CommandPlacement>
 
@@ -431,9 +457,9 @@
 
   <KeyBindings>
     <KeyBinding guid="PackageCommandSet" id="RebuildProjectCommand" editor="guidVSStd97"
-                mod1="Control Alt" key1="9" />
+                mod1="Control" key1="9" />
     <KeyBinding guid="PackageCommandSet" id="RebuildSolutionCommand" editor="guidVSStd97"
-                mod1="Control Alt" key1="0" />
+                mod1="Control" key1="0" />
 
     <KeyBinding guid="PackageCommandSet" id="InsertGuidCommand" editor="GUID_TextEditorFactory"
                 mod1="Control Alt" key1="I" mod2="Control Alt" key2="G" />
@@ -489,7 +515,7 @@
 
       <IDSymbol name="GeneralGroup" value="0x0210" />
 
-      <IDSymbol name="BrowserWindowCommand" value="0x0217" />
+      <IDSymbol name="BrowserWindowCommand" value="0x0215" />
 
       <!--~~~ Build ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 

@@ -14,7 +14,7 @@ namespace Luminous.TimeSavers.Commands.Developer
         //!!!
 
         private BrowserWindowCommand(PackageBase package)
-            : base(package, 666666)//PackageIds.BrowserWindowCommand)
+            : base(package, PackageIds.BrowserWindowCommand)
         { }
 
         //!!!

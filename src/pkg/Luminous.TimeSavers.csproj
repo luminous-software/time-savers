@@ -51,6 +51,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Commands\General\BrowserWindowCommand.cs" />
     <Compile Include="Commands\Insert\InsertCommand.cs" />
     <Compile Include="Commands\TimeSaversCommand.cs" />
     <Compile Include="Commands\Build\BuildCommand.cs" />

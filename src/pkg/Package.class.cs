@@ -33,11 +33,12 @@ namespace Luminous.TimeSavers
     //YD ProvideProfile - for persistence?
 
     [ProvideToolWindow(typeof(UI.PathVariables.ToolWindowPane), Style = Tabbed)]
+    [ProvideToolWindow(typeof(UI.BrowserWindow.ToolWindowPane), Style = Tabbed)]
 
-    [ProvideOptionPage(typeof(GeneralDialogPage), Name, General, 0, 0, !SupportsAutomation)]
-    [ProvideOptionPage(typeof(BuildDialogPage), Name, Build, 0, 0, !SupportsAutomation)]
-    [ProvideOptionPage(typeof(DeveloperDialogPage), Name, Developer, 0, 0, !SupportsAutomation)]
-    [ProvideOptionPage(typeof(VisualStudioDialogPage), Name, VisualStudio, 0, 0, !SupportsAutomation)]
+    [ProvideOptionPage(typeof(GeneralDialogPage), Name, General, 0, 0, supportsAutomation: false)]
+    [ProvideOptionPage(typeof(BuildDialogPage), Name, Build, 0, 0, supportsAutomation: false)]
+    [ProvideOptionPage(typeof(DeveloperDialogPage), Name, Developer, 0, 0, supportsAutomation: false)]
+    [ProvideOptionPage(typeof(VisualStudioDialogPage), Name, VisualStudio, 0, 0, supportsAutomation: false)]
 
     public sealed class PackageClass : PackageBase
     {

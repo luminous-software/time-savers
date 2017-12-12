@@ -2,17 +2,17 @@
 using System.Runtime.InteropServices;
 using shell = Microsoft.VisualStudio.Shell;
 
-namespace Luminous.TimeSavers.BrowserControl
+namespace Luminous.TimeSavers.UI.BrowserWindow
 {
     using static Guids;
 
-    [Guid(ToolWindowGuidString)]
+    [Guid(BrowserWindowGuidString)]
     public class ToolWindowPane : shell.ToolWindowPane
     {
         public ToolWindowPane() : base(null)
         {
             Caption = "Browser";
-            Content = new ToolWindow();
+            Content = new BrowserWindowToolWindow();
         }
 
         public override void OnToolWindowCreated()

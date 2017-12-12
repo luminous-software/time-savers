@@ -8,7 +8,7 @@ namespace Luminous.TimeSavers.Commands.Developer
     using Luminous.Code.VisualStudio.Packages;
     using Luminous.TimeSavers.UI.BrowserWindow;
 
-    internal sealed class BrowserWindowCommand : DynamicCommand
+    internal sealed class BrowserWindowCommand : TimeSaversCommand
     {
         //***
         //!!!

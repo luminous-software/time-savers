@@ -12,7 +12,7 @@ namespace Luminous.TimeSavers.Commands.Developer
     using Luminous.Code.VisualStudio.Packages;
     using Luminous.TimeSavers.UI.PathVariables;
 
-    internal sealed class PathVariablesCommand : DynamicCommand
+    internal sealed class PathVariablesCommand : TimeSaversCommand
     {
         //***
         //!!!

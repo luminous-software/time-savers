@@ -1,12 +1,12 @@
 {
-    "name": "luminous-time-savers",
-    "version": "2.2.0.3",
-    "repository": "github.com/luminous-software/time-savers",
-    "license": "MIT",
+  "name": "luminous-time-savers",
+  "version": "2.2.0",
+  "repository": "github.com/luminous-software/time-savers",
+  "license": "MIT",
 
-    "devDependencies": {
-        "gulp": "^3.9.1",
-        "gulp-all-tasks": "^1.1.4",
-        "gulp-gh-pages": "^0.5.4"
-    }
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-all-tasks": "^1.1.4",
+    "gulp-gh-pages": "^0.5.4"
+  }
 }

@@ -1,0 +1,37 @@
+﻿img[alt$=">"] {
+    float: right;
+    height: 350px;
+    margin-left: 15px;
+}
+
+img[alt$="<"] {
+    float: left;
+    height: 350px;
+    margin-right: 15px;
+}
+
+img[alt$="<>"] {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    float: none !important;
+}
+
+.article h1 {
+    color: red; /*#444;*/
+    padding-bottom: 0;
+}
+
+.article h3 {
+    font-size: 18px;
+}
+
+.article h4 {
+    font-size: 13px;
+    font-weight:bold;
+}
+
+hr {
+    border-top: 1px solid #aaa;
+}

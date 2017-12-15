@@ -15,7 +15,7 @@ theme_dir: 'theme'
 theme: 'material'
 
 pages:
-  - About Luminous Code: 'index.md'
+  - About Luminous Time Savers: 'index.md'
   - How to Get Started: 'getting-started.md'
   - Change Log: 'changelog.md'
   - What's Coming: 'roadmap.md'

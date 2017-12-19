@@ -2,44 +2,43 @@ site_name: 'Luminous Time Savers'
 site_description: ''
 site_author: 'Yann Duran'
 site_url: 'https://luminous-software.solutions/time-savers'
-site_favicon: 'img/favicon.ico'
 
 repo_name: 'time-savers'
 repo_url: 'https://github.com/luminous-software/time-savers'
 
 copyright: 'Copyright (c) 2017 Luminous Software Solutions'
 
-docs_dir: 'source'
+docs_dir: 'docs-source'
 site_dir: 'docs'
-theme_dir: 'theme'
-theme: 'material'
 
-pages:
-  - About Luminous Time Savers: 'index.md'
-  - How to Get Started: 'getting-started.md'
-  - Change Log: 'changelog.md'
-  - What's Coming: 'roadmap.md'
-  - How to Contribute: 'contributing.md'
-  - License: 'license.md'
-
-extra:
-  version: 'v2.2.0.3'
-  logo: 'img/logo.png'
-
+theme:
+  name: 'material'
   palette:
     primary: 'deep purple'
     accent: 'purple'
+  custom_dir: 'docs-theme-overrides'
+  favicon: 'assets/images/favicon.ico'
+  feature:
+    tabs: false
 
-  author:
-    github: 'luminous-software'
-    twitter: 'lumiinus'
+pages:
+  - Increase Your Productivity: 'index.md'
+  - How to Get Started: 'getting-started.md'
+  - Change Log: 'changelog.md'
+  - What's Coming: 'roadmap.md'
+
+extra:
+  links:
+    - https://luminous-software.solutions
 
 extra_css:
-  ['css/extra.css']
+  - assets/stylesheets/extra.css
 
 extra_javascript:
-  ['js/extra.js']
+  - assets/javascripts/extra.js
 
 markdown_extensions:
   - codehilite(css_class=code)
   - admonition
+  - toc:
+      permalink: true

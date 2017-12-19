@@ -7,13 +7,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		appveyor.yml = appveyor.yml
-		CHANGELOG.md = CHANGELOG.md
+		source\changelog.md = source\changelog.md
+		source\contributing.md = source\contributing.md
+		source\getting-started.md = source\getting-started.md
 		gulpfile.js = gulpfile.js
+		source\index.md = source\index.md
+		source\license.md = source\license.md
 		lss-time-savers.favdoc = lss-time-savers.favdoc
 		mkdocs.yml = mkdocs.yml
 		package.json = package.json
 		README.html = README.html
 		README.md = README.md
+		source\roadmap.md = source\roadmap.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers", "src\pkg\Luminous.TimeSavers.csproj", "{A2A22BAD-F136-4409-B37D-1E070E373E3D}"

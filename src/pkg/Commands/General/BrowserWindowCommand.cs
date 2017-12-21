@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.Shell;
 
-//FEATURE: 445 Browser Window
+//FEATURE:   445 Browser Window
+//WORK_ITEM: 446 Create Browser Window ToolWindow
 
 namespace Luminous.TimeSavers.Commands.Developer
 {
@@ -26,14 +27,13 @@ namespace Luminous.TimeSavers.Commands.Developer
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()
-                .ShowProblem()
-                .ShowInformation();
+                .ShowProblem();
 
         //---
 
         private CommandResult ExecuteCommand()
         {
-            return Package.ShowToolWindow<ToolWindowPane>();
+            return Package.ShowNewToolWindow<ToolWindowPane>(maxWindows: 10);
         }
 
         //***

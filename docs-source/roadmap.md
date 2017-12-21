@@ -5,7 +5,7 @@ Once they've been tested, they'll be included in the *next public release*.
 
 <!--[![AppVeyor](https://img.shields.io/appveyor/ci/luminous-software/luminous-code.svg)]()
 -->
-- [ ] (none yet)
+- [ ] (come back soon)
 
 ---
 

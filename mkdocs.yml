@@ -26,6 +26,7 @@ pages:
   - How to Get Started: 'getting-started.md'
   - Change Log: 'changelog.md'
   - What's Coming: 'roadmap.md'
+  - License: 'license.md'
 
 extra:
   links:

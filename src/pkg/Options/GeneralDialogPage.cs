@@ -23,7 +23,7 @@ namespace Luminous.TimeSavers.Options
         [Category("Luminous Browser Windows")]
         [DisplayName("Maximum Windows Open")]
         [Description("Defines how many Luminous Browser windows can be open at any time")]
-        public int MaxBrowserWindows { get; set; } = 20;
+        public int MaxBrowserWindows { get; set; } = 100;
 
         //---
 

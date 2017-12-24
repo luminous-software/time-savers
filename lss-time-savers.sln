@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.10
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08B276AF-9E6A-4DD9-994F-964CFD71AC29}"
 	ProjectSection(SolutionItems) = preProject
@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers", "src\pkg\Luminous.TimeSavers.csproj", "{A2A22BAD-F136-4409-B37D-1E070E373E3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers.Options", "src\options\Luminous.TimeSavers.Options.csproj", "{D1FB9B94-BDDB-4474-B8C8-FBBC8F0137B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A2A22BAD-F136-4409-B37D-1E070E373E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2A22BAD-F136-4409-B37D-1E070E373E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2A22BAD-F136-4409-B37D-1E070E373E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1FB9B94-BDDB-4474-B8C8-FBBC8F0137B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1FB9B94-BDDB-4474-B8C8-FBBC8F0137B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1FB9B94-BDDB-4474-B8C8-FBBC8F0137B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1FB9B94-BDDB-4474-B8C8-FBBC8F0137B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

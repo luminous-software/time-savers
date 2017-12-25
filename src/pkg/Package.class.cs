@@ -17,10 +17,10 @@ namespace Luminous.TimeSavers
     using Commands.SolutionNode;
     using Commands.ProjectNode;
     using Commands.Developer;
-    using Options;
+    using Luminous.TimeSavers.Options;
     using Events;
 
-    using static PackageConstants;
+    using static Core.Constants;
     using static PackageGuids;
     using static Vsix;
 

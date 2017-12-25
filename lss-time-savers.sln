@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers.Options
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers.Core", "src\core\Luminous.TimeSavers.Core.csproj", "{10D8B248-A9A7-4A5D-BBF2-55402E59475B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers.UI", "src\ui\Luminous.TimeSavers.UI.csproj", "{7012B73A-B0CE-4B42-A52D-B237CCB61627}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{10D8B248-A9A7-4A5D-BBF2-55402E59475B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10D8B248-A9A7-4A5D-BBF2-55402E59475B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10D8B248-A9A7-4A5D-BBF2-55402E59475B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7012B73A-B0CE-4B42-A52D-B237CCB61627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7012B73A-B0CE-4B42-A52D-B237CCB61627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7012B73A-B0CE-4B42-A52D-B237CCB61627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7012B73A-B0CE-4B42-A52D-B237CCB61627}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

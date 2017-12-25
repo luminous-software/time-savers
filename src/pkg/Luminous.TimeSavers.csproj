@@ -25,7 +25,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Luminous.TimeSavers</RootNamespace>
     <AssemblyName>Luminous.TimeSavers</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
     <IncludeDebugSymbolsInVSIXContainer>true</IncludeDebugSymbolsInVSIXContainer>
@@ -70,25 +70,7 @@
     <Compile Include="Commands\Restart\RestartElevatedCommand.cs" />
     <Compile Include="Commands\Restart\RestartNormalCommand.cs" />
     <Compile Include="Events\VsSolutionEvents.cs" />
-    <Compile Include="Options\OptionsDialogPage.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Options\VisualStudioDialogPage.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Options\DeveloperDialogPage.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Options\BuildDialogPage.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Options\GeneralDialogPage.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Package.class.cs">
-      <DependentUpon>Package.vsct</DependentUpon>
-    </Compile>
-    <Compile Include="Package.const.cs">
       <DependentUpon>Package.vsct</DependentUpon>
     </Compile>
     <Compile Include="Package.cs">
@@ -123,7 +105,9 @@
     <Content Include="source.extension.ico">
       <DependentUpon>source.extension.vsixmanifest</DependentUpon>
     </Content>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -307,6 +291,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\core\Luminous.TimeSavers.Core.csproj">
+      <Project>{10d8b248-a9a7-4a5d-bbf2-55402e59475b}</Project>
+      <Name>Luminous.TimeSavers.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\options\Luminous.TimeSavers.Options.csproj">
+      <Project>{d1fb9b94-bddb-4474-b8c8-fbbc8f0137b1}</Project>
+      <Name>Luminous.TimeSavers.Options</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />

@@ -1,4 +1,4 @@
-/// <binding AfterBuild='build' />
+/// <binding />
 'use strict';
 
 const gulp = require('gulp');

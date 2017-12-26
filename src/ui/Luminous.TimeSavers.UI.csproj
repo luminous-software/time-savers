@@ -111,10 +111,10 @@
     <Compile Include="BrowserWindow\BrowserWindow.ToolWindow.xaml.cs">
       <DependentUpon>BrowserWindow.ToolWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BrowserWindow\BrowserWindow.ToolWindowPane.cs">
-      <DependentUpon>BrowserWindow.ViewModel.cs</DependentUpon>
+    <Compile Include="BrowserWindow\BrowserWindow.ToolWindowPane.cs" />
+    <Compile Include="BrowserWindow\BrowserWindow.ViewModel.cs">
+      <DependentUpon>BrowserWindow.ToolWindowPane.cs</DependentUpon>
     </Compile>
-    <Compile Include="BrowserWindow\BrowserWindow.ViewModel.cs" />
     <Compile Include="Guids.cs" />
     <Compile Include="NotificationObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -127,7 +127,7 @@
     <Page Include="BrowserWindow\BrowserWindow.ToolWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>XamlIntelliSenseFileGenerator</Generator>
-      <DependentUpon>BrowserWindow.ViewModel.cs</DependentUpon>
+      <DependentUpon>BrowserWindow.ToolWindowPane.cs</DependentUpon>
     </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

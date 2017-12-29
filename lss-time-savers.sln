@@ -7,19 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		appveyor.yml = appveyor.yml
-		source\changelog.md = source\changelog.md
-		source\contributing.md = source\contributing.md
 		..\..\..\tools\CreatePrivateGallery.cmd = ..\..\..\tools\CreatePrivateGallery.cmd
-		source\getting-started.md = source\getting-started.md
-		gulpfile.js = gulpfile.js
-		source\index.md = source\index.md
-		source\license.md = source\license.md
 		lss-time-savers.favdoc = lss-time-savers.favdoc
-		mkdocs.yml = mkdocs.yml
-		package.json = package.json
 		README.html = README.html
 		README.md = README.md
-		source\roadmap.md = source\roadmap.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers", "src\pkg\Luminous.TimeSavers.csproj", "{A2A22BAD-F136-4409-B37D-1E070E373E3D}"
@@ -29,6 +20,19 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers.Core", "src\core\Luminous.TimeSavers.Core.csproj", "{10D8B248-A9A7-4A5D-BBF2-55402E59475B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers.UI", "src\ui\Luminous.TimeSavers.UI.csproj", "{7012B73A-B0CE-4B42-A52D-B237CCB61627}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B388B43D-55ED-4F06-B651-A7CF5DFF5B01}"
+	ProjectSection(SolutionItems) = preProject
+		docs-source\changelog.md = docs-source\changelog.md
+		docs-source\contributing.md = docs-source\contributing.md
+		docs-source\getting-started.md = docs-source\getting-started.md
+		gulpfile.js = gulpfile.js
+		docs-source\index.md = docs-source\index.md
+		docs-source\license.md = docs-source\license.md
+		mkdocs.yml = mkdocs.yml
+		package.json = package.json
+		docs-source\roadmap.md = docs-source\roadmap.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +59,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B388B43D-55ED-4F06-B651-A7CF5DFF5B01} = {08B276AF-9E6A-4DD9-994F-964CFD71AC29}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C837AE99-4FDA-400B-B90A-533B271E55B8}

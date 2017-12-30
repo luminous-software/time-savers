@@ -5,9 +5,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 
-    xmlns:viewModels="clr-namespace:Luminous.TimeSavers.UI.PathVariables.ViewModels"
-    xmlns:shell="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
-    xmlns:dd="urn:gong-wpf-dragdrop"
+    xmlns:local="clr-namespace:Luminous.TimeSavers.UI.PathVariables"
 
     Background="{DynamicResource ToolWindowBackgroundBrushKey}"
     Foreground="{DynamicResource ToolWindowTextBrushKey}"
@@ -19,7 +17,7 @@
     <!--Background="{DynamicResource {x:Static shell:EnvironmentColors.ToolWindowBackgroundBrushKey}}"-->
 
     <UserControl.DataContext>
-        <viewModels:ViewModel />
+        <local:PathVariablesViewModel />
     </UserControl.DataContext>
 
     <Grid>
@@ -37,8 +35,3 @@
             />
     </Grid>
 </UserControl>
-<!--dd:DragDrop.IsDragSource="True"
-            dd:DragDrop.IsDropTarget="True"
-            Background="{DynamicResource ToolWindowBackgroundBrushKey}"
-            Foreground="{DynamicResource ToolWindowTextBrushKey}"
-            />-->

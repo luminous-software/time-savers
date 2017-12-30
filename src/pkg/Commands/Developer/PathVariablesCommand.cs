@@ -37,7 +37,7 @@ namespace Luminous.TimeSavers.Commands.Developer
 
         private CommandResult ExecuteCommand()
         {
-            return Package.ShowToolWindow<ToolWindowPane>();
+            return Package.ShowToolWindow<PathVariablesToolWindowPane>();
         }
 
         //***

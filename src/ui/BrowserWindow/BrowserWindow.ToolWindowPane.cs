@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using shell = Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Shell;
 
 namespace Luminous.TimeSavers.UI.BrowserWindow
 {
     using static Guids;
 
     [Guid(BrowserWindowGuidString)]
-    public class ToolWindowPane : shell.ToolWindowPane
+    public class BrowserWindowToolWindowPane : ToolWindowPane
     {
-        public ToolWindowPane() : base(null)
+        public BrowserWindowToolWindowPane() : base(null)
         {
-            Caption = "Browser";
+            Caption = "Luminous Browser";
             Content = new BrowserWindowToolWindow();
         }
 

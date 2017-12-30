@@ -19,7 +19,9 @@ namespace Luminous.TimeSavers
     using Commands.SolutionNode;
     using Commands.ProjectNode;
     using Commands.Developer;
-    using Luminous.TimeSavers.Options;
+    using Options;
+    using UI.PathVariables;
+    using UI.BrowserWindow;
     using Events;
 
     using static Core.Constants;
@@ -34,8 +36,8 @@ namespace Luminous.TimeSavers
 
     //YD ProvideProfile - for persistence?
 
-    [ProvideToolWindow(typeof(UI.PathVariables.ToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
-    [ProvideToolWindow(typeof(UI.BrowserWindow.ToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
+    [ProvideToolWindow(typeof(PathVariablesToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
+    [ProvideToolWindow(typeof(BrowserWindowToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
 
     [ProvideOptionPage(typeof(GeneralDialogPage), Name, General, 0, 0, supportsAutomation: false)]
     [ProvideOptionPage(typeof(BuildDialogPage), Name, Build, 0, 0, supportsAutomation: false)]

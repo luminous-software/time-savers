@@ -116,10 +116,19 @@
     </Compile>
     <Compile Include="BrowserWindow\BrowserWindow.ToolWindowPane.cs" />
     <Compile Include="BrowserWindow\BrowserWindow.ViewModel.cs">
-      <DependentUpon>BrowserWindow.ToolWindowPane.cs</DependentUpon>
+      <DependentUpon>BrowserWindow.ToolWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Guids.cs" />
     <Compile Include="NotificationObject.cs" />
+    <Compile Include="PathVariables\PathData.cs" />
+    <Compile Include="PathVariables\PathModel.cs" />
+    <Compile Include="PathVariables\PathVariables.ToolWindow.xaml.cs">
+      <DependentUpon>PathVariables.ToolWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PathVariables\PathVariables.ToolWindowPane.cs" />
+    <Compile Include="PathVariables\PathVariables.ViewModel.cs">
+      <DependentUpon>PathVariables.ToolWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -128,9 +137,12 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="BrowserWindow\BrowserWindow.ToolWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
-      <DependentUpon>BrowserWindow.ToolWindowPane.cs</DependentUpon>
+    </Page>
+    <Page Include="PathVariables\PathVariables.ToolWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

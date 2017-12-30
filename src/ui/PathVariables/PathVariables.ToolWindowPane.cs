@@ -1,14 +1,15 @@
-﻿namespace Luminous.TimeSavers.UI.PathVariables
+﻿using System;
+using System.Runtime.InteropServices;
+using Microsoft.VisualStudio.Shell;
+
+namespace Luminous.TimeSavers.UI.PathVariables
 {
-    using System;
-    using System.Runtime.InteropServices;
+    using static Guids;
 
-    using static PackageGuids;
-
-    [Guid(PathVariablesToolWindowString)]
-    internal class ToolWindowPane : Microsoft.VisualStudio.Shell.ToolWindowPane
+    [Guid(PathVariablesGuidString)]
+    public class PathVariablesToolWindowPane : ToolWindowPane
     {
-        public ToolWindowPane() : base(null)
+        public PathVariablesToolWindowPane() : base(null)
         {
             Caption = "Path Variables";
             Content = new ToolWindowControl();

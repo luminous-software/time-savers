@@ -34,7 +34,7 @@ namespace Luminous.TimeSavers.Commands.Developer
 
         private CommandResult ExecuteCommand()
         {
-            return Package.ShowNewToolWindow<ToolWindowPane>(maxWindows: TimeSaversOptions.MaxBrowserWindows);
+            return Package.ShowNewToolWindow<BrowserWindowToolWindowPane>(maxWindows: TimeSaversOptions.MaxBrowserWindows);
         }
 
         //***

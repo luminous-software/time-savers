@@ -108,6 +108,9 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\pkg\source.extension.cs">
+      <Link>source.extension.cs</Link>
+    </Compile>
     <Compile Include="BrowserWindow\BrowserWindow.ToolWindow.xaml.cs">
       <DependentUpon>BrowserWindow.ToolWindow.xaml</DependentUpon>
     </Compile>

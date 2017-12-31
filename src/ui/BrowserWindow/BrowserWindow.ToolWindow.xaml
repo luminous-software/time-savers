@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 
     xmlns:local="clr-namespace:Luminous.TimeSavers.UI.BrowserWindow"
+    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.Wpf"
 
     Background="{DynamicResource ToolWindowBackgroundBrushKey}"
     Foreground="{DynamicResource ToolWindowTextBrushKey}"
@@ -28,7 +29,10 @@
         </Grid.ColumnDefinitions>
     </Grid>-->
 
-    <StackPanel>
-        <ComboBox Height="20" />
+    <StackPanel x:Name="BrowserWindowControl">
+        <syncfusion:AutoComplete x:Name="BrowserWindowUrl"
+            Source="Custom" CustomSource="{Binding Urls}"
+            >
+        </syncfusion:AutoComplete>
     </StackPanel>
 </UserControl>

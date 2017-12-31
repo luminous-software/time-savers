@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.ObjectModel;
 
 namespace Luminous.TimeSavers.UI.BrowserWindow
 {
@@ -6,6 +6,16 @@ namespace Luminous.TimeSavers.UI.BrowserWindow
 
     public class BrowserWindowViewModel : ViewModelBase
     {
-        public String Url { get; private set; }
+        public string Url { get; }
+        public ObservableCollection<string> Urls { get; }
+
+        public ObservableCollection<string> GetUrls()
+        {
+            return new ObservableCollection<string>();
+        }
+
+        public void SaveUrls()
+        {
+        }
     }
 }

@@ -92,8 +92,10 @@
       <HintPath>..\..\packages\Microsoft.VisualStudio.Validation.14.1.111\lib\net45\Microsoft.VisualStudio.Validation.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Syncfusion.SfInput.WPF, Version=15.4460.0.17, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -118,6 +120,8 @@
     <Compile Include="BrowserWindow\BrowserWindow.ViewModel.cs">
       <DependentUpon>BrowserWindow.ToolWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BrowserWindow\Commands\ClearCommand.cs" />
+    <Compile Include="BrowserWindow\Commands\GoCommand.cs" />
     <Compile Include="Guids.cs" />
     <Compile Include="NotificationObject.cs" />
     <Compile Include="PathVariables\PathData.cs" />
@@ -140,10 +144,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="BrowserWindow\Styles\ControlStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BrowserWindow\Styles\Brushes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="PathVariables\PathVariables.ToolWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BrowserWindow\Images\cross.png" />
+    <Resource Include="BrowserWindow\Images\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BrowserWindow\Images\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BrowserWindow\Images\accept.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

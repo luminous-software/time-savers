@@ -1,27 +1,5 @@
 # Luminous Time Savers
 
-## Download/Test
-
-Any features that have a checkmark are ready to be tested by downloading the latest
-[CI build](http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/).
-
-### Planned
-- [ ] Duplicate File
-- [ ] Copy References
-- [ ] Paste References
-- [ ] Copy Solution
-- [ ] Delete Solution
-- [ ] Reload Solution (last solution - ie first in MRU list)
-- [ ] Copy Project
-- [ ] Delete Project
-- [ ] Reload Project
-- [ ] Edit Path Variables
-- [ ] Edit Environment Variables
-- [ ] Clean Experimental Hive (Clean Hive and Debug for Extension Developers - John McBride)
-- [ ] Open Bin Folder (Open Bin Folder Extension - John McBride)
-
----
-
 ## Changelog
 
 These are the changes to each version that has been released

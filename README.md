@@ -1,22 +1,27 @@
 # Luminous Time Savers
 
-![VSTS Badge][vsts-badge-url]
-[![Build status][appveyor-status]][appveyor-url]
-
 Download this extension from the [Visual Studio Marketplace][marketplace-url]
 or get the [CI build][ci-build-url].
 
-See the [changelog][changelog-url] for changes and the roadmap for the future.
+![VSTS Badge][vsts-badge-url]
+[![Build status][appveyor-status]][appveyor-url]
+
+See the [change log][changelog-url] for changes and the roadmap for upcoming features.
 
 ---
 
-- If you **like** this extension, please show your support by ***rating*** or ***reviewing*** it.
-It only takes a couple of seconds.
+- If you **like** this extension, please show your support by [***rating it***][rating-url]
+(only takes a couple of seconds),
+or [***reviewing it***][rating-url].
 
-- If you **didn't like** it for some reason, or have any **suggestions** for improving it,
-just let me know via the ***Q&A*** section.
+- If you **didn't like** it for some reason, just let me know via the [***Q&A section***][qna-url]
+(please don't ask questions in the review section).
+
+- If you have any **suggestions** for improving it,
+just let me know via the [***Q&A section***][suggestions-url].
 
 ---
+## Enhance Your Productivity
 
 ### Time Savers Toolbar
 This extension adds a new toolbar.
@@ -60,96 +65,80 @@ A more in-depth description of the features listed below [can be found here][fea
 including a comparison of the steps required both with and without the extension installed,
 as well as images of the features in action.
 
-- Activity Log
-- Cancel Build
-- Close Solution
-- Diagnostic Log
-- Edit Project
-- Edit Solution
-- Extensions and Updates
-- Insert Guid(s)
-- Keyboard Options
-- Path Variables
-- Rebuild Project
-- Rebuild Solution
-- Reopen Start Page
-- Restart Visual Studio
-- Restart Visual Studio as Administrator
-
----
-
-#### Activity Log
-Open the Visual Studio activity monitor log.
-
-The activity log is a powerful tool for troubleshooting issues with *VS Packages*, *VS Extensions*,
-*MEF Components**, and *pkgdef* files, and provides useful insights into what Visual Studio is doing.
-
-When Visual Studio starts writing the log, it also writes a corresponding XSL file in the same folder
-as the XML file that makes it easy to read in a browser.
-
->The file's path is *%APPDATA%\Microsoft\VisualStudio\version\ActivityLog.xml*
->
->- *%APPDATA%* represents the value in the APPDATA environment variable
->- *version* represents the current Visual Studio version (ie 14.0 2015)
-
-#### Cancel Build
-A convenient way to cancel a running build/rebuild.
-
-#### Close Solution
-Close the solution.
-This command is missing from the solution node in Visual Studio for some unknown reason.
-
-#### Diagnostic Log
-Open the most recent MSBuild diagnostic log file.
-
->The file is: *%LOCALAPPDATA%\Temp\MSBuild_guid.failure.txt*
->
->- *%LOCALAPPDATA%* represents the value in the *LOCALAPPDATA* environment variable
->- *guid* represents a random guid value
-
-#### Edit Project
-Open a project's *csproj* file in an xml editor.
-
-#### Edit Solution
-Open a solution's *.sln* file in an xml editor.
-
-#### Extensions and Updates
-A convenient way to open the *Extensions and Updates* dialog.
-
-#### Insert Guid(s)
-Insert a single guid, or multiple guids directly into your code without the use of any **external** tool.
-
-#### Keyboard Options
-Open the *Tools* | *Options* dialog at the *Environment* | *Keyboard* node.
-
-#### Path Variables
-Display the current set of Windows paths variable values.
-
-#### Rebuild Project
-A convenient way to rebuild the just the current project
-(either a selected project, or the project to which the active code document belongs).
-
-#### Rebuild Solution
-A convenient way to rebuild the whole solution.
-
-#### Reopen Start Page
-Automatically reopen the *Start Page* when the solution is closed.
-
-#### Restart Visual Studio
-Unlock Visual Studio's built-in ability to restart itself.
-
-#### Restart Visual Studio as Administrator
-Restart Visual Studio as administrator (elevated session).
-
-#### Time Savers Options
-Open the *Tools* | *Options* dialog at the *Time Savers* node.
-
-#### Time Savers Options
-Open the *Tools* | *Options* dialog at the *Environment* | *Time Savers* node.
+<table style="width: 800px;" border="1">
+<tbody>
+    <tr>
+        <td style="text-align: left;"><strong>Feature</strong></td>
+        <td style="text-align: left;"><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td>Activity Log</td>
+        <td>Open the Visual Studio activity monitor log</td>
+    </tr>
+    <tr>
+        <td>Cancel Build</td>
+        <td>A convenient way to cancel a running build/rebuild</td>
+    </tr>
+    <tr>
+        <td>Close Solution</td>
+        <td>Adds the missing command to the solution node in Solution Explorer</td>
+    </tr>
+    <tr>
+        <td>Diagnostic Log</td>
+        <td>Opens the most recent MSBuild diagnostic log file</td>
+    </tr>
+    <tr>
+        <td>Edit Project</td>
+        <td>Opens a project's <i>csproj</i> file in an xml editor</td>
+    </tr>
+    <tr>
+        <td>Edit Solution</td>
+        <td>Open a solution's <i>.sln</i> file in an xml editor</td>
+    </tr>
+    <tr>
+        <td>Extensions and Updates</td>
+        <td>A convenient way to open the <i>Extensions and Updates</i> dialog</td>
+    </tr>
+    <tr>
+        <td>Insert Guid(s)</td>
+        <td>Inserts a single guid, or multiple guids directly into your code without the use of any external tool</td>
+    </tr>
+    <tr>
+        <td>Keyboard Options</td>
+        <td>Opens the <i>Tools</i> | <i>Options</i> dialog at the <i>Environment</i> | <i>Keyboard</i> node</td>
+    </tr>
+    <tr>
+        <td>Path Variables</td>
+        <td>Displays the current set of Windows paths variable values</td>
+    </tr>
+    <tr>
+        <td>Rebuild Project</td>
+        <td>A convenient way to rebuild the just the current project</td>
+    </tr>
+    <tr>
+        <td>Rebuild Solution</td>
+        <td>A convenient way to rebuild the whole solution</td>
+    </tr>
+    <tr>
+        <td>Reopen Start Page</td>
+        <td>Automatically reopen the <i>Start Page</i> when the solution is closed</td>
+    <tr>
+        <td>Restart Visual Studio</td>
+        <td>Unlock Visual Studio's built-in ability to restart itself</td>
+    </tr>
+    <tr>
+        <td>Restart Visual Studio <br /> as Administrator</td>
+        <td>Restarts Visual Studio as administrator (aka an <i>elevated</i> session)</td>
+    </tr>
+    <tr>
+        <td>Time Savers Options</td>
+        <td>Opens the <i>Tools</i> | <i>Options</i> dialog at the <i>Time Savers</i> node</td>
+    </tr>
+</table>
 
 ## Contribute
 Check out the [contribution guidelines][contributing-url]
-if you want to contribute to this project.
+if you'd like to contribute to this project.
 
 For cloning and building this project yourself, make sure to install the
 [Extensibility Tools 2015][extensibility-tools-url]
@@ -157,7 +146,6 @@ extension for Visual Studio which enables some features used by this project.
 
 ## License
 [MIT][license-url]
-
 
 <div style="text-align:center">
     <img src="https://i1.visualstudiogallery.msdn.s-msft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/image/file/262824/1/lss-vsip.png"/>
@@ -168,16 +156,17 @@ extension for Visual Studio which enables some features used by this project.
 [appveyor-status]: https://ci.appveyor.com/api/projects/status/tsf4rxwtgtcub741?svg=true
 [appveyor-url]: https://ci.appveyor.com/project/luminous-software/time-savers
 
-[marketplace-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
-[gallery-url]: https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
-
-[features-url]: https://luminous-software.solutions/extensions-vs/#time-savers
-
-[changelog]: https://github.com/yannduran/time-savers/blob/master/CHANGELOG.md
-[changelog-url]: https://github.com/luminous-software/time-savers/blob/master/CHANGELOG.md
-
 [ci-build]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
 [ci-build-url]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
+
+[marketplace-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
+[gallery-url]: https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
+[rating-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd#review-details
+[qna-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd#qna
+[suggestions-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd#qna
+
+[changelog-url]: https://github.com/luminous-software/time-savers/blob/master/CHANGELOG.md
+[features-url]: https://luminous-software.solutions/extensions-vs/#time-savers
 
 [contributing-url]: https://github.com/luminous-software/time-savers/blob/master/.github/CONTRIBUTING.md
 [extensibility-tools-url]: https://visualstudiogallery.msdn.microsoft.com/ab39a092-1343-46e2-b0f1-6a3f91155aa6

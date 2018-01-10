@@ -5,8 +5,7 @@ namespace Luminous.TimeSavers.Commands.ProjectNode
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
 
-
-    internal sealed class EditProjectCommand : DynamicCommand
+    internal sealed class EditProjectCommand : TimeSaversCommand
     {
         //***
 

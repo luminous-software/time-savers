@@ -1,53 +1,13 @@
-#---------------------------------#
-#    environment configuration
-#---------------------------------#
-
 image: Visual Studio 2017
-
-version: 1.0.0.{build}
-
-branches:
-  only:
-  - master
-
-# called at very beginning, before cloning repo
-init:
-  - ps: (new-object Net.WebClient).DownloadString("https://raw.github.com/madskristensen/ExtensionScripts/master/AppVeyor/vsix.ps1") | iex
-
-# environment variables
-#environment:
-#  my_var1: value1
-#  my_var2: value2
-#
-#  # encrypted variable ("Encrypt data" page in account menu to encrypt data)
-#  my_secure_var1:
-#    secure: FW3tJ3fMncxvs58/ifSP7w==
-
-#  runs after cloning repo
-
-nuget:
-  account_feed: true
-  project_feed: false
-
-#---------------------------------#
-#       build configuration
-#---------------------------------#
-
 platform: Any CPU
 configuration: Release
 
-# to add several configurations to build matrix:
-#configuration:
-#  - Debug
-#  - Release
-
-build:
-  parallel: true
-  verbosity: minimal
+init:
+  - ps: (new-object Net.WebClient).DownloadString("https://raw.github.com/madskristensen/ExtensionScripts/master/AppVeyor/vsix.ps1") | iex
 
 before_build:
   - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
-  - ps: Vsix-TokenReplacement 'src\source.extension.cs Version = "([0-9\\.]+)" Version = "{version}"'
+  - ps: Vsix-TokenReplacement src\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
 
 build_script:
   - nuget restore -verbosity quiet
@@ -56,43 +16,7 @@ build_script:
 after_build:
   - ps: Vsix-PushArtifacts | Vsix-PublishToGallery
 
-#---------------------------------#
-#       tests configuration
-#---------------------------------#
-
-before_test:
-#  - echo Before Tests (echo)
-#  - ps: Write-Host "Before Tests (ps)"
-
-after_test:
-
-# run custom script instead of automatic tests
-test_script:
-#  - echo This is my custom test script
-
-#---------------------------------#
-#      artifacts configuration
-#---------------------------------#
-
-#artifacts:
-
-#---------------------------------#
-#     deployment configuration
-#---------------------------------#
-
-# providers: Local, FTP, WebDeploy, AzureCS, AzureBlob, S3, NuGet, Environment
-# provider names are case-sensitive!
 deploy:
-
-  # Deploying to NuGet feed
-#  - provider: NuGet
-#    server: https://my.nuget.server/feed
-#    api_key:
-#      secure: FYWX6NfjZIVw==
-#    skip_symbols: false
-#    symbol_server: https://your.symbol.server/feed
-#    artifact: MyPackage.nupkg
-
   # Deploy to GitHub Releases
   - provider: GitHub
     artifact: /.*\.vsix/           # upload all vsix files to release assets
@@ -101,34 +25,3 @@ deploy:
     on:
       branch: master                # release from master branch only
       appveyor_repo_tag: true       # deploy on tag push only
-
-    # Deploying to a named environment
-#  - provider: Environment
-#    name: staging
-#    on:
-#      branch: staging
-#      env_var1: value1
-#      env_var2: value2
-#
-# scripts to run before deployment
-before_deploy:
-
-# to run your custom scripts instead of provider deployments
-deploy_script:
-
-# scripts to run after deployment
-after_deploy:
-
-#---------------------------------#
-#        global handlers
-#---------------------------------#
-
-# on successful build
-on_success:
-
-# on build failure
-on_failure:
-
-# after build failure or success
-on_finish:
-

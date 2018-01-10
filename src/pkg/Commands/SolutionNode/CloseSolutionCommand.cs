@@ -5,7 +5,7 @@ namespace Luminous.TimeSavers.Commands.SolutionNode
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
 
-    internal sealed class CloseSolutionCommand : DynamicCommand
+    internal sealed class CloseSolutionCommand : TimeSaversCommand
     {
         //***
         //!!!

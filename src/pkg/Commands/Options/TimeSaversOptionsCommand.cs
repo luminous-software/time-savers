@@ -6,7 +6,7 @@ namespace Luminous.TimeSavers.Commands.Options
     using Luminous.Code.VisualStudio.Packages;
     using TimeSavers.Options;
 
-    internal sealed class TimeSaversOptionsCommand : DynamicCommand
+    internal sealed class TimeSaversOptionsCommand : TimeSaversCommand
     {
         //***
         //!!!

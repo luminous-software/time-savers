@@ -7,7 +7,7 @@ namespace Luminous.TimeSavers.Commands.Developer
 
     using static Luminous.Code.VisualStudio.Commands.CommandKeys;
 
-    internal sealed class ActivityLogCommand : DynamicCommand
+    internal sealed class ActivityLogCommand : TimeSaversCommand
     {
         //***
 

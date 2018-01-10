@@ -5,7 +5,7 @@ namespace Luminous.TimeSavers.Commands.Restart
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
 
-    internal sealed class RestartElevatedCommand : DynamicCommand
+    internal sealed class RestartElevatedCommand : TimeSaversCommand
     {
         //***
         //!!!

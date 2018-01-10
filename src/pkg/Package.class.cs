@@ -2,9 +2,11 @@
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
+using orientation = Microsoft.VisualStudio.Shell.ToolWindowOrientation;
 
 using static Microsoft.VisualStudio.Shell.Interop.UIContextGuids80;
 using static Microsoft.VisualStudio.Shell.VsDockStyle;
+using static EnvDTE.Constants;
 
 namespace Luminous.TimeSavers
 {
@@ -17,7 +19,9 @@ namespace Luminous.TimeSavers
     using Commands.SolutionNode;
     using Commands.ProjectNode;
     using Commands.Developer;
-    using Luminous.TimeSavers.Options;
+    using Options;
+    using UI.PathVariables;
+    using UI.BrowserWindow;
     using Events;
 
     using static Core.Constants;
@@ -32,12 +36,13 @@ namespace Luminous.TimeSavers
 
     //YD ProvideProfile - for persistence?
 
-    [ProvideToolWindow(typeof(UI.PathVariables.ToolWindowPane), Style = Tabbed)]
+    [ProvideToolWindow(typeof(PathVariablesToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
+    [ProvideToolWindow(typeof(BrowserWindowToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
 
-    [ProvideOptionPage(typeof(GeneralDialogPage), Name, General, 0, 0, !SupportsAutomation)]
-    [ProvideOptionPage(typeof(BuildDialogPage), Name, Build, 0, 0, !SupportsAutomation)]
-    [ProvideOptionPage(typeof(DeveloperDialogPage), Name, Developer, 0, 0, !SupportsAutomation)]
-    [ProvideOptionPage(typeof(VisualStudioDialogPage), Name, VisualStudio, 0, 0, !SupportsAutomation)]
+    [ProvideOptionPage(typeof(GeneralDialogPage), Name, General, 0, 0, supportsAutomation: false)]
+    [ProvideOptionPage(typeof(BuildDialogPage), Name, Build, 0, 0, supportsAutomation: false)]
+    [ProvideOptionPage(typeof(DeveloperDialogPage), Name, Developer, 0, 0, supportsAutomation: false)]
+    [ProvideOptionPage(typeof(VisualStudioDialogPage), Name, VisualStudio, 0, 0, supportsAutomation: false)]
 
     public sealed class PackageClass : PackageBase
     {
@@ -64,6 +69,7 @@ namespace Luminous.TimeSavers
             base.Initialize();
 
             InstantiateInsertCommands();
+            InstantiateGeneralCommands();
             InstantiateBuildCommands();
             InstantiateDeveloperCommands();
             InstantiateVisualStudioCommands();
@@ -110,6 +116,11 @@ namespace Luminous.TimeSavers
             ActivityLogCommand.Instantiate(this);
             DiagnosticLogCommand.Instantiate(this);
             PathVariablesCommand.Instantiate(this);
+        }
+
+        private void InstantiateGeneralCommands()
+        {
+            BrowserWindowCommand.Instantiate(this);
         }
 
         private void InstantiateBuildCommands()

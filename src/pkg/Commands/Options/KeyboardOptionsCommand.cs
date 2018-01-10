@@ -5,7 +5,7 @@ namespace Luminous.TimeSavers.Commands.Options
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
 
-    internal sealed class KeyboardOptionsCommand : DynamicCommand
+    internal sealed class KeyboardOptionsCommand : TimeSaversCommand
     {
         //***
         //!!!

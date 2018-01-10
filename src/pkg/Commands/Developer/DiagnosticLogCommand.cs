@@ -13,7 +13,7 @@ namespace Luminous.TimeSavers.Commands.Developer
 
     using static Luminous.Code.VisualStudio.Commands.CommandKeys;
 
-    internal sealed class DiagnosticLogCommand : DynamicCommand
+    internal sealed class DiagnosticLogCommand : TimeSaversCommand
     {
         //***
 

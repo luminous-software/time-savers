@@ -1,0 +1,82 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+    xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+    xmlns:ui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.14.0"
+    >
+
+    <Style TargetType="{x:Type Label}">
+        <Setter Property="Foreground"
+                Value="{DynamicResource ui.EnvironmentColors.ToolWindowTextColorKey}" />
+        <Setter Property="Background"
+                Value="{DynamicResource ui.EnvironmentColors.ToolWindowBackgroundColorKey}" />
+    </Style>
+
+    <Style TargetType="{x:Type Button}">
+        <Setter Property="Width"
+                Value="20" />
+        <Setter Property="Height"
+                Value="20" />
+        <Setter Property="Margin"
+                Value="2,0,2,0" />
+        <Setter Property="BorderBrush"
+                Value="Transparent" />
+    </Style>
+
+    <Style TargetType="editors:SfTextBoxExt">
+        <Setter Property="HorizontalAlignment"
+                Value="Stretch" />
+        <Setter Property="Margin"
+                Value="2,0,2,0" />
+        <Setter Property="Height"
+                Value="20" />
+        <Setter Property="Foreground"
+                Value="{DynamicResource ToolWindowTextKey}" />
+        <Setter Property="Background"
+                Value="{DynamicResource ToolWindowBackgroundKey}" />
+        <Setter Property="BorderBrush"
+                Value="Transparent" />
+    </Style>
+
+    <Style TargetType="{x:Type ComboBox}">
+        <Setter Property="Foreground"
+                Value="{DynamicResource ToolWindowTextKey}" />
+        <Setter Property="Background"
+                Value="{DynamicResource ComboBoxBackgroundKey}" />
+    </Style>
+
+    <Style TargetType="{x:Type ComboBoxItem}">
+        <Setter Property="Foreground"
+                Value="{DynamicResource ToolWindowTextKey}" />
+        <Setter Property="Background"
+                Value="{DynamicResource ComboBoxBackgroundKey}" />
+        <Style.Triggers>
+            <Trigger Property="IsHighlighted"
+                     Value="true">
+                <Setter Property="Background"
+                        Value="{DynamicResource ComboBoxMouseOverBackgroundGradientKey}" />
+                <Setter Property="Foreground"
+                        Value="{DynamicResource CommandBarTextHoverKey}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="IndicatorLabel">
+
+        <Setter Property="Label.Foreground"
+                Value="{DynamicResource ToolWindowTextKey}" />
+
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsEnabled}"
+                         Value="false">
+                <Setter Property="Label.Opacity"
+                        Value="0.4" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <DataTemplate x:Key="WatermarkTemplate">
+        <TextBlock Text="{Binding}" Opacity="0.5" />
+    </DataTemplate>
+</ResourceDictionary>

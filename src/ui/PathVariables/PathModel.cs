@@ -1,18 +1,20 @@
 ﻿namespace Luminous.TimeSavers.UI.PathVariables
 {
-    public class Model : NotificationObject
+    using Luminous.Code.Core;
+
+    public class PathModel : NotificationObject
     {
         public string Caption { get; set; }
 
         //public ObservableCollection<Model> Items { get; set; }
 
-        public Model()
+        public PathModel()
         {
         }
 
         public override string ToString()
         {
-            return this.Caption;
+            return Caption;
         }
     }
 }

@@ -1,5 +1,9 @@
 # Luminous Time Savers
 
+![Visual Studio Marketplace][version-badge-url]
+![Installs][installs-badge-url]
+![Rating][rating-badge-url]
+
 Download this extension from the [Visual Studio Marketplace][marketplace-url]
 or get the [CI build][ci-build-url].
 
@@ -55,7 +59,7 @@ than having to search through one gigantic menu of different commands.
 
 ### Keyboard Shortcuts
 Some of the features that tend to be used frequently have also been assigned a keyboard shortcut.
-And of course you can add your own keyboard shortcut to any of the **Time Savers* commands.
+And of course you can add your own keyboard shortcut to any of the *Time Savers* commands.
 
 ---
 
@@ -151,8 +155,11 @@ extension for Visual Studio which enables some features used by this project.
     <img src="https://i1.visualstudiogallery.msdn.s-msft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/image/file/262824/1/lss-vsip.png"/>
 </div>
 
-[vsts-badge-url]: https://lumiinus.visualstudio.com/_apis/public/build/definitions/c31b2195-e4da-4ad9-a64c-e1712d313703/15/badge
+[version-badge-url]: http://vsmarketplacebadge.apphb.com/version-short/YannDuran.VisualStudioTimeSavers.svg?label=version&colorB=7E57C2
+[installs-badge-url]: http://vsmarketplacebadge.apphb.com/installs-short/YannDuran.VisualStudioTimeSavers.svg?colorB=7E57C2
+[rating-badge-url]: http://vsmarketplacebadge.apphb.com/rating-short/YannDuran.VisualStudioTimeSavers.svg?colorB=7E57C2
 
+[vsts-badge-url]: https://lumiinus.visualstudio.com/_apis/public/build/definitions/c31b2195-e4da-4ad9-a64c-e1712d313703/15/badge
 [appveyor-status]: https://ci.appveyor.com/api/projects/status/tsf4rxwtgtcub741?svg=true
 [appveyor-url]: https://ci.appveyor.com/project/luminous-software/time-savers
 

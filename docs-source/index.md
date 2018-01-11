@@ -1,19 +1,41 @@
+# Luminous Time Savers
 
-## Time Savers Toolbar
+![Visual Studio Marketplace][version-badge-url]
+![Installs][installs-badge-url]
+![Rating][rating-badge-url]
+
+You can download this extension from the [Visual Studio Marketplace][marketplace-url],
+or get the soure code from [GitHub][github-url].
+
+See the [change log][changelog-url] for changes and the [roadmap][roadmap-url] for upcoming features.
+
+---
+
+- If you find this extension useful, please show your support by [***rating it***][rating-url]
+(only takes a couple of seconds),
+or [***reviewing it***][rating-url].
+
+---
+## Enhancing Your Productivity
+Every feature of *Time Savers* was created specifically to enhance development productivity by **saving time**.
+
+### Time Savers Toolbar
 This extension adds a new toolbar.
 Because it's usually far easier to click a toolbar button than to have to go hunting for
 the command you want in a menu somewhere,
 the most convenient commands have been added to the toolbar.
+
 To make the toolbar visible, right-click in a blank spot on the toolbar area,
 and select *Time Savers*.
-Like all other Visual Studio toolbars, you can remove any commands that you feel you don't need,
-or even add new commands to it.
 
-## Time Savers Menu
+Like all other Visual Studio toolbars, you can remove any commands that you feel you don't need,
+or even add Visual Studio commands to it.
+
+### Time Savers Menu
 For those people who prefer a menu to a toolbar this extension also adds a new menu to
 Visual Studio's main menu bar. All commands are available via this menu.
 
-## Context Menus
+### Context Menus (right-click)
 Most features are also available via another menu that's been added to the
 right-click context menu of any code window, and to some nodes in *Solution Explorer*.
 This allows you to access nearly all of the *Time Savers* features
@@ -22,42 +44,19 @@ without moving your mouse from the code you're working on.
 The commands have been grouped into their own *Time Savers* menu because most context menus
 are already pretty clogged up. And they're growing all the time,
 as Microsoft or 3rd-party extensions add more and more commands to them.
-It means that there is one more click than I'd ideally prefer,
-but I've found it much easier to find the commands in a dedicated menu
+
+Unfortunately it means that there's one more click than I'd ideally prefer,
+but I've found it much easier to find commands in a dedicated menu
 than having to search through one gigantic menu of different commands.
 
-## Keyboard Shortcuts
-
+### Keyboard Shortcuts
 Some of the features that tend to be used frequently have also been assigned a keyboard shortcut.
-And of course you can add your own keyboard shortcut to invoke any of the *Time Savers* commands.
-
----
+And of course you can add your own keyboard shortcut to any of the *Time Savers* commands.
 
 ## Features
 
-A more in-depth description of the features listed below [can be found here][features-url],
-including a comparison of the steps required both with and without the extension installed,
-as well as images of the features in action.
-
-- Activity Log
-- Cancel Build
-- Close Solution
-- Diagnostic Log
-- Edit Project
-- Edit Solution
-- Extensions and Updates
-- Insert Guid(s)
-- Keyboard Options
-- Path Variables
-- Rebuild Project
-- Rebuild Solution
-- Reopen Start Page
-- Restart Visual Studio
-- Restart Visual Studio as Administrator
-
----
-
 ### Activity Log
+
 Open the Visual Studio activity monitor log.
 The activity log is a powerful tool for troubleshooting issues with *VS Packages*, *VS Extensions*,
 *MEF Components**, and *pkgdef* files, and provides useful insights into what Visual Studio is doing.
@@ -121,3 +120,26 @@ Open the *Tools* | *Options* dialog at the *Time Savers* node.
 
 ### Keyboard Options
 Open the *Tools* | *Options* dialog at the *Environment* | *Keyboard* node.
+
+[version-badge-url]: http://vsmarketplacebadge.apphb.com/version-short/YannDuran.VisualStudioTimeSavers.svg?label=version&colorB=7E57C2
+[installs-badge-url]: http://vsmarketplacebadge.apphb.com/installs-short/YannDuran.VisualStudioTimeSavers.svg?colorB=7E57C2
+[rating-badge-url]: http://vsmarketplacebadge.apphb.com/rating-short/YannDuran.VisualStudioTimeSavers.svg?colorB=7E57C2
+
+[github-url]: http://www.github.com/luminous-software/time-savers
+
+[marketplace-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
+[gallery-url]: https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
+[rating-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd#review-details
+[qna-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd#qna
+[suggestions-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd#qna
+
+[changelog-url]: https://github.com/luminous-software/time-savers/blob/master/CHANGELOG.md
+[roadmap-url]: https://github.com/luminous-software/time-savers/blob/master/roadmap.md
+[features-url]: https://luminous-software.solutions/extensions-vs/#time-savers
+[icon-url]: /assets/images/favicon.ico
+
+[contributing-url]: https://github.com/luminous-software/time-savers/blob/master/.github/CONTRIBUTING.md
+[extensibility-tools-url]: https://visualstudiogallery.msdn.microsoft.com/ab39a092-1343-46e2-b0f1-6a3f91155aa6
+
+[license-url]: https://github.com/luminous-software/time-savers/blob/master/LICENSE
+

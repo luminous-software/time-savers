@@ -12,34 +12,36 @@ docs_dir: 'docs-source'
 site_dir: 'docs'
 
 theme:
-  name: 'material'
-  palette:
-    primary: 'deep purple'
-    accent: 'purple'
-  custom_dir: 'docs-theme-overrides'
-  favicon: 'assets/images/favicon.ico'
-  feature:
-    tabs: false
+    name: 'material'
+    palette:
+        primary: 'deep purple'
+        accent: 'purple'
+        custom_dir: 'docs-theme-overrides'
+        favicon: 'assets/images/favicon.ico'
+    feature:
+        tabs: false
 
 pages:
-  - Enhancing Your Productivity: 'index.md'
-  - How to Get Started: 'getting-started.md'
-  - Change Log: 'changelog.md'
-  - What's Coming: 'roadmap.md'
-  - License: 'license.md'
+    - Enhancing Your Productivity: 'index.md'
+    - How to Get Started: 'getting-started.md'
+    - Change Log: 'changelog.md'
+    - What's Coming: 'roadmap.md'
+    - License: 'license.md'
 
 extra:
-  links:
-    - https://luminous-software.solutions
+    links:
+        - https://luminous-software.solutions
 
 extra_css:
-  - assets/stylesheets/extra.css
+    - assets/stylesheets/extra.css
 
 extra_javascript:
-  - assets/javascripts/extra.js
+    - assets/javascripts/extra.js
 
 markdown_extensions:
-  - codehilite(css_class=code)
-  - admonition
-  - toc:
-      permalink: true
+    - codehilite(css_class=code)
+    - admonition
+    - toc:
+        permalink: true
+    - pymdownx.tasklist:
+        custom_checkbox: true

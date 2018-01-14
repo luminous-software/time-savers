@@ -13,22 +13,8 @@ namespace Luminous.TimeSavers
     internal sealed partial class PackageGuids
     {
         public const string PackageString = "6359da17-6477-4e9c-8e73-7d05ea8a33a1";
-        public const string InsertGuidToolWindowString = "776cdc3d-f8f4-4819-8141-cf5938c4cd7d";
-        public const string GeneralDialogPageString = "dcbbd0f7-6463-48f4-9c86-1ce95ef7c1a2";
-        public const string BuildDialogPageString = "e967a459-0b9e-4222-ba52-a66496edaee3";
-        public const string DeveloperDialogPageString = "7a9f803b-96de-4d30-b1cd-590443192092";
-        public const string VisualStudioDialogPageString = "13c28243-07fb-4034-a035-3a44ff0330aa";
-        public const string SeparatorsDialogPageString = "736339a2-2ba5-4e37-9e55-1e72f5ae4721";
-        public const string OptionsDialogPageString = "6bf7c9fa-8e42-4673-83cb-288efe5ae3b5";
         public const string PackageCommandSetString = "4eac4e23-4909-4dac-9d6e-819bdc861480";
         public static Guid Package = new Guid(PackageString);
-        public static Guid InsertGuidToolWindow = new Guid(InsertGuidToolWindowString);
-        public static Guid GeneralDialogPage = new Guid(GeneralDialogPageString);
-        public static Guid BuildDialogPage = new Guid(BuildDialogPageString);
-        public static Guid DeveloperDialogPage = new Guid(DeveloperDialogPageString);
-        public static Guid VisualStudioDialogPage = new Guid(VisualStudioDialogPageString);
-        public static Guid SeparatorsDialogPage = new Guid(SeparatorsDialogPageString);
-        public static Guid OptionsDialogPage = new Guid(OptionsDialogPageString);
         public static Guid PackageCommandSet = new Guid(PackageCommandSetString);
     }
     /// <summary>
@@ -46,10 +32,9 @@ namespace Luminous.TimeSavers
         public const int CloseSolutionCommand = 0xCB06;
         public const int ProjectGroup = 0x0D00;
         public const int EditProjectCommand = 0x0D05;
-        public const int InsertGroup = 0x0A00;
-        public const int InsertGuidCommand = 0x0A05;
         public const int GeneralGroup = 0x0210;
         public const int BrowserWindowCommand = 0x0215;
+        public const int InsertGuidCommand = 0x0216;
         public const int BuildGroup = 0x0310;
         public const int RebuildProjectCommand = 0x0315;
         public const int RebuildSolutionCommand = 0x0316;

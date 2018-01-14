@@ -39,9 +39,22 @@ extra_javascript:
     - assets/javascripts/extra.js
 
 markdown_extensions:
+    - markdown.extensions.tables
     - codehilite(css_class=code)
     - admonition
     - toc:
         permalink: true
     - pymdownx.tasklist:
         custom_checkbox: true
+    - pymdownx.magiclink:
+        repo_url_shortener: true
+        repo_url_shorthand: true
+        social_url_shorthand: true
+        provider: github
+        user: luminous-software
+        repo: pymdowntime-savers
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.tilde
+    - pymdownx.superfences
+    - pymdownx.snippets

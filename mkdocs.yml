@@ -22,7 +22,7 @@ theme:
         tabs: false
 
 pages:
-    - Enhancing Your Productivity: 'index.md'
+    - Enhance Your Productivity: 'index.md'
     - How to Get Started: 'getting-started.md'
     - Change Log: 'changelog.md'
     - What's Coming: 'roadmap.md'

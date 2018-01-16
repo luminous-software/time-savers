@@ -1,5 +1,10 @@
 # Luminous Time Savers
 
+## What's Coming
+Click [here][roadmap-url] to see what features are in the works, or are ready to be tested.
+
+[roadmap-url]: https://luminous-software.solutions/time-savers/roadmap
+
 ## Changelog
 
 These are the changes to each version that has been released

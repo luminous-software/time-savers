@@ -9,37 +9,36 @@ or get the soure code from [GitHub][github-url].
 
 See the [change log][changelog-url] for changes and the [roadmap][roadmap-url] for upcoming features.
 
----
+!!! Note "Share Your Time Savers Experience"
 
-- If you find this extension useful, please show your support by [***rating it***][rating-url]
-(only takes a couple of seconds),
-or [***reviewing it***][rating-url].
+    If you find this extension useful, please show your support:
 
----
-## Enhancing Your Productivity
-Every feature of *Time Savers* was created specifically to enhance development productivity by **saving time**.
+    - by [***rating it***][rating-url] (only takes a couple of seconds)
+    - or [***reviewing it***][rating-url] (help others by )
+
+## Enhance Your Productivity
+Every feature of *Time Savers* was created specifically to enhance development productivity by
+**saving you time**.
 
 ### Time Savers Toolbar
-This extension adds a new toolbar.
-Because it's usually far easier to click a toolbar button than to have to go hunting for
-the command you want in a menu somewhere,
-the most convenient commands have been added to the toolbar.
+This extension adds a new toolbar that adds command buttons for most *Time Savers* features giving you a
+**one-click experience**, saving you from having to go hunting for the command you want in a menu somewhere.
 
-To make the toolbar visible, right-click in a blank spot on the toolbar area,
-and select *Time Savers*.
-
+To enable the toolbar, right-click in a blank spot on the toolbar area, and select *Time Savers*.
 Like all other Visual Studio toolbars, you can remove any commands that you feel you don't need,
-or even add Visual Studio commands to it.
+or even add exisitng Visual Studio commands to it.
 
 ### Time Savers Menu
-For those people who prefer a menu to a toolbar this extension also adds a new menu to
-Visual Studio's main menu bar. All commands are available via this menu.
+
+For people who prefer a menu to a toolbar this extension also adds a new menu to Visual Studio's main menu bar.
+All *Time Savers* features are available via this menu giving you a simple
+**two-click experience**.
 
 ### Context Menus (right-click)
-Most features are also available via another menu that's been added to the
-right-click context menu of any code window, and to some nodes in *Solution Explorer*.
-This allows you to access nearly all of the *Time Savers* features
-without moving your mouse from the code you're working on.
+For people who hate having to move their mouse from the code they're working on,
+another menu has been added to the context menu of any code window, as well as to some nodes in *Solution Explorer*.
+Most *Time Savers* features are available via this context menu for a simple
+**right-click experience**, without having to your mouse from the code you're working on.
 
 The commands have been grouped into their own *Time Savers* menu because most context menus
 are already pretty clogged up. And they're growing all the time,
@@ -50,14 +49,16 @@ but I've found it much easier to find commands in a dedicated menu
 than having to search through one gigantic menu of different commands.
 
 ### Keyboard Shortcuts
-Some of the features that tend to be used frequently have also been assigned a keyboard shortcut.
-And of course you can add your own keyboard shortcut to any of the *Time Savers* commands.
+
+Some of the *Time Savers* features that tend to be used frequently have also been assigned a keyboard shortcut for a 
+**one or two-click experience**.
+And of course you can add your own keyboard shortcut to any of the *Time Savers* features.
 
 ## Features
 
 ### Activity Log
 
-Open the Visual Studio activity monitor log.
+Opens the Visual Studio activity monitor log.
 The activity log is a powerful tool for troubleshooting issues with *VS Packages*, *VS Extensions*,
 *MEF Components**, and *pkgdef* files, and provides useful insights into what Visual Studio is doing.
 When Visual Studio starts writing the log, it also writes a corresponding XSL file in the same folder

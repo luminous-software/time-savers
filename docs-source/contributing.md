@@ -5,29 +5,18 @@ Looking to contribute something? **Here's how you can help.**
 Please take a moment to review this document in order to make the contribution
 process easy and effective for everyone involved.
 
-Following these guidelines helps to communicate that you respect the time of
-the developers managing and developing this open source project. In return,
-they should reciprocate that respect in addressing your issue or assessing
-patches and features.
-
-
-## Using the issue tracker
+## Using the Issue Tracker
 
 The issue tracker is the preferred channel for
 [bug reports](#bug-reports),
 [features requests](#feature-requests) and
 [submitting pull requests](#pull-requests),
-but please respect the following restrictions:
+but please respect the following requests:
 
-* Please **do not** use the issue tracker for personal support requests.  Stack
-  Overflow is a better place to get help.
+* Please **do not** use the issue tracker for personal support requests.
 
-* Please **do not** derail or troll issues. Keep the discussion on topic and
-  respect the opinions of others.
-
-* Please **do not** open issues or pull requests which *belongs to* third party
-  components.
-
+* Please try to keep the discussion on topic, and respect the opinions of others,
+even if you don't agree with them.
 
 ## Bug reports
 
@@ -44,9 +33,8 @@ Guidelines for bug reports:
 
 3. **Isolate the problem** &mdash; ideally create an
    [SSCCE](http://www.sscce.org/) and a live example.
-   Uploading the project on cloud storage (OneDrive, DropBox, et el.)
+   Uploading the project on cloud storage (OneDrive, DropBox, etc)
    or creating a sample GitHub repository is also helpful.
-
 
 A good bug report shouldn't leave others needing to chase you up for more
 information. Please try to be as detailed as possible in your report. What is
@@ -73,14 +61,12 @@ Example:
 > causing the bug, and potential solutions (and your opinions on their
 > merits).
 
-
 ## Feature requests
 
-Feature requests are welcome. But take a moment to find out whether your idea
+Feature requests are very welcome. But take a moment to find out whether your idea
 fits with the scope and aims of the project. It's up to *you* to make a strong
-case to convince the project's developers of the merits of this feature. Please
-provide as much detail and context as possible.
-
+case for the merits of this feature.
+Please provide as much detail and context as possible.
 
 ## Pull requests
 
@@ -90,8 +76,8 @@ commits.
 
 **Please ask first** before embarking on any significant pull request (e.g.
 implementing features, refactoring code, porting to a different language),
-otherwise you risk spending a lot of time working on something that the
-project's developers might not want to merge into the project.
+otherwise you risk spending a lot of time working on something that might end up
+merged into the project.
 
 Please adhere to the [coding guidelines](#code-guidelines) used throughout the
 project (indentation, accurate comments, etc.) and any other requirements
@@ -109,7 +95,7 @@ included in the project:
    # Navigate to the newly cloned directory
    cd <folder-name>
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/madskristensen/<this-repro-name>.git
+   git remote add upstream https://github.com/luminous-software/time-savers.git
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:
@@ -128,8 +114,8 @@ included in the project:
 
 4. Commit your changes in logical chunks. Please adhere to these [git commit
    message guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
-   or your code is unlikely be merged into the main project. Use Git's
-   [interactive rebase](https://help.github.com/articles/interactive-rebase)
+   or your code is unlikely be merged into the main project.
+   Use Git's [interactive rebase](https://help.github.com/articles/interactive-rebase)
    feature to tidy up your commits before making them public. Also, prepend name of the feature
    to the commit message. For instance: "SCSS: Fixes compiler results for IFileListener.\nFixes `#123`"
 
@@ -147,7 +133,6 @@ included in the project:
 
 7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
     with a clear title and description against the `master` branch.
-
 
 ## Code guidelines
 

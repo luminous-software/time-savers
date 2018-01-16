@@ -5,12 +5,9 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08B276AF-9E6A-4DD9-994F-964CFD71AC29}"
 	ProjectSection(SolutionItems) = preProject
-		.gitignore = .gitignore
-		appveyor.yml = appveyor.yml
 		..\..\..\tools\CreatePrivateGallery.cmd = ..\..\..\tools\CreatePrivateGallery.cmd
 		lss-time-savers.favdoc = lss-time-savers.favdoc
-		README.html = README.html
-		README.md = README.md
+		lss-time-savers.notes.md = lss-time-savers.notes.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers", "src\pkg\Luminous.TimeSavers.csproj", "{A2A22BAD-F136-4409-B37D-1E070E373E3D}"
@@ -32,6 +29,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B388B43D-5
 		mkdocs.yml = mkdocs.yml
 		package.json = package.json
 		docs-source\roadmap.md = docs-source\roadmap.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{14C79BB0-FD6F-4021-99DA-1EEDB7AE464B}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
+		CHANGELOG.md = CHANGELOG.md
+		LICENSE = LICENSE
+		README.html = README.html
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
@@ -62,6 +69,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B388B43D-55ED-4F06-B651-A7CF5DFF5B01} = {08B276AF-9E6A-4DD9-994F-964CFD71AC29}
+		{14C79BB0-FD6F-4021-99DA-1EEDB7AE464B} = {08B276AF-9E6A-4DD9-994F-964CFD71AC29}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C837AE99-4FDA-400B-B90A-533B271E55B8}

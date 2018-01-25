@@ -1,5 +1,14 @@
 # Luminous Time Savers Notes
 
+## Temp
+
+<--
+{% if site.copyright %}
+<div class="md-footer-copyright__highlight">
+</div>
+{% endif %}
+-->
+
 ## Post Build Event
 
 The purpose of this cmd file is to automatically update the local nuget folder with the updated vsix.
@@ -10,6 +19,19 @@ The purpose of this cmd file is to automatically update the local nuget folder w
 ## Links
 
 ```
+![Version][version-badge-url] ![Installs][installs-badge-url] ![Rating][rating-badge-url] | [![License][license-badge]][license-url]
+--- | ---
+
+![Version][version-badge-url] ![Installs][installs-badge-url] ![Rating][rating-badge-url]    [![License][license-badge]][license-url]
+
+[version-badge-url]: http://vsmarketplacebadge.apphb.com/version-short/YannDuran.VisualStudioTimeSavers.svg?label=version&colorB=7E57C2
+[installs-badge-url]: http://vsmarketplacebadge.apphb.com/installs-short/YannDuran.VisualStudioTimeSavers.svg?colorB=7E57C2
+[rating-badge-url]: http://vsmarketplacebadge.apphb.com/rating-short/YannDuran.VisualStudioTimeSavers.svg?colorB=7E57C2
+[license-badge]: https://img.shields.io/badge/license-MIT-7E57C2.svg
+[license-url]: http://luminous-software.solutions/time-savers/license
+[paypal-badge]: https://img.shields.io/badge/donate-paypal-7E57C2.svg
+[paypal-url]: https://www.paypal.me/yannduran/10
+
 [version-badge-url]: http://vsmarketplacebadge.apphb.com/version-short/YannDuran.VisualStudioTimeSavers.svg?label=version&colorB=7E57C2
 [installs-badge-url]: http://vsmarketplacebadge.apphb.com/installs-short/YannDuran.VisualStudioTimeSavers.svg?colorB=7E57C2
 [rating-badge-url]: http://vsmarketplacebadge.apphb.com/rating-short/YannDuran.VisualStudioTimeSavers.svg?colorB=7E57C2
@@ -28,6 +50,9 @@ The purpose of this cmd file is to automatically update the local nuget folder w
 [contributing-url]: https://github.com/luminous-software/time-savers/blob/master/.github/CONTRIBUTING.md
 [extensibility-tools-url]: https://visualstudiogallery.msdn.microsoft.com/ab39a092-1343-46e2-b0f1-6a3f91155aa6
 [license-url]: https://github.com/luminous-software/time-savers/blob/master/LICENSE
+
+[![NuGet](https://img.shields.io/nuget/v/Mvvmicro.svg?label=NuGet)](https://www.nuget.org/packages/Mvvmicro/)
+[![Donate](https://img.shields.io/badge/donate-paypal-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ZJZKXPPGBKKAY&lc=US&item_name=GitHub&item_number=0000001&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)
 ```
 
 ---

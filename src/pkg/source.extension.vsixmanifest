@@ -9,7 +9,7 @@
         <ReleaseNotes>https://github.com/luminous-software/time-savers/blob/master/CHANGELOG.md</ReleaseNotes>
         <Icon>Resources\icon.png</Icon>
         <PreviewImage>Resources\preview.png</PreviewImage>
-        <Tags>time savers,visual studio,productivity,luminous,timesavers,yannduran,yd</Tags>
+        <Tags>luminous,time savers,time-savers,timesavers,visual studio,productivity,guid,guid generator,guid-generator,yannduran,yd</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,16.0)" />

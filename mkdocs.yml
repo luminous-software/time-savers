@@ -1,36 +1,71 @@
+# project
 site_name: 'Luminous Time Savers'
-site_description: ''
+site_description: 'Documentation for Luminous Time Savers (Visual Studio extension)'
 site_author: 'Yann Duran'
+copyright: 'Copyright &copy Luminous Software Solutions'
 site_url: 'https://luminous-software.solutions/time-savers'
-
-repo_name: 'time-savers'
-repo_url: 'https://github.com/luminous-software/time-savers'
-
-copyright: 'Copyright (c) 2017 Luminous Software Solutions'
-
-docs_dir: 'docs-source'
 site_dir: 'docs'
+docs_dir: 'docs-source'
+dev_addr: '127.0.0.1:8004'
 
+# repository
+#repo_name: 'time-savers'
+#repo_url: 'https://github.com/luminous-software/time-savers'
+remote_branch: 'master'
+remote_name: 'origin'
+
+# configuration
 theme:
     name: 'material'
+    language: 'en'
     palette:
         primary: 'deep purple'
         accent: 'purple'
-        custom_dir: 'docs-theme-overrides'
-        favicon: 'assets/images/favicon.ico'
+    custom_dir: 'docs-theme-overrides'
+    favicon: 'assets/images/favicon.ico'
     feature:
-        tabs: false
+        tabs: true
+    font:
+        text: 'Ubuntu'
+        code: 'Ubuntu Mono'
+    logo:
+        icon: 'lightbulb_outline'
 
+# layout
 pages:
-    - Enhance Your Productivity: 'index.md'
-    - How to Get Started: 'getting-started.md'
-    - Change Log: 'changelog.md'
-    - What's Coming: 'roadmap.md'
-    - License: 'license.md'
+    - Home:
+        - Why Luminous Time Savers?: 'index.md'
+        - How to Get Started: 'getting-started.md'
+        - Features: 'features.md'
+        - Change Log: 'changelog.md'
+        - What's Coming: 'roadmap.md'
+        #- License: 'license.md'
+#    - Luminous Software Solutions:
+#        - Luminous Software Website: 'website.md' #'https://luminous-software.solutions'
+#        - Luminous Software Blog: 'blog.md' #'https://luminous-software.solutions/blog'
 
+#    - Features:
+#        - Features: 'features.md'
+
+#        - General Features: 'features/general.md'
+#        - Solution Features: 'features/solution.md'
+#        - Project Features: 'features/project.md'
+#        - Build Features: 'features/build.md'
+#        - Log Features: 'features/logs.md'
+#        - Visual Studio Features: 'features/vs.md'
+
+# customisation
 extra:
+    version: ''
+    discus: ''
     links:
         - https://luminous-software.solutions
+    social:
+        - type: 'twitter'
+        - link: 'https://twitter.com/lumiinus'
+        - type: 'linkedin'
+        - link: 'https://linkedin.com/in/yannduran'
+    repo_icon: ''
 
 extra_css:
     - assets/stylesheets/extra.css
@@ -38,6 +73,7 @@ extra_css:
 extra_javascript:
     - assets/javascripts/extra.js
 
+# extensions
 markdown_extensions:
     - markdown.extensions.tables
     - codehilite(css_class=code)
@@ -52,7 +88,7 @@ markdown_extensions:
         social_url_shorthand: true
         provider: github
         user: luminous-software
-        repo: pymdowntime-savers
+        repo: time-savers
     - pymdownx.betterem:
         smart_enable: all
     - pymdownx.tilde

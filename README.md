@@ -1,15 +1,17 @@
 # Luminous Time Savers
 
-![Visual Studio Marketplace][version-badge-url]
+![Version][version-badge-url]
 ![Installs][installs-badge-url]
 ![Rating][rating-badge-url]
-[![License][license-badge]][license-url]
+[![Donate][paypal-badge]](https://www.paypal.me/yannduran/5)
 
 [version-badge-url]: http://vsmarketplacebadge.apphb.com/version-short/YannDuran.VisualStudioTimeSavers.svg?label=version&colorB=7E57C2
 [installs-badge-url]: http://vsmarketplacebadge.apphb.com/installs-short/YannDuran.VisualStudioTimeSavers.svg?colorB=7E57C2
 [rating-badge-url]: http://vsmarketplacebadge.apphb.com/rating-short/YannDuran.VisualStudioTimeSavers.svg?colorB=7E57C2
 [license-badge]: https://img.shields.io/badge/license-MIT-7E57C2.svg
 [license-url]: http://luminous-software.solutions/time-savers/license
+[paypal-badge]: https://img.shields.io/badge/donate-paypal-green.svg
+[paypal-url]: https://www.paypal.me/yannduran/10
 
 Download this extension from the [Visual Studio Marketplace][marketplace-url],
 or get the *CI build* from the [VSIX Gallery][vsix-gallery-url].
@@ -19,7 +21,7 @@ or get the *CI build* from the [VSIX Gallery][vsix-gallery-url].
 [vsix-gallery-url]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
 
 Development | Appveyor | Production
----| --- | ---
+--- | --- | ---
 ![VSTS Dev Badge][vsts-dev-badge-url] | ![Appveyor status][appveyor-status] | ![VSTS Prod Badge][vsts-prod-badge-url]
 
 See the [change log][changelog-url] for changes, and the [roadmap][roadmap-url] for upcoming features.
@@ -31,16 +33,20 @@ See the [change log][changelog-url] for changes, and the [roadmap][roadmap-url] 
 
 ---
 
-If you **like** this extension, please show your support by either 
-[rating][rate-or-review-url] or 
-[reviewing][rate-or-review-url] it.
+## Enhance Your Productivity
+
+Every feature of *Time Savers* was created specifically to enhance development productivity by **saving you time**.
+
+---
+
+If you find this extension useful, please come back and show your support:
+- by [***rating *Time Savers****][rate-or-review-url] (only takes a couple of seconds)
+- or [***reviewing *Time Savers****][rate-or-review-url] (help others by {YD})
+- or [***shout me a coke***](https://www.paypal.me/yannduran/5) (as I don't drink coffee lol)
 
 [rate-or-review-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd#review-details
 
 ---
-## Enhance Your Productivity
-
-Every feature of *Time Savers* was created specifically to enhance development productivity by **saving you time**.
 
 ### Time Savers Toolbar
 
@@ -73,8 +79,8 @@ And of course you can add your own keyboard shortcut to any of the *Time Savers*
 
 See the [Luminous Time Savers][website-url] website, or click any of the links below:
 
-- [List of Features][features-url]
 - [How to Get Started][how-to-get-started-url]
+- [List of Features][features-url]
 - [Change Log][changelog-url]
 - [What's Coming][whats-coming-url]
 - [License Details][license-url]

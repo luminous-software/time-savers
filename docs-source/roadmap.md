@@ -1,30 +1,74 @@
 
-# Upcoming Features
+### Product Backlog
 
-- Items **without a checkmark** are *planned features*, but which may or may not make it into the extension.
-- Items **with a checkmark** are either *beta features*, that are available for testing by downloading the
-[current CI build][ci-build-url] version.
+The **_product backlog_** is a list of **_product backlog items_** (also known as _PBI's_ for short).
 
-[ci-build-url]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
+The _PBI's_ listed below are **features** or **enhancements** that or may not be added into _Time Savers_.
+However, no code has been written for them yet, and they could be removed from the _product backlog_ at any time. 
 
-![VSTS Badge][vsts-badge-url]
-[![Build status][appveyor-status]][appveyor-url]
+- [ ] Duplicate File (one operation, instead of copy/paste/rename)
+- [ ] Copy Solution (copy the entire solution, with a new name)
+- [ ] Delete Solution (delete the folder containing the solution)
+- [ ] Reload Solution (last solution - ie first in MRU list)
+- [ ] Copy Project (one operation, instead of copy/paste/rename)
+- [ ] Delete Project (one operation, instead of remove/open folder/delete)
+- [ ] Reload Project (one operation, instead of unload/reload)
+- [ ] Edit Path Variables
+- [ ] Edit Environment Variables
+- [ ] Clean Experimental Hive (as in [_Clean Hive and Debug for Extension Developers_][clean-hive-and-debug] - John McBride)
 
+---
+
+### Contributing
+
+If you'd like to implement one of the the _PBI's_ from the _product backlog_,
+feel free to open an [Issue on GitHub][github-issue-pbi] (with the same name that the PBI has here), 
+and we can start a discussion there. We can then work toward developing a pull request,
+so the implemented feature can be incorporated into *Time Savers*.
+
+Don't forget to check out the [Contribution Guidelines][contribution-guidelines].
+
+[clean-hive-and-debug]: https://marketplace.visualstudio.com/items?itemName=JohnMcBride.CleanHiveandDebugforExtensionDevelopers
+[github-issue-pbi]: https://github.com/luminous-software/time-savers/issues/new?title=Contribute%20to%20PBI%3A%20
+[contribution-guidelines]: contributing.md 
+
+---
+
+### Beta Features
+
+Beta features are _PBI'S_ that have actually had some code written for them,
+and are waiting for that code to be thoroughly tested. 
+You can participate in the testing phase by downloading the _CI build_ mentioned below.
+You can install it on your own machine, and confirm that it does what it's supposed to do.
+If you do find a problem, you can create a [Bug Report on GitHub][github-issue-bug-report].
+
+Once they've passed testing they'll be included in the **next public release** of _Time Savers_.
+
+>There are no beta features that need testing at the moment.
+
+[github-issue-bug-report]: https://github.com/luminous-software/time-savers/issues/new?title=Bug%20Report%3A%20
+
+---
+
+### Bug Fixes
+
+Once bug fixes have been fully tested, they'll be included in the *next public release*.
+
+>There are no bug fixes that need testing at the moment
+
+---
+
+### Continuous Integration
+
+The CI build is the build from the continous integration process. 
+The resultant VSIX file is then uploaded to the [VSIX Gallery][vsix-gallery] for you to download.
+
+![(VSTS Badge)][vsts-badge-url]
+![(Build status)][appveyor-status]
+
+If both build badges above are green, the latest CI build is ready to be downloaded and installed  to test.
+
+[vsix-gallery]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
 [vsts-badge-url]: https://lumiinus.visualstudio.com/_apis/public/build/definitions/c31b2195-e4da-4ad9-a64c-e1712d313703/15/badge
 [appveyor-status]: https://ci.appveyor.com/api/projects/status/tsf4rxwtgtcub741?svg=true
 [appveyor-url]: https://ci.appveyor.com/project/luminous-software/time-savers
-
-Once bug fixes and beta features have been fully tested, they'll be included in the *next public release*.
-
-- [ ] Duplicate File
-- [ ] Copy Solution
-- [ ] Delete Solution
-- [ ] Reload Solution (last solution - ie first in MRU list)
-- [ ] Copy Project
-- [ ] Delete Project
-- [ ] Reload Project
-- [ ] Edit Path Variables
-- [ ] Edit Environment Variables
-- [ ] Clean Experimental Hive (Clean Hive and Debug for Extension Developers - John McBride)
-
----

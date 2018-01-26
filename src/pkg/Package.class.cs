@@ -28,13 +28,13 @@ namespace Luminous.TimeSavers
     using static PackageGuids;
     using static Vsix;
 
+    //YD ProvideProfile - for persistence?
+
     [InstalledProductRegistration(Name, Description, Version, IconResourceID = 400)]
     [Guid(PackageString)]
 
     [ProvideAutoLoad(NoSolution)]
     [ProvideAutoLoad(SolutionExists)]
-
-    //YD ProvideProfile - for persistence?
 
     [ProvideToolWindow(typeof(PathVariablesToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
     [ProvideToolWindow(typeof(BrowserWindowToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
@@ -138,7 +138,7 @@ namespace Luminous.TimeSavers
         //---
 
         //TODO: move to framework
-        private void AdviseSolutionEvents(IVsSolutionEvents vsSolutionEvents)
+        private static void AdviseSolutionEvents(IVsSolutionEvents vsSolutionEvents)
         {
             var vsSolution = GetGlobalService<SVsSolution, IVsSolution>();
 

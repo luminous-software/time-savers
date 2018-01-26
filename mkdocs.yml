@@ -21,10 +21,10 @@ theme:
     palette:
         primary: 'deep purple'
         accent: 'purple'
-    custom_dir: 'docs-theme-overrides'
+    custom_dir: 'docs-theme'
     favicon: 'assets/images/favicon.ico'
     feature:
-        tabs: true
+        tabs: false
     font:
         text: 'Ubuntu'
         code: 'Ubuntu Mono'

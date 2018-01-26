@@ -377,10 +377,6 @@
       <Parent guid="PackageCommandSet" id="PackageToolbar" />
     </CommandPlacement>
 
-    <CommandPlacement guid="PackageCommandSet" id="InsertGroup" priority="0x0500">
-      <Parent guid="PackageCommandSet" id="PackageToolbar" />
-    </CommandPlacement>
-
     <CommandPlacement guid="PackageCommandSet" id="VisualStudioGroup" priority="0x0800">
       <Parent guid="PackageCommandSet" id="PackageToolbar" />
     </CommandPlacement>

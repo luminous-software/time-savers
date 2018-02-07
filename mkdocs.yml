@@ -33,26 +33,11 @@ theme:
 
 # layout
 pages:
-    - Home:
-        - Why Luminous Time Savers?: 'index.md'
-        - How to Get Started: 'getting-started.md'
-        - Features: 'features.md'
-        - Change Log: 'changelog.md'
-        - What's Coming: 'roadmap.md'
-        #- License: 'license.md'
-#    - Luminous Software Solutions:
-#        - Luminous Software Website: 'website.md' #'https://luminous-software.solutions'
-#        - Luminous Software Blog: 'blog.md' #'https://luminous-software.solutions/blog'
-
-#    - Features:
-#        - Features: 'features.md'
-
-#        - General Features: 'features/general.md'
-#        - Solution Features: 'features/solution.md'
-#        - Project Features: 'features/project.md'
-#        - Build Features: 'features/build.md'
-#        - Log Features: 'features/logs.md'
-#        - Visual Studio Features: 'features/vs.md'
+    - Why Luminous Time Savers?: 'index.md'
+    - How to Get Started: 'getting-started.md'
+    - Features: 'features.md'
+    - Change Log: 'changelog.md'
+    - What's Coming: 'roadmap.md'
 
 # customisation
 extra:

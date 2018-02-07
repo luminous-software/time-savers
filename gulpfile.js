@@ -20,16 +20,15 @@ const config = {
     },
     address: '127.0.0.1',
     port: '8004'
-}
+};
 
 const script = {
     build: 'mkdocs build',
     serve: 'mkdocs serve --dev-addr=' + config.address + ':' + config.port,
-    //deploy: 'mkdocs gh_pages',
 
     changes: 'git log -n 1 HEAD --pretty=format:"  * %s"',
-    log: 'git log HEAD --pretty=format:"  * %s"',
-}
+    log: 'git log HEAD --pretty=format:"  * %s"'
+};
 
 gulp.task('log', function (cb) {
     exec(script.log, function (err, stdout, stderr) {
@@ -56,7 +55,8 @@ gulp.task('build', function (cb) {
 });
 
 gulp.task('serve', function (cb) {
-    const address = config.address + ':' + config.port
+    const address = config.address + ':' + config.port;
+
     gulp_util.log(address);
 
     exec(script.serve, function (err, stdout, stderr) {

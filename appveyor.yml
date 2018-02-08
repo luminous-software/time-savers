@@ -2,26 +2,24 @@ image: Visual Studio 2017
 platform: Any CPU
 configuration: Release
 
-init:
-  - ps: (new-object Net.WebClient).DownloadString("https://raw.github.com/madskristensen/ExtensionScripts/master/AppVeyor/vsix.ps1") | iex
-
-before_build:
-  - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
-  - ps: Vsix-TokenReplacement src\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
+install:
+    - ps: (new-object Net.WebClient).DownloadString("https://raw.github.com/madskristensen/ExtensionScripts/master/AppVeyor/vsix.ps1") | iex
+    - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
+    - ps: Vsix-TokenReplacement src\source.extension.cs 'Version = "([0-9\\.]+)"' 'Version = "{version}"'
 
 build_script:
-  - nuget restore -verbosity quiet
-  - msbuild /p:configuration=Release /p:DeployExtension=false /p:ZipPackageCompressionLevel=normal /v:m
+    - nuget restore -verbosity quiet
+    - msbuild /p:configuration=Release /p:DeployExtension=false /p:ZipPackageCompressionLevel=normal /v:m
 
 after_build:
-  - ps: Vsix-PushArtifacts | Vsix-PublishToGallery
+    - ps: Vsix-PushArtifacts | Vsix-PublishToGallery
 
 deploy:
-  # Deploy to GitHub Releases
-  - provider: GitHub
+    # Deploy to GitHub Releases
+    - provider: GitHub
     artifact: /.*\.vsix/           # upload all vsix files to release assets
     draft: false
     prerelease: false
     on:
-      branch: master                # release from master branch only
-      appveyor_repo_tag: true       # deploy on tag push only
+        branch: master                # release from master branch only
+        appveyor_repo_tag: true       # deploy on tag push only

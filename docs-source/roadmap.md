@@ -1,10 +1,9 @@
 
-### Product Backlog
+## Feature Ideas
 
-The **_product backlog_** is a list of **_product backlog items_** (also known as _PBI's_ for short).
-
-The _PBI's_ listed below are **features** or **enhancements** that or may not be added into _Time Savers_.
-However, no code has been written for them yet, and they could be removed from the _product backlog_ at any time. 
+The list below is a list of **potential** _features_ or _enhancements_ (aka _FI's_).
+These might be entirely **new features** or **enhancements to existing features**.
+They may, or may not, end up being added into _Time Savers_.
 
 - [ ] Duplicate File (one operation, instead of copy/paste/rename)
 - [ ] Copy Solution (copy the entire solution, with a new name)
@@ -17,12 +16,10 @@ However, no code has been written for them yet, and they could be removed from t
 - [ ] Edit Environment Variables
 - [ ] Clean Experimental Hive (as in [_Clean Hive and Debug for Extension Developers_][clean-hive-and-debug] - John McBride)
 
----
+## Contributing Code
 
-### Contributing
-
-If you'd like to implement one of the the _PBI's_ from the _product backlog_,
-feel free to open an [Issue on GitHub][github-issue-pbi] (with the same name that the PBI has here), 
+If you'd like to implement one of the the _FI's_ from the _feature backlog_,
+feel free to [open an _Issue_ on GitHub][github-issue-pbi] (with the same name as the feature), 
 and we can start a discussion there. We can then work toward developing a pull request,
 so the implemented feature can be incorporated into *Time Savers*.
 
@@ -32,11 +29,9 @@ Don't forget to check out the [Contribution Guidelines][contribution-guidelines]
 [github-issue-pbi]: https://github.com/luminous-software/time-savers/issues/new?title=Contribute%20to%20PBI%3A%20
 [contribution-guidelines]: contributing.md 
 
----
+## Beta Features
 
-### Beta Features
-
-Beta features are _PBI'S_ that have actually had some code written for them,
+_Beta features_ are _FI's_ that have actually had code written for them,
 and are waiting for that code to be thoroughly tested. 
 You can participate in the testing phase by downloading the _CI build_ mentioned below.
 You can install it on your own machine, and confirm that it does what it's supposed to do.
@@ -44,26 +39,22 @@ If you do find a problem, you can create a [Bug Report on GitHub][github-issue-b
 
 Once they've passed testing they'll be included in the **next public release** of _Time Savers_.
 
->There are no beta features that need testing at the moment.
+>There are no beta features that need testing at the moment
 
 [github-issue-bug-report]: https://github.com/luminous-software/time-savers/issues/new?title=Bug%20Report%3A%20
 
----
-
-### Bug Fixes
+## Bug Fixes
 
 Once bug fixes have been fully tested, they'll be included in the *next public release*.
 
 >There are no bug fixes that need testing at the moment
 
----
-
-### Continuous Integration
+## Continuous Integration
 
 The CI build is the build from the continous integration process. 
 The resultant VSIX file is then uploaded to the [VSIX Gallery][vsix-gallery] for you to download.
 
-![(VSTS Badge)][vsts-badge-url]
+![VSTS Status](https://lumiinus.visualstudio.com/_apis/public/build/definitions/c31b2195-e4da-4ad9-a64c-e1712d313703/15/badge)
 ![(Build status)][appveyor-status]
 
 If both build badges above are green, the latest CI build is ready to be downloaded and installed  to test.

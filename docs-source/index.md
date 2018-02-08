@@ -28,7 +28,7 @@ This extension adds a new toolbar that adds command buttons for most *Time Saver
 
 To enable the toolbar, right-click in a blank spot on the toolbar area, and select *Time Savers*.
 Like all other Visual Studio toolbars, you can remove any commands that you feel you don't need,
-or even add exisitng Visual Studio commands to it.
+or even add existing Visual Studio commands to it.
 
 ### Time Savers Menu
 

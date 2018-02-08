@@ -2,6 +2,8 @@ image: Visual Studio 2017
 platform: Any CPU
 configuration: Release
 
+version: 1.0.0.{build}
+
 install:
     - ps: (new-object Net.WebClient).DownloadString("https://raw.github.com/madskristensen/ExtensionScripts/master/AppVeyor/vsix.ps1") | iex
     - ps: Vsix-IncrementVsixVersion -versionType revision | Vsix-UpdateBuildVersion
@@ -21,5 +23,5 @@ deploy:
     draft: false
     prerelease: false
     on:
-        branch: master                # release from master branch only
-        appveyor_repo_tag: true       # deploy on tag push only
+        branch: master             # release from master branch only
+        appveyor_repo_tag: true    # deploy on tag push only

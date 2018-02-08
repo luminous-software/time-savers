@@ -18,20 +18,6 @@ img[alt$="<>"] {
     float: none !important;
 }
 
-.article h1 {
-    color: #444;
-    padding-bottom: 0;
-}
-
-.article h3 {
-    font-size: 18px;
-}
-
-.article h4 {
-    font-size: 13px;
-    font-weight: bold;
-}
-
 hr {
     border: 0;
     border-top: 1px solid #8c8c8c;
@@ -40,15 +26,12 @@ hr {
 
 h1 {
     margin-bottom: 8px !important;
+    font-size: 2.75rem !important;
 }
 
 h2 {
     margin-top: 20px !important;
-}
-
-h3 {
-    margin-top: 16px !important;
-    margin-bottom: 0 !important;
+    font-size: 2.5rem !important;
 }
 
 h1, h2 {
@@ -59,19 +42,22 @@ h1, h2 {
 
 h3 {
     color: #7E57C2 !important;
+    margin-top: 16px !important;
+    margin-bottom: 0 !important;
+    font-size: 2rem !important;
 }
 
 article p {
-    margin: 8px 0 !important;
-    font-size: 1.35rem;
+    /*margin: 8px 0 !important;*/
+    font-size: 1.4rem;
 }
 
-/*.admonition-title {
-    margin: 0 !important;
-}*/
+a.md-nav-link {
+    font-size: 1.4rem;
+}
 
-li {
-    font-size: 1.35rem;
+.md-content p {
+    margin: 8px 0;
 }
 
 .md-content article ul li {
@@ -82,20 +68,36 @@ li {
         margin-top: 0;
     }
 
-div article ul {
-    margin-top: 0;
-}
-
 .md-main__inner {
     padding-top: 0;
 }
 
-div .md-sidebar {
+.md-sidebar {
     background: #eaecef;
 }
 
-.md-typeset ul {
+.md-content ol {
     margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.md-content ul {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.md-nav__title {
+    color: #7E57C2 !important;
+    font-size: 1.6rem;
+}
+
+    .md-nav__title.md-nav__title--site {
+        color: #7E57C2 !important;
+        font-size: 1.6rem;
+    }
+
+.md-flex__ellipsis.md-header-nav__title {
+    padding-left: 0;
 }
 
 .md-footer-nav {
@@ -107,11 +109,11 @@ div .md-sidebar {
     padding-top: 8px;
 }
 
-span .md-footer-nav__direction {
+.md-footer-nav__direction {
     display: none;
 }
 
-div .md-footer-social {
+.md-footer-social {
     display: none;
 }
 
@@ -125,6 +127,38 @@ div .md-footer-social {
     color: #eaecef;
 }
 
+.icon-note:before {
+    content: "\e611"
+}
+
+.admonition {
+    margin: 1.56em 0 !important;
+}
+
+.admonition-title {
+    /*
+    background: #29b6f6;
+    color: #fff;
+
+    */
+}
+
+.admonition.note .admonition-title {
+    background: #cab0f9;
+    color: #fff;
+}
+
+.admonition.note {
+    border-left: .4rem solid #7E57C2;
+}
+
+    .admonition.note .admonition-title:before {
+        color: #7E57C2;
+        /*content: "\e610";*/
+    }
+
+/*
 .md-hero {
     background: red;
 }
+*/

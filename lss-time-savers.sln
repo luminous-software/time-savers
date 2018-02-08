@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08B276AF-9E6A-4DD9-994F-964CFD71AC29}"
 	ProjectSection(SolutionItems) = preProject
@@ -22,6 +22,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B388B43D-5
 	ProjectSection(SolutionItems) = preProject
 		docs-source\changelog.md = docs-source\changelog.md
 		docs-source\contributing.md = docs-source\contributing.md
+		docs-source\features.md = docs-source\features.md
 		docs-source\getting-started.md = docs-source\getting-started.md
 		gulpfile.js = gulpfile.js
 		docs-source\index.md = docs-source\index.md

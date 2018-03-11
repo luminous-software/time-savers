@@ -2,6 +2,7 @@
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
+using Microsoft.VisualStudio.Threading;
 using orientation = Microsoft.VisualStudio.Shell.ToolWindowOrientation;
 
 using static Microsoft.VisualStudio.Shell.Interop.UIContextGuids80;
@@ -20,9 +21,9 @@ namespace Luminous.TimeSavers
     using Commands.ProjectNode;
     using Commands.Developer;
     using Options;
+    using Events;
     using UI.PathVariables;
     using UI.BrowserWindow;
-    using Events;
 
     using static Core.Constants;
     using static PackageGuids;
@@ -49,20 +50,14 @@ namespace Luminous.TimeSavers
         private BuildDialogPage _buildOptions;
         private VisualStudioDialogPage _visualStudioOptions;
 
-        //***
-
         public BuildDialogPage BuildOptions
             => _buildOptions ?? (_buildOptions = GetDialogPage(typeof(BuildDialogPage)) as BuildDialogPage);
 
         public VisualStudioDialogPage VisualStudioOptions
             => _visualStudioOptions ?? (_visualStudioOptions = GetDialogPage(typeof(VisualStudioDialogPage)) as VisualStudioDialogPage);
 
-        //!!!
-
         public PackageClass() : base(PackageCommandSet, Name, Description)
         { }
-
-        //!!!
 
         protected override void Initialize()
         {
@@ -80,8 +75,6 @@ namespace Luminous.TimeSavers
 
             AdviseSolutionEvents(new VsSolutionEvents(this));
         }
-
-        //===
 
         private void InstantiateProjectCommands()
         {
@@ -135,16 +128,20 @@ namespace Luminous.TimeSavers
             InsertGuidCommand.Instantiate(this);
         }
 
-        //---
-
         //TODO: move to framework
+        //YD: what about unadvise?
         private static void AdviseSolutionEvents(IVsSolutionEvents vsSolutionEvents)
         {
             var vsSolution = GetGlobalService<SVsSolution, IVsSolution>();
 
-            vsSolution.AdviseSolutionEvents(vsSolutionEvents, out uint solutionEventsCookie);
-        }
+#pragma warning disable VSTHRD102 // Implement internal logic asynchronously
+            ThreadHelper.JoinableTaskFactory.Run(async delegate
+#pragma warning restore VSTHRD102 // Implement internal logic asynchronously
+            {
+                await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
 
-        //***
+                vsSolution.AdviseSolutionEvents(vsSolutionEvents, out uint solutionEventsCookie);
+            });
+        }
     }
 }

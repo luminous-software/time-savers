@@ -16,7 +16,7 @@ They may, or may not, end up being added into _Time Savers_.
 - [ ] Edit Environment Variables
 - [ ] Clean Experimental Hive (as in [_Clean Hive and Debug for Extension Developers_][clean-hive-and-debug] - John McBride)
 
-## Contributing Code
+## Contributions
 
 If you'd like to implement one of the the _FI's_ from the _feature backlog_,
 feel free to [open an _Issue_ on GitHub][github-issue-pbi] (with the same name as the feature), 
@@ -49,15 +49,19 @@ Once bug fixes have been fully tested, they'll be included in the *next public r
 
 >There are no bug fixes that need testing at the moment
 
+
+[![time-savers MyGet Build Status](https://www.myget.org/BuildSource/Badge/time-savers?identifier=648f86dc-b6fc-47cf-a9a8-06951c0f6418)](https://www.myget.org/)
+
+<!--
 ## Continuous Integration
 
 The CI build is the build from the continous integration process. 
 The resultant VSIX file is then uploaded to the [VSIX Gallery][vsix-gallery] for you to download.
-
 ![VSTS Status](https://lumiinus.visualstudio.com/_apis/public/build/definitions/c31b2195-e4da-4ad9-a64c-e1712d313703/15/badge)
 ![(Build status)][appveyor-status]
 
 If both build badges above are green, the latest CI build is ready to be downloaded and installed  to test.
+-->
 
 [vsix-gallery]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
 [vsts-badge-url]: https://lumiinus.visualstudio.com/_apis/public/build/definitions/c31b2195-e4da-4ad9-a64c-e1712d313703/15/badge

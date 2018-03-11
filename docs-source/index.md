@@ -6,7 +6,7 @@
 [version-badge-url]: http://vsmarketplacebadge.apphb.com/version-short/YannDuran.VisualStudioTimeSavers.svg?label=version&colorB=7E57C2
 [installs-badge-url]: http://vsmarketplacebadge.apphb.com/installs-short/YannDuran.VisualStudioTimeSavers.svg?colorB=7E57C2
 [rating-badge-url]: http://vsmarketplacebadge.apphb.com/rating-short/YannDuran.VisualStudioTimeSavers.svg?colorB=7E57C2
-[paypal-badge]: https://img.shields.io/badge/donate-paypal-green.svg 
+[paypal-badge]: https://img.shields.io/badge/donate-paypal-green.svg
 
 ## Enhance Your Productivity
 
@@ -17,14 +17,14 @@ Every feature of *Time Savers* was created specifically to enhance development p
 
     If *Time Savers* has saved you time, please come back and show your support:
 
-    - by [***rating *Time Savers****][rate-or-review-url] (only takes a couple of seconds)
-    - or [***reviewing *Time Savers****][rate-or-review-url] (help others benefit from your experience)
+    - you could [***rate *Time Savers****][rate-or-review-url] (only takes a couple of seconds)
+    - or [***review *Time Savers****][rate-or-review-url] (help others benefit from your experience)
     - or [***shout me a coke***](https://www.paypal.me/yannduran/5) (as I don't drink coffee lol)
 
 ### Time Savers Toolbar
 
 This extension adds a new toolbar that adds command buttons for most *Time Savers* features giving you a
-**one-click experience**, saving you from having to go hunting for the command you want in a menu somewhere.
+**one-click experience**, saving you from having to go hunting for the command you want in a menu _somewhere_.
 
 To enable the toolbar, right-click in a blank spot on the toolbar area, and select *Time Savers*.
 Like all other Visual Studio toolbars, you can remove any commands that you feel you don't need,
@@ -53,7 +53,7 @@ than having to search through one gigantic menu of commands.
 
 ### Keyboard Shortcuts
 
-Some of the *Time Savers* features that tend to be used frequently have also been assigned a keyboard shortcut for a 
+Some of the *Time Savers* features that tend to be used frequently have also been assigned a keyboard shortcut for a
 **one or two keystroke experience**.
 And of course you can add your own keyboard shortcut to any of the *Time Savers* features.
 

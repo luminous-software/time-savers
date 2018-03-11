@@ -113,15 +113,6 @@
     <Compile Include="..\pkg\source.extension.cs">
       <Link>source.extension.cs</Link>
     </Compile>
-    <Compile Include="BrowserWindow\BrowserWindow.ToolWindow.xaml.cs">
-      <DependentUpon>BrowserWindow.ToolWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="BrowserWindow\BrowserWindow.ToolWindowPane.cs" />
-    <Compile Include="BrowserWindow\BrowserWindow.ViewModel.cs">
-      <DependentUpon>BrowserWindow.ToolWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="BrowserWindow\Commands\ClearCommand.cs" />
-    <Compile Include="BrowserWindow\Commands\GoCommand.cs" />
     <Compile Include="Guids.cs" />
     <Compile Include="NotificationObject.cs" />
     <Compile Include="PathVariables\PathData.cs" />
@@ -140,32 +131,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="BrowserWindow\BrowserWindow.ToolWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="BrowserWindow\Styles\ControlStyles.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="BrowserWindow\Styles\Brushes.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="PathVariables\PathVariables.ToolWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="BrowserWindow\Images\cross.png" />
-    <Resource Include="BrowserWindow\Images\tick.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="BrowserWindow\Images\cancel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="BrowserWindow\Images\accept.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

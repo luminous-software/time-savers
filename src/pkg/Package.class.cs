@@ -23,7 +23,8 @@ namespace Luminous.TimeSavers
     using Options;
     using Events;
     using UI.PathVariables;
-    using UI.BrowserWindow;
+
+    //using UI.BrowserWindow;
 
     using static Core.Constants;
     using static PackageGuids;
@@ -38,7 +39,7 @@ namespace Luminous.TimeSavers
     [ProvideAutoLoad(SolutionExists)]
 
     [ProvideToolWindow(typeof(PathVariablesToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
-    [ProvideToolWindow(typeof(BrowserWindowToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
+    //[ProvideToolWindow(typeof(BrowserWindowToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
 
     [ProvideOptionPage(typeof(GeneralDialogPage), Name, General, 0, 0, supportsAutomation: false)]
     [ProvideOptionPage(typeof(BuildDialogPage), Name, Build, 0, 0, supportsAutomation: false)]

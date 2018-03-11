@@ -8,7 +8,8 @@ namespace Luminous.TimeSavers.Commands.Developer
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
     using Luminous.TimeSavers.Options;
-    using Luminous.TimeSavers.UI.BrowserWindow;
+
+    //using Luminous.TimeSavers.UI.BrowserWindow;
 
     internal sealed class BrowserWindowCommand : TimeSaversCommand
     {
@@ -34,7 +35,8 @@ namespace Luminous.TimeSavers.Commands.Developer
 
         private CommandResult ExecuteCommand()
         {
-            return Package.ShowNewToolWindow<BrowserWindowToolWindowPane>(maxWindows: TimeSaversOptions.MaxBrowserWindows);
+            return null;
+            //return Package.ShowNewToolWindow<BrowserWindowToolWindowPane>(maxWindows: TimeSaversOptions.MaxBrowserWindows);
         }
 
         //***

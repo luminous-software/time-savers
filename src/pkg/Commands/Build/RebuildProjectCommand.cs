@@ -7,19 +7,12 @@ namespace Luminous.TimeSavers.Commands.Build
 
     internal sealed class RebuildProjectCommand : BuildCommand
     {
-        //***
-        //!!!
-
         private RebuildProjectCommand(PackageBase package)
             : base(package, PackageIds.RebuildProjectCommand)
         { }
 
-        //!!!
-
         public static void Instantiate(PackageBase package)
             => Instantiate(new RebuildProjectCommand(package));
-
-        //---
 
         protected override bool CanExecute
         => base.CanExecute && BuildOptions.RebuildProjectCommandEnabled;
@@ -32,11 +25,7 @@ namespace Luminous.TimeSavers.Commands.Build
                 .ShowProblem()
                 .ShowInformation();
 
-        //---
-
-        private CommandResult ExecuteCommand()
+        private static CommandResult ExecuteCommand()
             => Package?.BuildProject(rebuild: true);
-
-        //***
     }
 }

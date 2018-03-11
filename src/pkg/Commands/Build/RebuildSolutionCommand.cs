@@ -7,18 +7,12 @@ namespace Luminous.TimeSavers.Commands.Build
 
     internal sealed class RebuildSolutionCommand : BuildCommand
     {
-        //***
-        //!!!
-
-        private RebuildSolutionCommand(PackageBase package) : base(package, PackageIds.RebuildSolutionCommand)
+        private RebuildSolutionCommand(PackageBase package)
+            : base(package, PackageIds.RebuildSolutionCommand)
         { }
-
-        //!!!
 
         public static void Instantiate(PackageBase package)
             => Instantiate(new RebuildSolutionCommand(package));
-
-        //---
 
         protected override bool CanExecute
         => base.CanExecute && BuildOptions.RebuildSolutionCommandEnabled;
@@ -31,11 +25,7 @@ namespace Luminous.TimeSavers.Commands.Build
                 .ShowProblem()
                 .ShowInformation();
 
-        //---
-
-        private CommandResult ExecuteCommand()
+        private static CommandResult ExecuteCommand()
             => Package?.BuildSolution(rebuild: true);
-
-        //***
     }
 }

@@ -301,9 +301,8 @@
   </Target>
   <Import Project="..\..\packages\Microsoft.VSSDK.BuildTools.15.0.26201\build\Microsoft.VSSDK.BuildTools.targets" Condition="Exists('..\..\packages\Microsoft.VSSDK.BuildTools.15.0.26201\build\Microsoft.VSSDK.BuildTools.targets')" />
   <PropertyGroup>
-    <PostBuildEvent>
-      c:\dev\tools\CreatePrivateGallery $(ProjectDir) $(OutDir) $(TargetName) $(ConfigurationName)
-    </PostBuildEvent>
+    <PostBuildEvent>IF EXIST c:\dev\tools\CreatePrivateGallery.cmd c:\dev\tools\CreatePrivateGallery $(ProjectDir) $(OutDir) $(TargetName) $(ConfigurationName)
+</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

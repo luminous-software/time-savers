@@ -1,9 +1,13 @@
 ## Public Releases
 
+### v2.2.1 - _2018-03-12_
+  - Added basic documentation to the website
+    - https://luminous-software.solutions/time-savers
+
 ### v2.2.0 - _2017-02-13_
   - Renamed extension
     - from *Time Savers*
-    - to *Luminous Time Savers*  
+    - to *Luminous Time Savers*
   - Changed lower level code packages
     - from YD.Code.Core, YD.Code.VisualStudio
     - to Luminous Code.Core, LuminousCode.VisualStudio
@@ -15,12 +19,12 @@
   - Added *Reopen Start Page* (when solution is closed)
   - Renamed extension
       - from *Visual Studio Time Savers*
-      - to just *Time Savers*  
+      - to just *Time Savers*
 
 ### v1.0.0 - 2016-10-15
   - Released to VS Gallery
 
-## Beta Releases 
+## Beta Releases
 
 ### v0.7 - 2016-10-10
   - Added *Time Savers Options* dialog pages (Tools | Options | Time Savers)

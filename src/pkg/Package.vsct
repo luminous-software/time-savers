@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <Extern href="stdidcmd.h"/>
-  <Extern href="vsshlids.h"/>
-  <Include href="KnownImageIds.vsct"/>
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h" />
+  <Include href="KnownImageIds.vsct" />
 
   <Commands package="Package">
     <!--
@@ -11,6 +11,7 @@
     <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN" />
     <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNNODE" />
     <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNFOLDER" />
+    <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_SOLUTION_BUILD" />
     <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
     <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_FOLDERNODE" />
     <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE" />
@@ -29,7 +30,7 @@
       <!--~~~ Package Menu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Menu guid="PackageCommandSet" id="PackageMenu" type="Menu" priority="0x4000">
-        <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS"/>
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS" />
         <CommandFlag>AlwaysCreate</CommandFlag>
         <Strings>
           <ButtonText>Time Savers</ButtonText>
@@ -54,7 +55,7 @@
         </Strings>
       </Menu>
 
-      <!--~~~ Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Options Dropdown ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Menu guid="PackageCommandSet" id="OptionsDropDown" type="MenuController" priority="0x0000">
         <Parent guid="PackageCommandSet" id="OptionsGroup" />
@@ -69,7 +70,6 @@
       <!--~~~ Solution Node ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="PackageCommandSet" id="SolutionNodeGroup" priority="0x0000">
-        <!--<Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_SOLUTION_BUILD" />-->
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNNODE" />
       </Group>
 
@@ -82,26 +82,26 @@
       <!--~~~ Code Editor ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="PackageCommandSet" id="CodeEditorGroup" priority="0x0000">
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN" />
       </Group>
 
-      <!--~~~ Solution ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Solution Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="PackageCommandSet" id="SolutionGroup" priority="0x0000" />
 
-      <!--~~~ Project ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Project Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="PackageCommandSet" id="ProjectGroup" priority="0x0000" />
 
-      <!--~~~ Insert ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ General Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-      <Group guid="PackageCommandSet" id="InsertGroup" priority="0x0000" />
+      <Group guid="PackageCommandSet" id="GeneralGroup" priority="0x0000" />
 
-      <!--~~~ Build ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Build Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="PackageCommandSet" id="BuildGroup" priority="0x0000" />
 
-      <!--~~~ Developer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Developer Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="PackageCommandSet" id="DeveloperGroup" priority="0x0000" />
 
@@ -109,11 +109,11 @@
         <Parent guid="PackageCommandSet" id="DeveloperDropdown" />
       </Group>
 
-      <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Visual Studio Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-      <Group guid="PackageCommandSet" id="VisualStudioGroup"/>
+      <Group guid="PackageCommandSet" id="VisualStudioGroup" />
 
-      <!--~~~ Restart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Restart Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="PackageCommandSet" id="RestartGroup" priority="0x0000" />
 
@@ -121,7 +121,7 @@
         <Parent guid="PackageCommandSet" id="RestartDropDown" />
       </Group>
 
-      <!--~~~ Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ Options Group ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Group guid="PackageCommandSet" id="OptionsGroup" priority="0x0950" />
       <Group guid="PackageCommandSet" id="OptionsCommands" priority="0x0951">
@@ -130,11 +130,12 @@
     </Groups>
 
     <Buttons>
+
       <!--~~~ Solution ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Button guid="PackageCommandSet" id="EditSolutionCommand" type="Button" priority="0x0010">
         <Parent guid="PackageCommandSet" id="SolutionGroup" />
-        <Icon guid="ImageCatalogGuid" id="Solution"/>
+        <Icon guid="ImageCatalogGuid" id="Solution" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -147,7 +148,7 @@
 
       <Button guid="PackageCommandSet" id="CloseSolutionCommand" type="Button" priority="0x0020">
         <Parent guid="PackageCommandSet" id="SolutionGroup" />
-        <Icon guid="ImageCatalogGuid" id="CloseSolution"/>
+        <Icon guid="ImageCatalogGuid" id="CloseSolution" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -162,7 +163,7 @@
 
       <Button guid="PackageCommandSet" id="EditProjectCommand" type="Button" priority="0x0010">
         <Parent guid="PackageCommandSet" id="ProjectGroup" />
-        <Icon guid="ImageCatalogGuid" id="CSProjectNode"/>
+        <Icon guid="ImageCatalogGuid" id="CSProjectNode" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -173,13 +174,27 @@
         </Strings>
       </Button>
 
-      <!--~~~ Insert ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ General ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-      <Button guid="PackageCommandSet" id="InsertGuidCommand" type="Button" priority="0x0001">
-        <Parent guid="PackageCommandSet" id="InsertGroup" />
-        <Icon guid="ImageCatalogGuid" id="InsertSpan"/>
+      <Button guid="PackageCommandSet" id="BrowserWindowCommand" type="Button" priority="0x0010">
+        <Parent guid="PackageCommandSet" id="GeneralGroup" />
+        <Icon guid="ImageCatalogGuid" id="ActiveEnvironment" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <CommandName>BrowserWindow</CommandName>
+          <CanonicalName>BrowserWindow</CanonicalName>
+          <LocCanonicalName>BrowserWindow</LocCanonicalName>
+          <ButtonText>Browser Window</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="PackageCommandSet" id="InsertGuidCommand" type="Button" priority="0x0020">
+        <Parent guid="PackageCommandSet" id="GeneralGroup" />
+        <Icon guid="ImageCatalogGuid" id="InsertSpan" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DontCache</CommandFlag>
+        <CommandFlag>DefaultDisabled</CommandFlag>
         <Strings>
           <CommandName>InsertGuid</CommandName>
           <CanonicalName>InsertGuid</CanonicalName>
@@ -192,7 +207,7 @@
 
       <Button guid="PackageCommandSet" id="RebuildProjectCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="BuildGroup" />
-        <Icon guid="ImageCatalogGuid" id="BuildSelection"/>
+        <Icon guid="ImageCatalogGuid" id="BuildSelection" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>DontCache</CommandFlag>
@@ -206,7 +221,7 @@
 
       <Button guid="PackageCommandSet" id="RebuildSolutionCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="BuildGroup" />
-        <Icon guid="ImageCatalogGuid" id="BuildSolution"/>
+        <Icon guid="ImageCatalogGuid" id="BuildSolution" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>DontCache</CommandFlag>
@@ -220,7 +235,7 @@
 
       <Button guid="PackageCommandSet" id="CancelBuildCommand" type="Button" priority="0x0002">
         <Parent guid="PackageCommandSet" id="BuildGroup" />
-        <Icon guid="ImageCatalogGuid" id="CancelBuild"/>
+        <Icon guid="ImageCatalogGuid" id="CancelBuild" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>DontCache</CommandFlag>
@@ -236,7 +251,7 @@
 
       <Button guid="PackageCommandSet" id="ActivityLogCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="DeveloperCommands" />
-        <Icon guid="ImageCatalogGuid" id="TriggerActionListActive"/>
+        <Icon guid="ImageCatalogGuid" id="TriggerActionListActive" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>FixMenuController</CommandFlag>
@@ -250,7 +265,7 @@
 
       <Button guid="PackageCommandSet" id="DiagnosticLogCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="DeveloperCommands" />
-        <Icon guid="ImageCatalogGuid" id="LogError"/>
+        <Icon guid="ImageCatalogGuid" id="LogError" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -263,7 +278,7 @@
 
       <Button guid="PackageCommandSet" id="PathVariablesCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="DeveloperCommands" />
-        <Icon guid="ImageCatalogGuid" id="DataList"/>
+        <Icon guid="ImageCatalogGuid" id="DataList" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -278,7 +293,7 @@
 
       <Button guid="PackageCommandSet" id="ExtensionsAndUpdatesCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="VisualStudioGroup" />
-        <Icon guid="ImageCatalogGuid" id="CSExtension"/>
+        <Icon guid="ImageCatalogGuid" id="CSExtension" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -289,11 +304,38 @@
         </Strings>
       </Button>
 
+      <!--~~~ Restart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <Button guid="PackageCommandSet" id="RestartNormalCommand" type="Button" priority="0x0001">
+        <Parent guid="PackageCommandSet" id="RestartCommands" />
+        <Icon guid="ImageCatalogGuid" id="VisualStudio" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>FixMenuController</CommandFlag>
+        <Strings>
+          <CommandName>RestartVisualStudio</CommandName>
+          <CanonicalName>RestartVisualStudio</CanonicalName>
+          <ButtonText>Restart Visual Studio</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="PackageCommandSet" id="RestartElevatedCommand" type="Button" priority="0x0001">
+        <Parent guid="PackageCommandSet" id="RestartCommands" />
+        <Icon guid="ImageCatalogGuid" id="VisualStudioExpressWindowsPhone" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <CommandName>RestartVisualStudioAsAdministrator</CommandName>
+          <CanonicalName>RestartVisualStudioAsAdministrator</CanonicalName>
+          <ButtonText>Restart Visual Studio As Administrator</ButtonText>
+        </Strings>
+      </Button>
+
       <!--~~~ Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
       <Button guid="PackageCommandSet" id="TimeSaversOptionsCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="OptionsCommands" />
-        <Icon guid="ImageCatalogGuid" id="Settings"/>
+        <Icon guid="ImageCatalogGuid" id="Settings" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <CommandFlag>FixMenuController</CommandFlag>
@@ -307,7 +349,7 @@
 
       <Button guid="PackageCommandSet" id="KeyboardOptionsCommand" type="Button" priority="0x0002">
         <Parent guid="PackageCommandSet" id="OptionsCommands" />
-        <Icon guid="ImageCatalogGuid" id="Keyboard"/>
+        <Icon guid="ImageCatalogGuid" id="Keyboard" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
@@ -317,40 +359,17 @@
           <ButtonText>Keyboard Options</ButtonText>
         </Strings>
       </Button>
-
-      <!--~~~ Restart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-      <Button guid="PackageCommandSet" id="RestartNormalCommand" type="Button" priority="0x0001">
-        <Parent guid="PackageCommandSet" id="RestartCommands" />
-        <Icon guid="ImageCatalogGuid" id="VisualStudio"/>
-        <CommandFlag>IconIsMoniker</CommandFlag>
-        <CommandFlag>DynamicVisibility</CommandFlag>
-        <CommandFlag>FixMenuController</CommandFlag>
-        <Strings>
-          <CommandName>RestartVisualStudio</CommandName>
-          <CanonicalName>RestartVisualStudio</CanonicalName>
-          <ButtonText>Restart Visual Studio</ButtonText>
-        </Strings>
-      </Button>
-
-      <Button guid="PackageCommandSet" id="RestartElevatedCommand" type="Button" priority="0x0001">
-        <Parent guid="PackageCommandSet" id="RestartCommands" />
-        <Icon guid="ImageCatalogGuid" id="VisualStudioExpressWindowsPhone"/>
-        <CommandFlag>IconIsMoniker</CommandFlag>
-        <CommandFlag>DynamicVisibility</CommandFlag>
-        <Strings>
-          <CommandName>RestartVisualStudioAsAdministrator</CommandName>
-          <CanonicalName>RestartVisualStudioAsAdministrator</CanonicalName>
-          <ButtonText>Restart Visual Studio As Administrator</ButtonText>
-        </Strings>
-      </Button>
     </Buttons>
   </Commands>
 
   <CommandPlacements>
     <!--~~~ PackageToolbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-    <CommandPlacement guid="PackageCommandSet" id="BuildGroup" priority="0x0100">
+    <CommandPlacement guid="PackageCommandSet" id="GeneralGroup" priority="0x0100">
+      <Parent guid="PackageCommandSet" id="PackageToolbar" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="PackageCommandSet" id="BuildGroup" priority="0x0200">
       <Parent guid="PackageCommandSet" id="PackageToolbar" />
     </CommandPlacement>
 
@@ -370,40 +389,6 @@
       <Parent guid="PackageCommandSet" id="PackageToolbar" />
     </CommandPlacement>
 
-    <!--~~~ MainMenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-    <!--<CommandPlacement guid="PackageCommandSet" id="SolutionGroup" priority="0x0B00">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="PackageCommandSet" id="ProjectGroup" priority="0x0C00">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="PackageCommandSet" id="InsertGroup" priority="0x0A00">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="PackageCommandSet" id="BuildGroup" priority="0x0300">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="PackageCommandSet" id="DeveloperCommands" priority="0x0400">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="PackageCommandSet" id="VisualStudioGroup" priority="0x0800">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="PackageCommandSet" id="RestartCommands" priority="0x0900">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>
-
-    <CommandPlacement guid="PackageCommandSet" id="OptionsCommands" priority="0x0900">
-      <Parent guid="PackageCommandSet" id="MainMenu" />
-    </CommandPlacement>-->
-
     <!--~~~ PackageMenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
     <CommandPlacement guid="PackageCommandSet" id="SolutionGroup" priority="0x0B00">
@@ -414,7 +399,7 @@
       <Parent guid="PackageCommandSet" id="PackageMenu" />
     </CommandPlacement>
 
-    <CommandPlacement guid="PackageCommandSet" id="InsertGroup" priority="0x0A00">
+    <CommandPlacement guid="PackageCommandSet" id="GeneralGroup" priority="0x0200">
       <Parent guid="PackageCommandSet" id="PackageMenu" />
     </CommandPlacement>
 
@@ -459,32 +444,16 @@
 
   <KeyBindings>
     <KeyBinding guid="PackageCommandSet" id="RebuildProjectCommand" editor="guidVSStd97"
-                mod1="Control Alt" key1="9"/>
+                mod1="Control" key1="9" />
     <KeyBinding guid="PackageCommandSet" id="RebuildSolutionCommand" editor="guidVSStd97"
-                mod1="Control Alt" key1="0"/>
+                mod1="Control" key1="0" />
 
     <KeyBinding guid="PackageCommandSet" id="InsertGuidCommand" editor="GUID_TextEditorFactory"
-                mod1="Control Alt" key1="I" mod2="Control Alt" key2="G"/>
+                mod1="Control Alt" key1="I" mod2="Control Alt" key2="G" />
   </KeyBindings>
 
   <Symbols>
     <GuidSymbol name="Package" value="{6359DA17-6477-4E9C-8E73-7D05EA8A33A1}" />
-
-    <!--~~~ Tool Windows ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-    <GuidSymbol name="InsertGuidToolWindow" value="{776cdc3d-f8f4-4819-8141-cf5938c4cd7d}" />
-
-    <!--~~~ Options ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-    <!--
-    <GuidSymbol name="CustomOptionsPage" value="{1D9ECCF3-5D2F-4112-9B25-264596873DC9}" />
-    -->
-    <GuidSymbol name="GeneralDialogPage" value="{DCBBD0F7-6463-48F4-9C86-1CE95EF7C1A2}" />
-    <GuidSymbol name="BuildDialogPage" value="{E967A459-0B9E-4222-BA52-A66496EDAEE3}" />
-    <GuidSymbol name="DeveloperDialogPage" value="{7A9F803B-96DE-4D30-B1CD-590443192092}" />
-    <GuidSymbol name="VisualStudioDialogPage" value="{13C28243-07FB-4034-A035-3A44FF0330AA}" />
-    <GuidSymbol name="SeparatorsDialogPage" value="{736339A2-2BA5-4E37-9E55-1E72F5AE4721}" />
-    <GuidSymbol name="OptionsDialogPage" value="{6BF7C9FA-8E42-4673-83CB-288EFE5AE3B5}" />
 
     <GuidSymbol name="PackageCommandSet" value="{4EAC4E23-4909-4DAC-9D6E-819BDC861480}">
       <IDSymbol name="PackageToolbar" value="0xA001" />
@@ -507,11 +476,12 @@
 
       <IDSymbol name="EditProjectCommand" value="0x0D05" />
 
-      <!--~~~ Insert  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~ General ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-      <IDSymbol name="InsertGroup" value="0x0A00" />
+      <IDSymbol name="GeneralGroup" value="0x0210" />
 
-      <IDSymbol name="InsertGuidCommand" value="0x0A05" />
+      <IDSymbol name="BrowserWindowCommand" value="0x0215" />
+      <IDSymbol name="InsertGuidCommand" value="0x0216" />
 
       <!--~~~ Build ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -527,9 +497,9 @@
       <IDSymbol name="DeveloperDropdown" value="0x0701" />
       <IDSymbol name="DeveloperCommands" value="0x0702" />
 
-      <IDSymbol name="ActivityLogCommand" value="0x0705"/>
-      <IDSymbol name="DiagnosticLogCommand" value="0x0706"/>
-      <IDSymbol name="PathVariablesCommand" value="0x0707"/>
+      <IDSymbol name="ActivityLogCommand" value="0x0705" />
+      <IDSymbol name="DiagnosticLogCommand" value="0x0706" />
+      <IDSymbol name="PathVariablesCommand" value="0x0707" />
 
       <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 

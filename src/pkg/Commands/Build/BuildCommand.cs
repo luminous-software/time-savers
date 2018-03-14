@@ -18,7 +18,7 @@
         //!!!
 
         protected override bool CanExecute
-        => (base.CanExecute && BuildOptions.BuildCommandsEnabled);
+            => base.CanExecute && BuildOptions.BuildCommandsEnabled;
 
         //***
     }

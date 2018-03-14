@@ -5,7 +5,7 @@ namespace Luminous.TimeSavers.Commands.VisualStudio
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
 
-    internal sealed class ExtensionsAndUpdatesCommand : DynamicCommand
+    internal sealed class ExtensionsAndUpdatesCommand : TimeSaversCommand
     {
         //***
         //!!!

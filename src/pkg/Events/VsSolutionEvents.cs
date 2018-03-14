@@ -1,6 +1,4 @@
-﻿using EnvDTE;
-using EnvDTE80;
-using Microsoft.VisualStudio;
+﻿using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell.Interop;
 
 namespace Luminous.TimeSavers.Events
@@ -11,23 +9,17 @@ namespace Luminous.TimeSavers.Events
     {
         private readonly bool _reopenStartPageEnabed;
 
-        //***
-
-        //!!!
+        private readonly string ViewStartPage = "View.StartPage";
 
         public VsSolutionEvents(PackageClass package)
         {
             _reopenStartPageEnabed = package.VisualStudioOptions.ReopenStartPageEnabled;
         }
 
-        //!!!
-
         int IVsSolutionEvents.OnAfterCloseSolution(object pUnkReserved)
         {
-            var dte = PackageBase.GetGlobalService<DTE, DTE2>();
-
             if (_reopenStartPageEnabed)
-                dte?.ExecuteCommand("View.StartPage");
+                PackageBase.Instance?.ExecuteCommand(ViewStartPage);
 
             return VSConstants.S_OK;
         }
@@ -76,7 +68,5 @@ namespace Luminous.TimeSavers.Events
         {
             return VSConstants.S_OK;
         }
-
-        //***
     }
 }

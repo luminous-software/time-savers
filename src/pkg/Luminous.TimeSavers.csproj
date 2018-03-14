@@ -4,15 +4,8 @@
   <PropertyGroup>
     <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
     <UseCodebase>true</UseCodebase>
     <TargetFrameworkProfile />
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <OldToolsVersion>14.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
@@ -32,7 +25,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Luminous.TimeSavers</RootNamespace>
     <AssemblyName>Luminous.TimeSavers</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
     <IncludeDebugSymbolsInVSIXContainer>true</IncludeDebugSymbolsInVSIXContainer>
@@ -56,8 +49,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DeployExtension>False</DeployExtension>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Commands\General\BrowserWindowCommand.cs" />
     <Compile Include="Commands\Insert\InsertCommand.cs" />
     <Compile Include="Commands\TimeSaversCommand.cs" />
     <Compile Include="Commands\Build\BuildCommand.cs" />
@@ -77,25 +72,7 @@
     <Compile Include="Commands\Restart\RestartElevatedCommand.cs" />
     <Compile Include="Commands\Restart\RestartNormalCommand.cs" />
     <Compile Include="Events\VsSolutionEvents.cs" />
-    <Compile Include="Options\OptionsDialogPage.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Options\VisualStudioDialogPage.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Options\DeveloperDialogPage.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Options\BuildDialogPage.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Options\GeneralDialogPage.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Package.class.cs">
-      <DependentUpon>Package.vsct</DependentUpon>
-    </Compile>
-    <Compile Include="Package.const.cs">
       <DependentUpon>Package.vsct</DependentUpon>
     </Compile>
     <Compile Include="Package.cs">
@@ -113,15 +90,14 @@
       <Link>Resources\LICENSE</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Content Include="Resources\icon.png" />
     <Content Include="Resources\preview.png" />
-    <Content Include="Resources\package.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="source.extension.ico">
       <DependentUpon>source.extension.vsixmanifest</DependentUpon>
     </Content>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -145,16 +121,22 @@
       <HintPath>..\..\packages\EnvDTE.8.0.1\lib\net10\EnvDTE.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EnvDTE100, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
     <Reference Include="EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>..\..\packages\EnvDTE80.8.0.1\lib\net10\EnvDTE80.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Luminous.Code.Core, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Luminous.Code.Core.1.0.2.0\lib\net462\Luminous.Code.Core.dll</HintPath>
+    <Reference Include="EnvDTE90, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
-    <Reference Include="Luminous.Code.VisualStudio, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Luminous.Code.VisualStudio.1.0.2.0\lib\net462\Luminous.Code.VisualStudio.dll</HintPath>
+    <Reference Include="Luminous.Code.Core, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Luminous.Code.Core.1.1.0\lib\net462\Luminous.Code.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Luminous.Code.VisualStudio, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Luminous.Code.VisualStudio.1.1.0\lib\net462\Luminous.Code.VisualStudio.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Build.Framework" />
     <Reference Include="Microsoft.CSharp" />
@@ -258,14 +240,16 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="SetDebugProperties, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SetDebugProperties.1.0.0.0\lib\net462\SetDebugProperties.dll</HintPath>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
@@ -289,6 +273,23 @@
       <ManifestResourceName>VSPackage</ManifestResourceName>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\core\Luminous.TimeSavers.Core.csproj">
+      <Project>{10d8b248-a9a7-4a5d-bbf2-55402e59475b}</Project>
+      <Name>Luminous.TimeSavers.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\options\Luminous.TimeSavers.Options.csproj">
+      <Project>{d1fb9b94-bddb-4474-b8c8-fbbc8f0137b1}</Project>
+      <Name>Luminous.TimeSavers.Options</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ui\Luminous.TimeSavers.UI.csproj">
+      <Project>{7012b73a-b0ce-4b42-a52d-b237ccb61627}</Project>
+      <Name>Luminous.TimeSavers.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\packages\Microsoft.VisualStudio.Threading.Analyzers.15.5.32\analyzers\cs\Microsoft.VisualStudio.Threading.Analyzers.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -299,6 +300,10 @@
     <Error Condition="!Exists('..\..\packages\Microsoft.VSSDK.BuildTools.15.0.26201\build\Microsoft.VSSDK.BuildTools.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.VSSDK.BuildTools.15.0.26201\build\Microsoft.VSSDK.BuildTools.targets'))" />
   </Target>
   <Import Project="..\..\packages\Microsoft.VSSDK.BuildTools.15.0.26201\build\Microsoft.VSSDK.BuildTools.targets" Condition="Exists('..\..\packages\Microsoft.VSSDK.BuildTools.15.0.26201\build\Microsoft.VSSDK.BuildTools.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>IF EXIST c:\dev\tools\CreatePrivateGallery.cmd c:\dev\tools\CreatePrivateGallery $(ProjectDir) $(OutDir) $(TargetName) $(ConfigurationName)
+</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

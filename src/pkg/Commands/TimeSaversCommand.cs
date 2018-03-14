@@ -4,7 +4,7 @@ namespace Luminous.TimeSavers.Commands
 {
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
-    using TimeSavers.Options;
+    using Luminous.TimeSavers.Options;
 
     internal abstract class TimeSaversCommand : DynamicCommand, IDisposable
     {
@@ -52,7 +52,7 @@ namespace Luminous.TimeSavers.Commands
             Dispose(true);
         }
 
-        #endregion
+        #endregion IDisposable Support
 
         //***
     }

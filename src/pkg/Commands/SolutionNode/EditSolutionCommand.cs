@@ -4,7 +4,7 @@ using Luminous.Code.VisualStudio.Packages;
 
 namespace Luminous.TimeSavers.Commands.SolutionNode
 {
-    internal sealed class EditSolutionCommand : DynamicCommand
+    internal sealed class EditSolutionCommand : TimeSaversCommand
     {
         //***
         //!!!

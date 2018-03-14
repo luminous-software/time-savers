@@ -5,19 +5,19 @@ namespace Luminous.TimeSavers.Commands.ProjectNode
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
 
-    internal sealed class EditProjectCommand : DynamicCommand
+    internal sealed class EditProjectCommand : TimeSaversCommand
     {
         //***
 
         private static int CommandId
             => PackageIds.EditProjectCommand;
 
-        //!!!
+        //---M
 
         private EditProjectCommand(PackageBase package) : base(package, CommandId)
         { }
 
-        //!!!
+        //---M
 
         public static void Instantiate(PackageBase package)
             => Instantiate(new EditProjectCommand(package));
@@ -33,13 +33,7 @@ namespace Luminous.TimeSavers.Commands.ProjectNode
         {
             get
             {
-                if (!base.IsActive)
-                    return false;
-
-                if (!Package.ProjectIsSelected)
-                    return false;
-
-                return SolutionIsNotBuilding;
+                return (base.IsActive && SolutionIsNotBuilding);
             }
         }
 

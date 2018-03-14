@@ -256,3 +256,4 @@ ModelManifest.xml
 /Gemfile.lock
 /_site
 /.bundle
+/package-lock.json

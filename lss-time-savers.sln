@@ -1,19 +1,46 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.3
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08B276AF-9E6A-4DD9-994F-964CFD71AC29}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\tools\CreatePrivateGallery.cmd = ..\..\..\tools\CreatePrivateGallery.cmd
+		lss-time-savers.favdoc = lss-time-savers.favdoc
+		lss-time-savers.notes.md = lss-time-savers.notes.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers", "src\pkg\Luminous.TimeSavers.csproj", "{A2A22BAD-F136-4409-B37D-1E070E373E3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers.Options", "src\options\Luminous.TimeSavers.Options.csproj", "{D1FB9B94-BDDB-4474-B8C8-FBBC8F0137B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers.Core", "src\core\Luminous.TimeSavers.Core.csproj", "{10D8B248-A9A7-4A5D-BBF2-55402E59475B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers.UI", "src\ui\Luminous.TimeSavers.UI.csproj", "{7012B73A-B0CE-4B42-A52D-B237CCB61627}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B388B43D-55ED-4F06-B651-A7CF5DFF5B01}"
+	ProjectSection(SolutionItems) = preProject
+		docs-source\changelog.md = docs-source\changelog.md
+		docs-source\contributing.md = docs-source\contributing.md
+		docs-source\features.md = docs-source\features.md
+		docs-source\getting-started.md = docs-source\getting-started.md
+		gulpfile.js = gulpfile.js
+		docs-source\index.md = docs-source\index.md
+		docs-source\license.md = docs-source\license.md
+		mkdocs.yml = mkdocs.yml
+		package.json = package.json
+		docs-source\roadmap.md = docs-source\roadmap.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{14C79BB0-FD6F-4021-99DA-1EEDB7AE464B}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		appveyor.yml = appveyor.yml
 		CHANGELOG.md = CHANGELOG.md
 		LICENSE = LICENSE
-		lss-time-savers.favdoc = lss-time-savers.favdoc
+		README.html = README.html
 		README.md = README.md
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers", "src\pkg\Luminous.TimeSavers.csproj", "{A2A22BAD-F136-4409-B37D-1E070E373E3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,8 +52,27 @@ Global
 		{A2A22BAD-F136-4409-B37D-1E070E373E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2A22BAD-F136-4409-B37D-1E070E373E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2A22BAD-F136-4409-B37D-1E070E373E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1FB9B94-BDDB-4474-B8C8-FBBC8F0137B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1FB9B94-BDDB-4474-B8C8-FBBC8F0137B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1FB9B94-BDDB-4474-B8C8-FBBC8F0137B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1FB9B94-BDDB-4474-B8C8-FBBC8F0137B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10D8B248-A9A7-4A5D-BBF2-55402E59475B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10D8B248-A9A7-4A5D-BBF2-55402E59475B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10D8B248-A9A7-4A5D-BBF2-55402E59475B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10D8B248-A9A7-4A5D-BBF2-55402E59475B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7012B73A-B0CE-4B42-A52D-B237CCB61627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7012B73A-B0CE-4B42-A52D-B237CCB61627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7012B73A-B0CE-4B42-A52D-B237CCB61627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7012B73A-B0CE-4B42-A52D-B237CCB61627}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B388B43D-55ED-4F06-B651-A7CF5DFF5B01} = {08B276AF-9E6A-4DD9-994F-964CFD71AC29}
+		{14C79BB0-FD6F-4021-99DA-1EEDB7AE464B} = {08B276AF-9E6A-4DD9-994F-964CFD71AC29}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C837AE99-4FDA-400B-B90A-533B271E55B8}
 	EndGlobalSection
 EndGlobal

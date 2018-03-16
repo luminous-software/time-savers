@@ -1,6 +1,6 @@
-# Contribution Guidelines
+# Contributing
 
-Looking to contribute something? Here's **how** you can help.
+Looking to contribute something? Here's how you can help.
 
 Please take a minute to review these guidelines, so that the contribution
 process is easy and effective for everyone involved.

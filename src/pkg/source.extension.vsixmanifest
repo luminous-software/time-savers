@@ -7,7 +7,7 @@
         <MoreInfo>https://luminous-software.solutions/time-savers</MoreInfo>
         <License>Resources\LICENSE</License>
         <ReleaseNotes>https://github.com/luminous-software/time-savers/blob/master/CHANGELOG.md</ReleaseNotes>
-        <Icon>Resources\icon.png</Icon>
+        <Icon>Resources\logo.png</Icon>
         <PreviewImage>Resources\preview.png</PreviewImage>
         <Tags>luminous,time savers,time-savers,timesavers,visual studio,productivity,guid,guid generator,guid-generator,yannduran,yd</Tags>
     </Metadata>

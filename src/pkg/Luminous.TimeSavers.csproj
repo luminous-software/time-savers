@@ -90,8 +90,12 @@
       <Link>Resources\LICENSE</Link>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Resources\icon.png" />
-    <Content Include="Resources\preview.png" />
+    <Content Include="Resources\logo.png">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Resources\preview.png">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="source.extension.ico">
       <DependentUpon>source.extension.vsixmanifest</DependentUpon>
     </Content>

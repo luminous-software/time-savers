@@ -20,16 +20,14 @@ or get the *CI build* from the [VSIX Gallery][vsix-gallery-url].
 [vs-gallery-url]: https://visualstudiogallery.msdn.microsoft.com/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
 [vsix-gallery-url]: http://vsixgallery.com/extension/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd/
 
-Development | Appveyor | Production
---- | --- | ---
-![VSTS Dev Badge][vsts-dev-badge-url] | ![Appveyor status][appveyor-status] | ![VSTS Prod Badge][vsts-prod-badge-url]
+| Develop | Production |
+| --- | --- |
+| ![Develop Badge][develop-badge-url] | ![Master Badge][master-badge-url] |
 
 See the [change log][changelog-url] for changes, and the [roadmap][roadmap-url] for upcoming features.
 
-[vsts-dev-badge-url]:  https://lumiinus.visualstudio.com/_apis/public/build/definitions/c31b2195-e4da-4ad9-a64c-e1712d313703/14/badge
-[appveyor-status]: https://ci.appveyor.com/api/projects/status/tsf4rxwtgtcub741?svg=true
-[appveyor-url]: https://ci.appveyor.com/project/luminous-software/time-savers
-[vsts-prod-badge-url]: https://lumiinus.visualstudio.com/_apis/public/build/definitions/c31b2195-e4da-4ad9-a64c-e1712d313703/15/badge
+[develop-badge-url]:  https://lumiinus.visualstudio.com/_apis/public/build/definitions/c31b2195-e4da-4ad9-a64c-e1712d313703/14/badge
+[master-badge-url]: https://lumiinus.visualstudio.com/_apis/public/build/definitions/c31b2195-e4da-4ad9-a64c-e1712d313703/15/badge
 
 ---
 

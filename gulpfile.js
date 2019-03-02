@@ -12,7 +12,6 @@ const config = {
     folder: 'site',
     push: 'false',
     force: 'false',
-    //commit: 'Automatic commit text',
     user: {
         email: 'yd@live.com.au',
         name: 'Yann Duran'
@@ -21,12 +20,21 @@ const config = {
     port: '8004'
 };
 
+const consts = {
+    address: config.address + ':' + config.port
+};
+
+const options = {
+    pretty_format: '--pretty=format:"  * %s"'
+};
+
 const script = {
     build: 'mkdocs build',
     serve: 'mkdocs serve --dev-addr=' + config.address + ':' + config.port,
 
-    changes: 'git log -n 1 HEAD --pretty=format:"  * %s"',
-    log: 'git log HEAD --pretty=format:"  * %s"'
+    log: 'echo. && git log HEAD ' + options.pretty_format,
+    changes: 'echo. && git log -n 1 HEAD ' + options.pretty_format,
+    features: 'echo. && git log HEAD --grep="^feature" --no-merges ' + options.pretty_format
 };
 
 gulp.task('log', function (cb) {
@@ -39,6 +47,14 @@ gulp.task('log', function (cb) {
 
 gulp.task('changes', function (cb) {
     exec(script.changes, function (err, stdout, stderr) {
+        gulp_util.log(stdout);
+        gulp_util.log(stderr);
+        cb(err);
+    });
+});
+
+gulp.task('features', function (cb) {
+    exec(script.features, function (err, stdout, stderr) {
         gulp_util.log(stdout);
         gulp_util.log(stderr);
         cb(err);
@@ -65,14 +81,5 @@ gulp.task('serve', function (cb) {
     });
     opn('http://' + address);
 });
-
-//gulp.task('deploy', ['build'], function () { // removes custom domain
-//    return gulp.src('/**/*')
-//        .pipe(ghPages({
-//            remoteUrl: config.repo,
-//            remote: config.remote,
-//            branch: config.branch
-//        }));
-//});
 
 gulp.task('default', ['build', 'deploy']);

@@ -22,9 +22,9 @@ namespace Luminous.TimeSavers.Options
         [Description("Installed " + TimeSavers + " version")]
         public string TimeSaversVersion { get; } = Vsix.Version;
 
-        [Category(H2 + "Luminous Browser")]
-        [DisplayName("Maximum Windows Open")]
-        [Description("Defines how many Luminous Browser windows can be open at any time")]
-        public int MaxBrowserWindows { get; set; } = 100;
+        //[Category(H2 + "Luminous Browser")]
+        //[DisplayName("Maximum Windows Open")]
+        //[Description("Defines how many Luminous Browser windows can be open at any time")]
+        //public int MaxBrowserWindows { get; set; } = 100;
     }
 }

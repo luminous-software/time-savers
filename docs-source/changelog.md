@@ -1,6 +1,6 @@
 ## Public Releases
 
-### v2.2.1 - _2018-03-12_
+### v2.3.0 - _2018-03-12_
   - Added basic documentation to the website
     - https://luminous-software.solutions/time-savers
 

@@ -40,7 +40,7 @@ namespace Luminous.TimeSavers.Options
         [DisplayName(Enable + Space + PathVariables)]
         [Description("Displays the current system '" + PathVariables + "'")]
         [DefaultValue(true)]
-        public bool PathVariablsCommandEnabled { get; set; } = true;
+        public bool PathVariablesCommandEnabled { get; set; } = true;
 
         //---
 

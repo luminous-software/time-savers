@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudio.Shell.Interop;
-using Microsoft.VisualStudio.Threading;
 using orientation = Microsoft.VisualStudio.Shell.ToolWindowOrientation;
 
 using static Microsoft.VisualStudio.Shell.Interop.UIContextGuids80;
@@ -21,7 +19,6 @@ namespace Luminous.TimeSavers
     using Commands.ProjectNode;
     using Commands.Developer;
     using Options;
-    using Events;
     using UI.PathVariables;
 
     //using UI.BrowserWindow;
@@ -52,10 +49,10 @@ namespace Luminous.TimeSavers
         private VisualStudioDialogPage _visualStudioOptions;
 
         public BuildDialogPage BuildOptions
-            => _buildOptions ?? (_buildOptions = GetDialogPage(typeof(BuildDialogPage)) as BuildDialogPage);
+            => _buildOptions ?? (_buildOptions = GetDialogPage<BuildDialogPage>());
 
         public VisualStudioDialogPage VisualStudioOptions
-            => _visualStudioOptions ?? (_visualStudioOptions = GetDialogPage(typeof(VisualStudioDialogPage)) as VisualStudioDialogPage);
+            => _visualStudioOptions ?? (_visualStudioOptions = GetDialogPage<VisualStudioDialogPage>());
 
         public PackageClass() : base(PackageCommandSet, Name, Description)
         { }
@@ -74,7 +71,7 @@ namespace Luminous.TimeSavers
             InstantiateSolutionCommands();
             InstantiateProjectCommands();
 
-            AdviseSolutionEvents(new VsSolutionEvents(this));
+            //AdviseSolutionEvents(new VsSolutionEvents(this));
         }
 
         private void InstantiateProjectCommands()
@@ -131,18 +128,18 @@ namespace Luminous.TimeSavers
 
         //TODO: move to framework
         //YD: what about unadvise?
-        private static void AdviseSolutionEvents(IVsSolutionEvents vsSolutionEvents)
-        {
-            var vsSolution = GetGlobalService<SVsSolution, IVsSolution>();
+        //        private static void AdviseSolutionEvents(IVsSolutionEvents vsSolutionEvents)
+        //        {
+        //            var vsSolution = GetGlobalService<SVsSolution, IVsSolution>();
 
-#pragma warning disable VSTHRD102 // Implement internal logic asynchronously
-            ThreadHelper.JoinableTaskFactory.Run(async delegate
-#pragma warning restore VSTHRD102 // Implement internal logic asynchronously
-            {
-                await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+        //#pragma warning disable VSTHRD102 // Implement internal logic asynchronously
+        //            ThreadHelper.JoinableTaskFactory.Run(async delegate
+        //#pragma warning restore VSTHRD102 // Implement internal logic asynchronously
+        //            {
+        //                await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
 
-                vsSolution.AdviseSolutionEvents(vsSolutionEvents, out uint solutionEventsCookie);
-            });
-        }
+        //                vsSolution.AdviseSolutionEvents(vsSolutionEvents, out var solutionEventsCookie);
+        //            });
+        //        }
     }
 }

@@ -7,18 +7,11 @@ namespace Luminous.TimeSavers.Commands.Build
 
     internal sealed class CancelBuildCommand : BuildCommand
     {
-        //***
-        //!!!
-
         private CancelBuildCommand(PackageBase package) : base(package, PackageIds.CancelBuildCommand)
         { }
 
-        //!!!
-
         public static void Instantiate(PackageBase package)
             => Instantiate(new CancelBuildCommand(package));
-
-        //---
 
         protected override bool CanExecute
         => base.CanExecute && BuildOptions.CancelBuildCommandEnabled;
@@ -31,11 +24,7 @@ namespace Luminous.TimeSavers.Commands.Build
                 .ShowProblem()
                 .ShowInformation();
 
-        //---
-
-        private CommandResult ExecuteCommand()
+        private static CommandResult ExecuteCommand()
             => Package?.CancelBuild();
-
-        //***
     }
 }

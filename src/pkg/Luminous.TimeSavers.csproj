@@ -47,6 +47,7 @@
     <Compile Include="Commands\Developer\DeveloperCommand.cs" />
     <Compile Include="Commands\General\BrowserWindowCommand.cs" />
     <Compile Include="Commands\Insert\InsertCommand.cs" />
+    <Compile Include="Commands\Options\OptionsCommand.cs" />
     <Compile Include="Commands\TimeSaversCommand.cs" />
     <Compile Include="Commands\Build\BuildCommand.cs" />
     <Compile Include="Commands\Developer\ActivityLogCommand.cs" />

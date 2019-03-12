@@ -13,35 +13,26 @@ namespace Luminous.TimeSavers.Commands.Developer
 
     using static Luminous.Code.VisualStudio.Commands.CommandKeys;
 
-    internal sealed class DiagnosticLogCommand : TimeSaversCommand
+    internal sealed class DiagnosticLogCommand : DeveloperCommand
     {
-        //***
-
         private static int CommandId
             => PackageIds.DiagnosticLogCommand;
-
-        //!!!
 
         private DiagnosticLogCommand(PackageBase package) : base(package, CommandId)
         { }
 
-        //!!!
-
         public static void Instantiate(PackageBase package)
             => Instantiate(new DiagnosticLogCommand(package));
-
-        //---
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()
                 .ShowProblem()
                 .ShowInformation();
 
-        //---
+        protected override bool CanExecute
+            => base.CanExecute && DeveloperOptions.DiagnosticLogCommandEnabled;
 
-        //UserLocalDataPath = C:/Users/Yann/AppData/Local/Microsoft/VisualStudio/14.0Exp/
-
-        private CommandResult ExecuteCommand()
+        private static CommandResult ExecuteCommand()
         {
             try
             {
@@ -56,21 +47,14 @@ namespace Luminous.TimeSavers.Commands.Developer
                     select file
                     ).FirstOrDefault();
 
-                if (fi == null)
-                {
-                    return new InformationResult("No diagnostic log found");
-                }
-
-                var filename = fi.FullName;
-
-                return Package?.ExecuteCommand(ViewWebBrowser, filename, problem: "Unable to view '{filename}'");
+                return (fi == null)
+                    ? new InformationResult("No diagnostic log found")
+                    : Package?.ExecuteCommand(ViewWebBrowser, fi.FullName, problem: "Unable to view '{filename}'");
             }
             catch (Exception ex)
             {
                 return new ProblemResult(ex.ExtendedMessage());
             }
         }
-
-        //***
     }
 }

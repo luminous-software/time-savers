@@ -5,6 +5,8 @@ namespace Luminous.TimeSavers.Commands.VisualStudio
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
 
+    using static Luminous.Code.VisualStudio.Constants.VsVersions;
+
     internal sealed class ManageExtensionsCommand : VisualStudioCommand
     {
         private ManageExtensionsCommand(PackageBase package) : base(package, PackageIds.ManageExtensionsCommand)
@@ -22,6 +24,18 @@ namespace Luminous.TimeSavers.Commands.VisualStudio
                 .ShowInformation();
 
         private CommandResult ExecuteCommand()
-            => Package?.OpenExtensionsAndUpdates();
+        {
+            var currentVersion = Package?.VsVersion;
+
+            switch (currentVersion)
+            {
+                case Vs2017:
+                    return Package?.OpenExtensionsAndUpdates();
+
+                case Vs2019:
+                default:
+                    return Package?.OpenManageExtensions();
+            }
+        }
     }
 }

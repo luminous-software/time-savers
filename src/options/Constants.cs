@@ -31,6 +31,7 @@
 
         public const string VisualStudioFeatureSet = VisualStudio + Space + FeatureSet;
         public const string ReopenStartPage = "Reopen Start Page";
+        public const string ManageExtensions = "Manage Extensions";
         public const string RestartVisualStudio = Restart + Space + VisualStudio;
         public const string RestartVisualStudioAsAdmin = RestartVisualStudio + Space + AsAdmin;
 

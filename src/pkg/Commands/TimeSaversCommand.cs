@@ -5,7 +5,7 @@ namespace Luminous.TimeSavers.Commands
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
 
-    using Luminous.TimeSavers.Options;
+    using Luminous.TimeSavers.Options.Pages;
 
     internal abstract class TimeSaversCommand : DynamicCommand, IDisposable
     {

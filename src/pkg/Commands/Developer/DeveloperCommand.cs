@@ -1,7 +1,7 @@
 ﻿namespace Luminous.TimeSavers.Commands.Developer
 {
     using Luminous.Code.VisualStudio.Packages;
-    using Luminous.TimeSavers.Options;
+    using Luminous.TimeSavers.Options.Pages;
 
     internal abstract class DeveloperCommand : TimeSaversCommand
     {

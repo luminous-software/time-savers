@@ -4,7 +4,7 @@ namespace Luminous.TimeSavers.Commands.Options
 {
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
-    using TimeSavers.Options;
+    using TimeSavers.Options.Pages;
 
     internal sealed class TimeSaversOptionsCommand : OptionsCommand
     {

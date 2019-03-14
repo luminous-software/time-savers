@@ -1,11 +1,9 @@
 ﻿using System;
 
-namespace Luminous.TimeSavers.Options
+namespace Luminous.TimeSavers.Options.Constants
 {
-    public static class Guids
+    public static class OptionGuids
     {
-        //internal const string CustomOptionsPage = "{1D9ECCF3-5D2F-4112-9B25-264596873DC9}";
-
         internal const string GeneralDialogPageString = "dcbbd0f7-6463-48f4-9c86-1ce95ef7c1a2";
         internal const string BuildDialogPageString = "e967a459-0b9e-4222-ba52-a66496edaee3";
         internal const string DeveloperDialogPageString = "7a9f803b-96de-4d30-b1cd-590443192092";

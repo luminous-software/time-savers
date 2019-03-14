@@ -1,8 +1,8 @@
-﻿namespace Luminous.TimeSavers.Options
+﻿namespace Luminous.TimeSavers.Options.Constants
 {
     using static Core.Constants;
 
-    internal static class Constants
+    internal static class OptionConstants
     {
         public const string H1 = "1." + Space;
         public const string H2 = "2." + Space;
@@ -17,7 +17,7 @@
 
         public const string TimeSavers = "Time Savers";
         public const string TimeSaversFeatureSet = TimeSavers + Space + FeatureSet;
-        public const string TimeSaversVersion = "Version Number";
+        public const string TimeSaversVersionNumber = "Version Number";
 
         public const string BuildFeatureSet = Build + Space + FeatureSet;
         public const string RebuildSolution = "Rebuild Solution";

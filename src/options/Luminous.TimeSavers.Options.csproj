@@ -39,24 +39,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\pkg\source.extension.cs">
-      <Link>source.extension.cs</Link>
+      <Link>Constants\source.extension.cs</Link>
     </Compile>
-    <Compile Include="BuildDialogPage.cs">
+    <Compile Include="Pages\BuildDialogPage.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Constants.cs" />
-    <Compile Include="DeveloperDialogPage.cs">
+    <Compile Include="Constants\OptionConstants.cs" />
+    <Compile Include="Pages\DeveloperDialogPage.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="GeneralDialogPage.cs">
+    <Compile Include="Pages\GeneralDialogPage.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Guids.cs" />
-    <Compile Include="OptionsDialogPage.cs">
+    <Compile Include="Constants\OptionGuids.cs" />
+    <Compile Include="Pages\OptionsDialogPage.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VisualStudioDialogPage.cs">
+    <Compile Include="Pages\VisualStudioDialogPage.cs">
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>

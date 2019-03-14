@@ -1,13 +1,12 @@
 ﻿using System.ComponentModel;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
-using Luminous.TimeSavers;
 
-namespace Luminous.TimeSavers.Options
+namespace Luminous.TimeSavers.Options.Pages
 {
     using static Core.Constants;
-    using static Guids;
-    using static Constants;
+    using static Constants.OptionGuids;
+    using static Constants.OptionConstants;
 
     [Guid(VisualStudioDialogPageString)]
     public class VisualStudioDialogPage : DialogPage

@@ -2,14 +2,15 @@
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
 
-namespace Luminous.TimeSavers.Options
+namespace Luminous.TimeSavers.Options.Pages
 {
     using static Core.Constants;
-    using static Constants;
+    using static Constants.OptionConstants;
+    using static Constants.OptionGuids;
 
     [ClassInterface(ClassInterfaceType.AutoDual)]
     [ComVisible(true)]
-    [Guid(Guids.GeneralDialogPageString)]
+    [Guid(GeneralDialogPageString)]
     public class GeneralDialogPage : DialogPage
     {
         [Category(H1 + TimeSavers)]
@@ -18,13 +19,8 @@ namespace Luminous.TimeSavers.Options
         public bool TimeSaversEnabled { get; set; } = true;
 
         [Category(H1 + TimeSavers)]
-        [DisplayName(Constants.TimeSaversVersion)]
+        [DisplayName(TimeSaversVersionNumber)]
         [Description("Installed " + TimeSavers + " version")]
         public string TimeSaversVersion { get; } = Vsix.Version;
-
-        //[Category(H2 + "Luminous Browser")]
-        //[DisplayName("Maximum Windows Open")]
-        //[Description("Defines how many Luminous Browser windows can be open at any time")]
-        //public int MaxBrowserWindows { get; set; } = 100;
     }
 }

@@ -99,7 +99,7 @@ namespace Luminous.TimeSavers
 
         private void InstantiateVisualStudioCommands()
         {
-            ExtensionsAndUpdatesCommand.Instantiate(this);
+            ManageExtensionsCommand.Instantiate(this);
         }
 
         private void InstantiateDeveloperCommands()

@@ -58,7 +58,7 @@
     <Compile Include="Commands\ProjectNode\EditProjectCommand.cs" />
     <Compile Include="Commands\SolutionNode\EditSolutionCommand.cs" />
     <Compile Include="Commands\VisualStudio\VisualStudioCommand.cs" />
-    <Compile Include="Commands\VisualStudio\ExtensionsAndUpdatesCommand.cs" />
+    <Compile Include="Commands\VisualStudio\ManageExtensionsCommand.cs" />
     <Compile Include="Commands\Insert\InsertGuidCommand.cs" />
     <Compile Include="Commands\Options\KeyboardOptionsCommand.cs" />
     <Compile Include="Commands\Build\RebuildSolutionCommand.cs" />

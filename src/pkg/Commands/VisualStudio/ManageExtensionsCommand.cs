@@ -5,18 +5,18 @@ namespace Luminous.TimeSavers.Commands.VisualStudio
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
 
-    internal sealed class ExtensionsAndUpdatesCommand : TimeSaversCommand
+    internal sealed class ManageExtensionsCommand : TimeSaversCommand
     {
         //***
         //!!!
 
-        private ExtensionsAndUpdatesCommand(PackageBase package) : base(package, PackageIds.ExtensionsAndUpdatesCommand)
+        private ManageExtensionsCommand(PackageBase package) : base(package, PackageIds.ManageExtensionsCommand)
         { }
 
         //!!!
 
         public static void Instantiate(PackageBase package)
-            => Instantiate(new ExtensionsAndUpdatesCommand(package));
+            => Instantiate(new ManageExtensionsCommand(package));
 
         //---
 

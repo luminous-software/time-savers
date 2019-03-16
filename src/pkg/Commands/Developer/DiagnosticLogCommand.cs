@@ -47,9 +47,9 @@ namespace Luminous.TimeSavers.Commands.Developer
                     select file
                     ).FirstOrDefault();
 
-                return (fi == null)
-                    ? new InformationResult("No diagnostic log found")
-                    : Package?.ExecuteCommand(ViewWebBrowser, fi.FullName, problem: "Unable to view '{filename}'");
+                return fi != null
+                    ? Package?.OpenTextFile(fi.FullName, problem: "Unable to view '{filename}'")
+                    : new InformationResult("No diagnostic log found");
             }
             catch (Exception ex)
             {

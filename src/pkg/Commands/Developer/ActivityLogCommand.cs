@@ -28,6 +28,6 @@ namespace Luminous.TimeSavers.Commands.Developer
                 .ShowInformation();
 
         private static CommandResult ExecuteCommand()
-            => Package?.ExecuteCommand(ViewWebBrowser, Path, problem: "Unable to view activity log");
+            => Package?.OpenFileInBrowser(Path, problem: "Unable to view activity log");
     }
 }

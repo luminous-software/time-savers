@@ -40,7 +40,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <PackageReference Include="Luminous.Code.VisualStudio">
-      <Version>1.1.0.9</Version>
+      <Version>1.1.0.13</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.SDK" Version="15.9.3" ExcludeAssets="runtime" />
   </ItemGroup>

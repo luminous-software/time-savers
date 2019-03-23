@@ -5,8 +5,6 @@ namespace Luminous.TimeSavers.Commands.Developer
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
 
-    using static Luminous.Code.VisualStudio.Commands.CommandKeys;
-
     internal sealed class ActivityLogCommand : DeveloperCommand
     {
         private static string Path

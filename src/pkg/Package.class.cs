@@ -32,11 +32,8 @@ namespace Luminous.TimeSavers
     [InstalledProductRegistration(Name, Description, Version, IconResourceID = 400)]
     [Guid(PackageString)]
 
-    [ProvideAutoLoad(NoSolution)]
-    [ProvideAutoLoad(SolutionExists)]
-
-    //[ProvideToolWindow(typeof(PathVariablesToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
-    //[ProvideToolWindow(typeof(BrowserWindowToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
+    //[ProvideAutoLoad(NoSolution)]
+    //[ProvideAutoLoad(SolutionExists)]
 
     [ProvideOptionPage(typeof(GeneralDialogPage), Name, General, 0, 0, supportsAutomation: false)]
     [ProvideOptionPage(typeof(BuildDialogPage), Name, Build, 0, 0, supportsAutomation: false)]

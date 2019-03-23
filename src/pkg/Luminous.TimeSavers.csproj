@@ -47,6 +47,7 @@
     <DeployExtension>True</DeployExtension>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Commands\Developer\DeveloperCommand.cs" />
     <Compile Include="Commands\General\BrowserWindowCommand.cs" />
     <Compile Include="Commands\Insert\InsertCommand.cs" />
@@ -78,7 +79,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Package.vsct</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="source.extension.cs">
       <DependentUpon>source.extension.vsixmanifest</DependentUpon>
     </Compile>

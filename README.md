@@ -1,4 +1,4 @@
-# Luminous Time Savers
+# Time Savers
 
 ![Version][version-badge-url]
 ![Installs][installs-badge-url]
@@ -75,7 +75,7 @@ And of course you can add your own keyboard shortcut to any of the *Time Savers*
 
 ## More Information
 
-See the [Luminous Time Savers][website-url] website, or click any of the links below:
+See the [Time Savers][website-url] website, or click any of the links below:
 
 - [How to Get Started][how-to-get-started-url]
 - [List of Features][features-url]

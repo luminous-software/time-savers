@@ -6,6 +6,7 @@
     <Description xml:space="preserve">TimeSavers =&gt; { developerProductivity++; }</Description>
     <MoreInfo>https://luminous-software.solutions/time-savers</MoreInfo>
     <License>Resources\LICENSE</License>
+    <GettingStartedGuide>https://luminous-software.solutions/time-savers/getting-started/</GettingStartedGuide>
     <ReleaseNotes>https://luminous-software.solutions/time-savers/changelog/</ReleaseNotes>
     <Icon>Resources\logo.png</Icon>
     <PreviewImage>Resources\preview.png</PreviewImage>

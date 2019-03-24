@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
-using orientation = Microsoft.VisualStudio.Shell.ToolWindowOrientation;
-
-using static Microsoft.VisualStudio.Shell.Interop.UIContextGuids80;
-using static Microsoft.VisualStudio.Shell.VsDockStyle;
-using static EnvDTE.Constants;
 
 namespace Luminous.TimeSavers
 {
@@ -19,21 +14,13 @@ namespace Luminous.TimeSavers
     using Commands.ProjectNode;
     using Commands.Developer;
     using Options.Pages;
-    //using UI.PathVariables;
-
-    //using UI.BrowserWindow;
 
     using static Core.Constants;
     using static PackageGuids;
     using static Vsix;
 
-    //YD ProvideProfile - for persistence?
-
     [InstalledProductRegistration(Name, Description, Version, IconResourceID = 400)]
     [Guid(PackageString)]
-
-    //[ProvideAutoLoad(NoSolution)]
-    //[ProvideAutoLoad(SolutionExists)]
 
     [ProvideOptionPage(typeof(GeneralDialogPage), Name, General, 0, 0, supportsAutomation: false)]
     [ProvideOptionPage(typeof(BuildDialogPage), Name, Build, 0, 0, supportsAutomation: false)]
@@ -67,8 +54,6 @@ namespace Luminous.TimeSavers
             InstantiateOptionsCommands();
             InstantiateSolutionCommands();
             InstantiateProjectCommands();
-
-            //AdviseSolutionEvents(new VsSolutionEvents(this));
         }
 
         private void InstantiateProjectCommands()
@@ -122,21 +107,5 @@ namespace Luminous.TimeSavers
         {
             InsertGuidCommand.Instantiate(this);
         }
-
-        //TODO: move to framework
-        //YD: what about unadvise?
-        //        private static void AdviseSolutionEvents(IVsSolutionEvents vsSolutionEvents)
-        //        {
-        //            var vsSolution = GetGlobalService<SVsSolution, IVsSolution>();
-
-        //#pragma warning disable VSTHRD102 // Implement internal logic asynchronously
-        //            ThreadHelper.JoinableTaskFactory.Run(async delegate
-        //#pragma warning restore VSTHRD102 // Implement internal logic asynchronously
-        //            {
-        //                await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-
-        //                vsSolution.AdviseSolutionEvents(vsSolutionEvents, out var solutionEventsCookie);
-        //            });
-        //        }
     }
 }

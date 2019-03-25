@@ -2,7 +2,7 @@
 site_name: 'Time Savers'
 site_description: 'Documentation for Time Savers (Visual Studio extension)'
 site_author: 'Yann Duran'
-copyright: 'Copyright &copy 2016 Luminous Software Solutions'
+copyright: 'Copyright &copy 2019 Luminous Software Solutions'
 site_url: 'https://luminous-software.solutions/time-savers'
 site_dir: 'docs'
 docs_dir: 'docs-source'

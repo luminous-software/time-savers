@@ -39,8 +39,8 @@ Every feature of *Time Savers* was created specifically to enhance development p
 
 If you find this extension useful, please come back and show your support:
 - by [***rating *Time Savers****][rate-or-review-url] (only takes a couple of seconds)
-- or [***reviewing *Time Savers****][rate-or-review-url] (help others by {YD})
-- or [***shout me a coke***](https://www.paypal.me/yannduran/5) (as I don't drink coffee lol)
+- or [***reviewing *Time Savers****][rate-or-review-url] (help others by sharing your experience)
+- or [***shout me a coke***](https://www.paypal.me/yannduran/5) (as I don't drink coffee or beer lol)
 
 [rate-or-review-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd#review-details
 
@@ -77,17 +77,17 @@ And of course you can add your own keyboard shortcut to any of the *Time Savers*
 
 See the [Time Savers][website-url] website, or click any of the links below:
 
-- [How to Get Started][how-to-get-started-url]
-- [List of Features][features-url]
+- [Getting Started][getting-started-url]
+- [Features][features-url]
 - [Change Log][changelog-url]
-- [What's Coming][whats-coming-url]
-- [License Details][license-url]
+- [Roadmap][roadmap-url]
+- [License][license-url]
 
 [website-url]: https://luminous-software.solutions/time-savers
 [features-url]: http://luminous-software.solutions/time-savers/#features
-[how-to-get-started-url]: http://luminous-software.solutions/time-savers/getting-started
+[getting-started-url]: http://luminous-software.solutions/time-savers/getting-started
 [changelog-url]: http://luminous-software.solutions/time-savers/changelog
-[whats-coming-url]: http://luminous-software.solutions/time-savers/roadmap
+[roadmap-url]: http://luminous-software.solutions/time-savers/roadmap
 
 ---
 

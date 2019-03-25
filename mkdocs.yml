@@ -1,8 +1,8 @@
 # project
-site_name: 'Luminous Time Savers'
-site_description: 'Documentation for Luminous Time Savers (Visual Studio extension)'
+site_name: 'Time Savers'
+site_description: 'Documentation for Time Savers (Visual Studio extension)'
 site_author: 'Yann Duran'
-copyright: 'Copyright &copy Luminous Software Solutions'
+copyright: 'Copyright &copy 2019 Luminous Software Solutions'
 site_url: 'https://luminous-software.solutions/time-savers'
 site_dir: 'docs'
 docs_dir: 'docs-source'
@@ -33,8 +33,8 @@ theme:
 
 # layout
 pages:
-    - Why Luminous Time Savers?: 'index.md'
-    - How to Get Started: 'getting-started.md'
+    - Why Time Savers?: 'index.md'
+    - Getting Started: 'getting-started.md'
     - Features: 'features.md'
     - Change Log: 'changelog.md'
     - What's Coming: 'roadmap.md'

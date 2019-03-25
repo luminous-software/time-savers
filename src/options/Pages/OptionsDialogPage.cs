@@ -3,26 +3,21 @@ using System.ComponentModel;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
 
-namespace Luminous.TimeSavers.Options
+namespace Luminous.TimeSavers.Options.Pages
 {
     using static Core.Constants;
-    using static Constants;
+    using static Constants.OptionConstants;
+    using static Constants.OptionGuids;
 
     [ClassInterface(ClassInterfaceType.AutoDual)]
     [ComVisible(true)]
-    [Guid(Guids.OptionsDialogPageString)]
+    [Guid(OptionsDialogPageString)]
     public class OptionsDialogPage : DialogPage
     {
-        //***
-        //!!!
-        //!!!
-
         [Category(H1 + OptionsFeatureSet)]
         [DisplayName(Enable + Space + FeatureSet)]
         [Description("Allows the whole set of " + Options + " features to be turned on/off together")]
         public bool OptionsCommandsEnabled { get; set; } = true;
-
-        //---
 
         [Category(H2 + Features)]
         [DisplayName(Enable + Space + TimeSaversOptions)]
@@ -35,7 +30,5 @@ namespace Luminous.TimeSavers.Options
         [Description("Displays the Tools | Options | Environment | Keyboard options page")]
         [DefaultValue(true)]
         public bool KeyboardOptionsCommandEnabled { get; set; } = true;
-
-        //***
     }
 }

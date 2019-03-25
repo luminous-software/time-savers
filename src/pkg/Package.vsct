@@ -176,6 +176,7 @@
 
       <!--~~~ General ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+      <!--
       <Button guid="PackageCommandSet" id="BrowserWindowCommand" type="Button" priority="0x0010">
         <Parent guid="PackageCommandSet" id="GeneralGroup" />
         <Icon guid="ImageCatalogGuid" id="ActiveEnvironment" />
@@ -187,6 +188,7 @@
           <ButtonText>Browser Window</ButtonText>
         </Strings>
       </Button>
+      -->
 
       <Button guid="PackageCommandSet" id="InsertGuidCommand" type="Button" priority="0x0020">
         <Parent guid="PackageCommandSet" id="GeneralGroup" />
@@ -291,16 +293,16 @@
 
       <!--~~~ Visual Studio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-      <Button guid="PackageCommandSet" id="ExtensionsAndUpdatesCommand" type="Button" priority="0x0001">
+      <Button guid="PackageCommandSet" id="ManageExtensionsCommand" type="Button" priority="0x0001">
         <Parent guid="PackageCommandSet" id="VisualStudioGroup" />
         <Icon guid="ImageCatalogGuid" id="CSExtension" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
-          <CommandName>ExtensionsAndUpdates</CommandName>
-          <CanonicalName>ExtensionsAndUpdates</CanonicalName>
-          <LocCanonicalName>ExtensionsAndUpdates</LocCanonicalName>
-          <ButtonText>Extensions And Updates</ButtonText>
+          <CommandName>ManageExtensions</CommandName>
+          <CanonicalName>ManageExtensions</CanonicalName>
+          <LocCanonicalName>ManageExtensions</LocCanonicalName>
+          <ButtonText>Manage Extensions</ButtonText>
         </Strings>
       </Button>
 
@@ -505,7 +507,7 @@
 
       <IDSymbol name="VisualStudioGroup" value="0x0840" />
 
-      <IDSymbol name="ExtensionsAndUpdatesCommand" value="0x0845" />
+      <IDSymbol name="ManageExtensionsCommand" value="0x0845" />
 
       <!--~~~ Restart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 

@@ -19,21 +19,21 @@ They may, or may not, end up being added into _Time Savers_.
 ## Contributions
 
 If you'd like to implement one of the the _FI's_ from the _feature backlog_,
-feel free to [open an _Issue_ on GitHub][github-issue-pbi] (with the same name as the feature), 
+feel free to [open an _Issue_ on GitHub][github-issue-fi] (with the same name as the feature),
 and we can start a discussion there. We can then work toward developing a pull request,
 so the implemented feature can be incorporated into *Time Savers*.
 
 Don't forget to check out the [Contribution Guidelines][contribution-guidelines].
 
 [clean-hive-and-debug]: https://marketplace.visualstudio.com/items?itemName=JohnMcBride.CleanHiveandDebugforExtensionDevelopers
-[github-issue-pbi]: https://github.com/luminous-software/time-savers/issues/new?title=Contribute%20to%20PBI%3A%20
-[contribution-guidelines]: contributing.md 
+[github-issue-fi]: https://github.com/luminous-software/time-savers/issues/new?title=&body=&label=enhancement
+[contribution-guidelines]: https://github.com/luminous-software/time-savers/blob/master/.github/CONTRIBUTING.md
 
 ## Beta Features
 
 _Beta features_ are _FI's_ that have actually had code written for them,
-and are waiting for that code to be thoroughly tested. 
-You can participate in the testing phase by downloading the _CI build_ mentioned below.
+and are waiting for that code to be thoroughly tested.
+You can participate in the testing phase by downloading the _CI build_.
 You can install it on your own machine, and confirm that it does what it's supposed to do.
 If you do find a problem, you can create a [Bug Report on GitHub][github-issue-bug-report].
 
@@ -49,13 +49,12 @@ Once bug fixes have been fully tested, they'll be included in the *next public r
 
 >There are no bug fixes that need testing at the moment
 
-
-[![time-savers MyGet Build Status](https://www.myget.org/BuildSource/Badge/time-savers?identifier=648f86dc-b6fc-47cf-a9a8-06951c0f6418)](https://www.myget.org/)
-
+<!--[![time-savers MyGet Build Status](https://www.myget.org/BuildSource/Badge/time-savers?identifier=648f86dc-b6fc-47cf-a9a8-06951c0f6418)](https://www.myget.org/)
+-->
 <!--
 ## Continuous Integration
 
-The CI build is the build from the continous integration process. 
+The CI build is the build from the continous integration process.
 The resultant VSIX file is then uploaded to the [VSIX Gallery][vsix-gallery] for you to download.
 ![VSTS Status](https://lumiinus.visualstudio.com/_apis/public/build/definitions/c31b2195-e4da-4ad9-a64c-e1712d313703/15/badge)
 ![(Build status)][appveyor-status]

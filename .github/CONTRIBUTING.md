@@ -1,5 +1,6 @@
 # Contributing
-Looking to contribute something? **Here's how you can help.**
+Looking to contribute something? Here's how you can help.
+
 Please take a minute to review these guidelines, so that the contribution
 process is easy and effective for everyone involved.
 
@@ -9,7 +10,6 @@ The issue tracker is the preferred channel for
 [bug reports](#bug-reports),
 [features requests](#feature-requests) and
 [submitting pull requests](#pull-requests),
-
 but please respect the following requests:
 - Please **do not** use the issue tracker for personal support requests.
 - Please try to keep the discussion on topic
@@ -30,11 +30,11 @@ Guidelines for bug reports:
     or creating a sample GitHub repository is also helpful.
 
 A good bug report shouldn't need to be chased up for more information.
-Please try to be as detailed as possible. 
+Please try to be as detailed as possible.
 
 - What's your OS version?
 - What version of Visual Studio are you using?
-- What steps will reproduce the issue? 
+- What steps will reproduce the issue?
 - What would you expect to happen?
 - What does actually happen?
 
@@ -70,11 +70,14 @@ Please provide as much detail and context as possible.
 ## Pull Requests
 Good pull requests, improvements and new features are a great help.
 But they should remain focused, avoiding any unrelated commits.
+
 **Please ask first** before embarking on any significant pull request (e.g.
 implementing features, refactoring code), otherwise you risk spending a lot of time
 working on something that might not end up being merged into the project.
+
 Please try to follow the [coding guidelines](#code-guidelines) used throughout the
 project (same indentation, accurate comments, etc).
+
 Using to the following process is the best way to get your work included in the project:
 
 1. [Fork](http://help.github.com/fork-a-repo/) the project, clone your fork,
@@ -85,7 +88,7 @@ Using to the following process is the best way to get your work included in the 
     git clone https://github.com/<your-username>/time-savers.git
     # Navigate to the newly cloned directory
     cd <folder-name>
-   
+
     # Assign the original repo to a remote called "upstream"
     git remote add upstream https://github.com/luminous-software/time-savers.git
     ```
@@ -107,13 +110,13 @@ Using to the following process is the best way to get your work included in the 
 4. Commit your changes in logical chunks. Please try to follow these
     [git commit message guidelines][git-commit-message-guidelines]
     or your code is unlikely be merged into the main project.
-   
+
     Use Git's [interactive rebase][git-interactive-rebase] feature
     to tidy up your commits before making them public.
-    Also, add the name of the feature to the beginning of the commit message. 
-   
+    Also, add the name of the feature to the beginning of the commit message.
+
     For example: "SCSS: Fixes compiler results for IFileListener.\nFixes `#123`"
-    
+
     [git-commit-message-guidelines]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
     [git-interactive-rebase]: https://help.github.com/articles/interactive-rebase
 

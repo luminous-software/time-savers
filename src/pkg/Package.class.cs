@@ -1,13 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
-using Microsoft.VisualStudio.Shell.Interop;
-using Microsoft.VisualStudio.Threading;
-using orientation = Microsoft.VisualStudio.Shell.ToolWindowOrientation;
-
-using static Microsoft.VisualStudio.Shell.Interop.UIContextGuids80;
-using static Microsoft.VisualStudio.Shell.VsDockStyle;
-using static EnvDTE.Constants;
 
 namespace Luminous.TimeSavers
 {
@@ -20,26 +13,14 @@ namespace Luminous.TimeSavers
     using Commands.SolutionNode;
     using Commands.ProjectNode;
     using Commands.Developer;
-    using Options;
-    using Events;
-    using UI.PathVariables;
-
-    //using UI.BrowserWindow;
+    using Options.Pages;
 
     using static Core.Constants;
     using static PackageGuids;
     using static Vsix;
 
-    //YD ProvideProfile - for persistence?
-
     [InstalledProductRegistration(Name, Description, Version, IconResourceID = 400)]
     [Guid(PackageString)]
-
-    [ProvideAutoLoad(NoSolution)]
-    [ProvideAutoLoad(SolutionExists)]
-
-    [ProvideToolWindow(typeof(PathVariablesToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
-    //[ProvideToolWindow(typeof(BrowserWindowToolWindowPane), Style = Tabbed, Orientation = orientation.none, Window = vsWindowKindMainWindow, MultiInstances = true, DocumentLikeTool = true)]
 
     [ProvideOptionPage(typeof(GeneralDialogPage), Name, General, 0, 0, supportsAutomation: false)]
     [ProvideOptionPage(typeof(BuildDialogPage), Name, Build, 0, 0, supportsAutomation: false)]
@@ -52,10 +33,10 @@ namespace Luminous.TimeSavers
         private VisualStudioDialogPage _visualStudioOptions;
 
         public BuildDialogPage BuildOptions
-            => _buildOptions ?? (_buildOptions = GetDialogPage(typeof(BuildDialogPage)) as BuildDialogPage);
+            => _buildOptions ?? (_buildOptions = GetDialogPage<BuildDialogPage>());
 
         public VisualStudioDialogPage VisualStudioOptions
-            => _visualStudioOptions ?? (_visualStudioOptions = GetDialogPage(typeof(VisualStudioDialogPage)) as VisualStudioDialogPage);
+            => _visualStudioOptions ?? (_visualStudioOptions = GetDialogPage<VisualStudioDialogPage>());
 
         public PackageClass() : base(PackageCommandSet, Name, Description)
         { }
@@ -73,8 +54,6 @@ namespace Luminous.TimeSavers
             InstantiateOptionsCommands();
             InstantiateSolutionCommands();
             InstantiateProjectCommands();
-
-            AdviseSolutionEvents(new VsSolutionEvents(this));
         }
 
         private void InstantiateProjectCommands()
@@ -102,7 +81,7 @@ namespace Luminous.TimeSavers
 
         private void InstantiateVisualStudioCommands()
         {
-            ExtensionsAndUpdatesCommand.Instantiate(this);
+            ManageExtensionsCommand.Instantiate(this);
         }
 
         private void InstantiateDeveloperCommands()
@@ -127,22 +106,6 @@ namespace Luminous.TimeSavers
         private void InstantiateInsertCommands()
         {
             InsertGuidCommand.Instantiate(this);
-        }
-
-        //TODO: move to framework
-        //YD: what about unadvise?
-        private static void AdviseSolutionEvents(IVsSolutionEvents vsSolutionEvents)
-        {
-            var vsSolution = GetGlobalService<SVsSolution, IVsSolution>();
-
-#pragma warning disable VSTHRD102 // Implement internal logic asynchronously
-            ThreadHelper.JoinableTaskFactory.Run(async delegate
-#pragma warning restore VSTHRD102 // Implement internal logic asynchronously
-            {
-                await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-
-                vsSolution.AdviseSolutionEvents(vsSolutionEvents, out uint solutionEventsCookie);
-            });
         }
     }
 }

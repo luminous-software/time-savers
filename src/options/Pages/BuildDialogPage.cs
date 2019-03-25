@@ -3,26 +3,21 @@ using System.ComponentModel;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
 
-namespace Luminous.TimeSavers.Options
+namespace Luminous.TimeSavers.Options.Pages
 {
-    using static PackageGuids;
-    using static PackageConstants;
+    using static Core.Constants;
+    using static Constants.OptionGuids;
+    using static Constants.OptionConstants;
 
     [ClassInterface(ClassInterfaceType.AutoDual)]
     [ComVisible(true)]
     [Guid(BuildDialogPageString)]
     public class BuildDialogPage : DialogPage
     {
-        //***
-        //!!!
-        //!!!
-
         [Category(H1 + BuildFeatureSet)]
         [DisplayName(Enable + Space + FeatureSet)]
         [Description("Allows the whole set of " + Build + " features to be turned off together")]
         public bool BuildCommandsEnabled { get; set; } = true;
-
-        //---
 
         [Category(H2 + Features)]
         [DisplayName(Enable + Space + RebuildSolution)]
@@ -41,15 +36,5 @@ namespace Luminous.TimeSavers.Options
         [Description("Cancels the currently running build/rebuild")]
         [DefaultValue(true)]
         public bool CancelBuildCommandEnabled { get; set; } = true;
-
-        //---
-
-        //protected override void OnApply(PageApplyEventArgs e)
-        //{
-
-        //    base.OnApply(e);
-        //}
-
-        //***
     }
 }

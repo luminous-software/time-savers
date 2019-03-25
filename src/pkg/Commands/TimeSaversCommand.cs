@@ -4,36 +4,29 @@ namespace Luminous.TimeSavers.Commands
 {
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
-    using Luminous.TimeSavers.Options;
+
+    using Luminous.TimeSavers.Options.Pages;
 
     internal abstract class TimeSaversCommand : DynamicCommand, IDisposable
     {
         private GeneralDialogPage _generalOptions;
 
-        //***
-
         protected GeneralDialogPage TimeSaversOptions
-            => _generalOptions ?? (_generalOptions = Package?.GetDialogPage(typeof(GeneralDialogPage)) as GeneralDialogPage);
-
-        //!!!
+            => _generalOptions ?? (_generalOptions = PackageBase.GetDialogPage<GeneralDialogPage>());
 
         protected TimeSaversCommand(PackageBase package, int id) : base(package, id)
         { }
 
-        //!!!
-
         protected override bool CanExecute
             => TimeSaversOptions.TimeSaversEnabled;
 
-        //===
-
         #region IDisposable Support
 
-        private bool disposedValue = false;
+        private bool disposed;
 
         protected virtual void Dispose(bool disposing)
         {
-            if (!disposedValue)
+            if (!disposed)
             {
                 if (disposing)
                 {
@@ -41,11 +34,9 @@ namespace Luminous.TimeSavers.Commands
                     _generalOptions = null;
                 }
 
-                disposedValue = true;
+                disposed = true;
             }
         }
-
-        //---
 
         public void Dispose()
         {
@@ -53,7 +44,5 @@ namespace Luminous.TimeSavers.Commands
         }
 
         #endregion IDisposable Support
-
-        //***
     }
 }

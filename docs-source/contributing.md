@@ -1,6 +1,6 @@
 # Contributing
 
-Looking to contribute something? **Here's how you can help.**
+Looking to contribute something? Here's how you can help.
 
 Please take a minute to review these guidelines, so that the contribution
 process is easy and effective for everyone involved.
@@ -17,7 +17,7 @@ but please respect the following requests:
 - Please try to keep the discussion on topic
 - Please respect the opinions of others, even if you don't agree with them.
 
-## Bug reports
+## Bug Reports
 
 A bug is a _demonstrable problem_ that is caused by the code in the repository.
 Good bug reports are extremely helpful, so thanks!
@@ -26,20 +26,18 @@ Guidelines for bug reports:
 
 1. **Use the GitHub issue search** &mdash; check if the issue has already been
     reported.
-
 2. **Check if the issue has been fixed** &mdash; try to reproduce it using the
     latest `master` branch in the repository.
-
 3. **Isolate the problem** &mdash; ideally create a small live example.
     Uploading the project on cloud storage (OneDrive, DropBox, etc)
     or creating a sample GitHub repository is also helpful.
 
 A good bug report shouldn't need to be chased up for more information.
-Please try to be as detailed as possible. 
+Please try to be as detailed as possible.
 
 - What's your OS version?
 - What version of Visual Studio are you using?
-- What steps will reproduce the issue? 
+- What steps will reproduce the issue?
 - What would you expect to happen?
 - What does actually happen?
 
@@ -66,14 +64,14 @@ Example:
 > This might include the lines of code that you have identified as causing the bug,
 > and potential solutions (as well as your opinions on the likelihood of success).
 
-## Feature requests
+## Feature Requests
 
 Feature requests are very welcome. Be sure take a moment to find out whether your idea
 fits with the scope and aims of the project.
 It's up to *you* to make a strong case for the addition of your suggested feature.
 Please provide as much detail and context as possible.
 
-## Pull requests
+## Pull Requests
 
 Good pull requests, improvements and new features are a great help.
 But they should remain focused, avoiding any unrelated commits.
@@ -96,7 +94,7 @@ Using to the following process is the best way to get your work included in the 
 
     # Navigate to the newly cloned directory
     cd <folder-name>
-   
+
     # Assign the original repo to a remote called "upstream"
     git remote add upstream https://github.com/luminous-software/time-savers.git
     ```
@@ -118,11 +116,11 @@ Using to the following process is the best way to get your work included in the 
 4. Commit your changes in logical chunks. Please try to follow these
     [git commit message guidelines][git-commit-message-guidelines]
     or your code is unlikely be merged into the main project.
-   
+
     Use Git's [interactive rebase][git-interactive-rebase] feature
     to tidy up your commits before making them public.
-    Also, add the name of the feature to the beginning of the commit message. 
-   
+    Also, add the name of the feature to the beginning of the commit message.
+
     For example: "SCSS: Fixes compiler results for IFileListener.\nFixes `#123`"
 
     [git-commit-message-guidelines]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html

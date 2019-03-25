@@ -1,5 +1,14 @@
 ## Public Releases
 
+### v2.4.0 - 2019-03-24
+  - Added Version Number to *General* options page
+  - Fixed commands not using options values
+  - Fixed broken extensions command
+      - VS 2017: ExtensionsAndUpdates
+      - VS 2019: ManageExtensions
+  - Added VS 2019 support
+  - Simplified extension's name to just *Time Savers*
+
 ### v2.3.0 - _2018-03-12_
   - Added basic documentation to the website
     - https://luminous-software.solutions/time-savers
@@ -10,7 +19,7 @@
     - to *Luminous Time Savers*
   - Changed lower level code packages
     - from YD.Code.Core, YD.Code.VisualStudio
-    - to Luminous Code.Core, LuminousCode.VisualStudio
+    - to Luminous.Code.Core, Luminous.Code.VisualStudio
 
 ### v2.0.0 - 2017-02-04
   - Added VS 2017 support

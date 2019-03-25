@@ -1,4 +1,4 @@
-# Luminous Time Savers Notes
+# Time Savers Notes
 
 ## Temp
 

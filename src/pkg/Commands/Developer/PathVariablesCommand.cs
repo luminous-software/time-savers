@@ -24,7 +24,9 @@ namespace Luminous.TimeSavers.Commands.Developer
             => base.CanExecute && DeveloperOptions.PathVariablesCommandEnabled;
 
         protected override void OnExecute(OleMenuCommand command)
+#pragma warning disable VSTHRD010 // Invoke single-threaded types on Main thread
             => ExecuteCommand()
+#pragma warning restore VSTHRD010 // Invoke single-threaded types on Main thread
                 .ShowProblem()
                 .ShowInformation();
 

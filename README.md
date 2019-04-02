@@ -84,7 +84,7 @@ See the [Time Savers][website-url] website, or click any of the links below:
 - [License][license-url]
 
 [website-url]: https://luminous-software.solutions/time-savers
-[features-url]: http://luminous-software.solutions/time-savers/#features
+[features-url]: http://luminous-software.solutions/time-savers/features
 [getting-started-url]: http://luminous-software.solutions/time-savers/getting-started
 [changelog-url]: http://luminous-software.solutions/time-savers/changelog
 [roadmap-url]: http://luminous-software.solutions/time-savers/roadmap

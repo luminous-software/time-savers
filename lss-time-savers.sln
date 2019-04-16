@@ -5,7 +5,6 @@ VisualStudioVersion = 16.0.28714.193
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08B276AF-9E6A-4DD9-994F-964CFD71AC29}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\tools\CreatePrivateGallery.cmd = ..\..\..\tools\CreatePrivateGallery.cmd
 		gulpfile.js = gulpfile.js
 		lss-time-savers.favdoc = lss-time-savers.favdoc
 		lss-time-savers.notes.md = lss-time-savers.notes.md
@@ -26,22 +25,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B388B43D-5
 		docs-source\contributing.md = docs-source\contributing.md
 		docs-source\features.md = docs-source\features.md
 		docs-source\getting-started.md = docs-source\getting-started.md
-		gulpfile.js = gulpfile.js
 		docs-source\index.md = docs-source\index.md
 		docs-source\license.md = docs-source\license.md
 		mkdocs.yml = mkdocs.yml
-		package.json = package.json
-		README.md = README.md
 		docs-source\roadmap.md = docs-source\roadmap.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{14C79BB0-FD6F-4021-99DA-1EEDB7AE464B}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		appveyor.yml = appveyor.yml
 		CHANGELOG.md = CHANGELOG.md
+		.github\CONTRIBUTING.md = .github\CONTRIBUTING.md
+		.github\ISSUE_TEMPLATE.md = .github\ISSUE_TEMPLATE.md
 		LICENSE = LICENSE
-		README.html = README.html
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -49,6 +45,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "publish", "publish", "{2209
 	ProjectSection(SolutionItems) = preProject
 		publish-manifest.json = publish-manifest.json
 		publish.cmd = publish.cmd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "version", "version", "{7DFBBAEE-34EF-4733-AE8F-0BA412C4EB97}"
+	ProjectSection(SolutionItems) = preProject
+		package.json = package.json
+		src\pkg\source.extension.vsixmanifest = src\pkg\source.extension.vsixmanifest
 	EndProjectSection
 EndProject
 Global
@@ -81,6 +83,7 @@ Global
 		{B388B43D-55ED-4F06-B651-A7CF5DFF5B01} = {08B276AF-9E6A-4DD9-994F-964CFD71AC29}
 		{14C79BB0-FD6F-4021-99DA-1EEDB7AE464B} = {08B276AF-9E6A-4DD9-994F-964CFD71AC29}
 		{2209E374-A952-479C-91C3-4563AA95A6BD} = {08B276AF-9E6A-4DD9-994F-964CFD71AC29}
+		{7DFBBAEE-34EF-4733-AE8F-0BA412C4EB97} = {08B276AF-9E6A-4DD9-994F-964CFD71AC29}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C837AE99-4FDA-400B-B90A-533B271E55B8}

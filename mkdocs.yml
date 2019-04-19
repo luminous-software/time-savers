@@ -33,11 +33,11 @@ theme:
 
 # layout
 pages:
-    - Why Time Savers?: 'index.md'
+    - Overview: 'index.md'
     - Getting Started: 'getting-started.md'
     - Features: 'features.md'
     - Change Log: 'changelog.md'
-    - What's Coming: 'roadmap.md'
+    - Roadmap: 'roadmap.md'
 
 # customisation
 extra:

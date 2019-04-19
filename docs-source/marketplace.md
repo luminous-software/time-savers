@@ -1,23 +1,15 @@
-# Time Savers
-
-_TimeSavers =>  developerProductivity++;_
-
 ![Version][version-badge-url]
-![Installs][installs-badge-url]
-![Rating][rating-badge-url]
-[![License][license-badge]][license-url]
+[![License][license-badge]](https://github.com/luminous-software/extensibility-logs/blob/master/LICENSE)
 [![Donate][paypal-badge]](https://www.paypal.me/yannduran/5)
 
 [version-badge-url]: http://vsmarketplacebadge.apphb.com/version-short/YannDuran.VisualStudioTimeSavers.svg?label=version&colorB=7E57C2
-[installs-badge-url]: http://vsmarketplacebadge.apphb.com/installs-short/YannDuran.VisualStudioTimeSavers.svg?colorB=7E57C2
-[rating-badge-url]: http://vsmarketplacebadge.apphb.com/rating-short/YannDuran.VisualStudioTimeSavers.svg?colorB=7E57C2
-[license-badge]: https://img.shields.io/badge/license-MIT-7E57C2.svg
-[license-url]: https://github.com/luminous-software/time-savers/blob/master/LICENSE
+[license-badge]: https://img.shields.io/badge/license-MIT-7E57C2.svg?style=flat-square
+[license-url]: https://github.com/luminous-software/extensibility-logs/blob/master/LICENSE
 [paypal-badge]: https://img.shields.io/badge/donate-paypal-green.svg
 
-Download this extension from the [Visual Studio Marketplace][marketplace-url].
+You can download this extension [from the Visual Studio Marketplace][marketplace-url]
 
-[marketplace-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd
+[marketplace-url]: https://marketplace.visualstudio.com/items?itemName=YannDuran.VisualStudioTimeSavers
 
 ---
 
@@ -31,14 +23,14 @@ Every feature of *Time Savers* was created specifically to enhance development p
 For those people who prefer their commands front-and-center, available all all times with a single click,
 this extension adds a new toolbar to hold _Time Savers_' commands.
 
-![Toolbar](docs-source/assets/images/toolbar.png)
+![Toolbar](assets/images/toolbar.png)
 
 ### Menu
 
 For those people who don't want to add yet another toolbar,
 this extension also adds a new _Time Savers_ menu to the _View_ menu.
 
-![Menu](docs-source/assets/images/menu.png)
+![Menu](assets/images/menu.png)
 
 ### Context Menus
 
@@ -55,7 +47,7 @@ Unfortunately that means that there's one more click involved than I'd ideally p
 However I've found it much easier to find commands in a dedicated menu anyway, rather
 than having to search through one gigantic menu of commands.
 
-![Menu](docs-source/assets/images/context-menu.png)
+![Menu](assets/images/context-menu.png)
 
 ### Shortcuts
 
@@ -86,18 +78,3 @@ If *Time Savers* has saved you time, please come back and show your support:
 [rate-or-review-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd#review-details
 [qna-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd#qna
 [suggestions-url]: https://marketplace.visualstudio.com/vsgallery/049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd#qna
-
----
-
-## Contribute
-
-Check out the [contribution guidelines][contributing-url]
-if you'd like to contribute to this project.
-
-[contributing-url]: https://github.com/luminous-software/time-savers/blob/master/.github/CONTRIBUTING.md
-
----
-
-<div style="text-align: center">
-    <img src="art/lss-vsip.png"/>
-</div>

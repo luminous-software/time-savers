@@ -1,78 +1,71 @@
 ## Public Releases
 
-### v2.4.0 - 2019-03-24
-  - Added Version Number to *General* options page
-  - Fixed commands not using options values
-  - Fixed broken extensions command
+### v2.?.? - 2019-04-??
+
+
+### v2.4 - 2019-03-24
+  - added Version Number to *General* options page
+  - fixed commands not using options values
+  - fixed broken extensions command
       - VS 2017: ExtensionsAndUpdates
       - VS 2019: ManageExtensions
-  - Added VS 2019 support
-  - Simplified extension's name to just *Time Savers*
+  - added VS 2019 support
+  - simplified extension's name to just *Time Savers* (again)
 
-### v2.3.0 - _2018-03-12_
-  - Added basic documentation to the website
-    - https://luminous-software.solutions/time-savers
+### v2.3 - 2018-03-12
+  - added basic documentation to the [website](https://luminous-software.solutions/time-savers)
 
-### v2.2.0 - _2017-02-13_
-  - Renamed extension
-    - from *Time Savers*
-    - to *Luminous Time Savers*
-  - Changed lower level code packages
-    - from YD.Code.Core, YD.Code.VisualStudio
-    - to Luminous.Code.Core, Luminous.Code.VisualStudio
+### v2.2 - 2017-02-13
+  - renamed extension to *Luminous Time Savers*
+  - upgraded Nuget packages to Luminous.Code.Core, Luminous.Code.VisualStudio
 
-### v2.0.0 - 2017-02-04
-  - Added VS 2017 support
+### v2.0 - 2017-02-04
+  - added VS 2017 support
 
-### v1.1.0 - 2016-11-08
-  - Added *Reopen Start Page* (when solution is closed)
-  - Renamed extension
-      - from *Visual Studio Time Savers*
-      - to just *Time Savers*
+### v1.1 - 2016-11-08
+  - added *Reopen Start Page* (when solution is closed)
+  - renamed extension to just *Time Savers*
 
-### v1.0.0 - 2016-10-15
-  - Released to VS Gallery
+### v1.0 - 2016-10-15
+  - released to VS Gallery
 
-## Beta Releases
+## Internal Releases
 
 ### v0.7 - 2016-10-10
-  - Added *Time Savers Options* dialog pages (Tools | Options | Time Savers)
-  - Added *General Options* node
-  - Added *Build Options* node
-  - Added *Developer Options* node
-  - Added *Visual Studio Options* node
+  - added *Time Savers Options* dialog pages (Tools | Options | Time Savers)
+  - added *General Options* node
+  - added *Build Options* node
+  - added *Developer Options* node
+  - added *Visual Studio Options* node
 
 ### v0.6 - 2016-09-30
-  - Added *Keyboard Options*
-  - Added *Activity Log*
-  - Added *Diagnostic Log*
-  - Added *Path Variables*
+  - added *Keyboard Options*
+  - added *Activity Log*
+  - added *Diagnostic Log*
+  - added *Path Variables*
 
 ### v0.5 - 2016-09-02
-  - Added *Edit Project*
-  - Added *Insert Guid*
+  - added *Edit Project*
+  - added *Insert Guid*
 
 ### v0.4 - 2016-09-02
-  - Added *Edit Solution*
-  - Added *Close Solution*
-  - renamed the extension
-    - from *Time Savers*
-    - to *Visual Studio Time Savers*
+  - added *Edit Solution*
+  - added *Close Solution*
+  - renamed the extension *Visual Studio Time Savers*
 
 ### v0.3 - 2016-08-30
-  - Added *Extensions And Updates*
+  - added *Extensions And Updates*
 
 ### v0.2 - 2016-08-29
-  - Added *Rebuild Project*
-  - Added *Rebuild Solution*
-  - Added *Cancel Build*
-  - Added *Restart Visual Studio*
-  - Added *Restart VisualStudio as Admin*
-  - Added dynamic enable/disable to build commands
+  - added *Rebuild Project*
+  - added *Rebuild Solution*
+  - added *Cancel Build*
+  - added *Restart Visual Studio*
+  - added *Restart VisualStudio as Admin*
+  - added dynamic enable/disable to build commands
 
 ### v0.1 - 2016-08-28
-  - initial public availabilty
-  - open-sourced this extension and the libraries it depends on
+  - open-sourced this extension and the NuGet libraries it depends on
   - rewrote the foundation of the extension from scratch
   - renamed the extension:
     - from *Luminous Essentials for VS* (a closed-source extension)

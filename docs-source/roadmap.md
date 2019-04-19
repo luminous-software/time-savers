@@ -14,7 +14,6 @@ They may, or may not, end up being added into _Time Savers_.
 - [ ] Reload Project (one operation, instead of unload/reload)
 - [ ] Edit Path Variables
 - [ ] Edit Environment Variables
-- [ ] Clean Experimental Hive (as in [_Clean Hive and Debug for Extension Developers_][clean-hive-and-debug] - John McBride)
 
 ## Contributions
 
@@ -28,20 +27,6 @@ Don't forget to check out the [Contribution Guidelines][contribution-guidelines]
 [clean-hive-and-debug]: https://marketplace.visualstudio.com/items?itemName=JohnMcBride.CleanHiveandDebugforExtensionDevelopers
 [github-issue-fi]: https://github.com/luminous-software/time-savers/issues/new?title=&body=&label=enhancement
 [contribution-guidelines]: https://github.com/luminous-software/time-savers/blob/master/.github/CONTRIBUTING.md
-
-## Beta Features
-
-_Beta features_ are _FI's_ that have actually had code written for them,
-and are waiting for that code to be thoroughly tested.
-You can participate in the testing phase by downloading the _CI build_.
-You can install it on your own machine, and confirm that it does what it's supposed to do.
-If you do find a problem, you can create a [Bug Report on GitHub][github-issue-bug-report].
-
-Once they've passed testing they'll be included in the **next public release** of _Time Savers_.
-
->There are no beta features that need testing at the moment
-
-[github-issue-bug-report]: https://github.com/luminous-software/time-savers/issues/new?title=Bug%20Report%3A%20
 
 ## Bug Fixes
 

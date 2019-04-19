@@ -5,10 +5,11 @@ VisualStudioVersion = 16.0.28714.193
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08B276AF-9E6A-4DD9-994F-964CFD71AC29}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		gulpfile.js = gulpfile.js
 		lss-time-savers.favdoc = lss-time-savers.favdoc
 		lss-time-savers.notes.md = lss-time-savers.notes.md
-		package.json = package.json
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers", "src\pkg\Luminous.TimeSavers.csproj", "{A2A22BAD-F136-4409-B37D-1E070E373E3D}"
@@ -19,15 +20,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers.Core", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luminous.TimeSavers.UI", "src\ui\Luminous.TimeSavers.UI.csproj", "{7012B73A-B0CE-4B42-A52D-B237CCB61627}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B388B43D-55ED-4F06-B651-A7CF5DFF5B01}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs-source", "docs-source", "{B388B43D-55ED-4F06-B651-A7CF5DFF5B01}"
 	ProjectSection(SolutionItems) = preProject
 		docs-source\changelog.md = docs-source\changelog.md
-		docs-source\contributing.md = docs-source\contributing.md
 		docs-source\features.md = docs-source\features.md
 		docs-source\getting-started.md = docs-source\getting-started.md
 		docs-source\index.md = docs-source\index.md
-		docs-source\license.md = docs-source\license.md
+		docs-source\marketplace.md = docs-source\marketplace.md
 		mkdocs.yml = mkdocs.yml
+		README.md = README.md
 		docs-source\roadmap.md = docs-source\roadmap.md
 	EndProjectSection
 EndProject
@@ -43,6 +44,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{14C79B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "publish", "publish", "{2209E374-A952-479C-91C3-4563AA95A6BD}"
 	ProjectSection(SolutionItems) = preProject
+		commands.json = commands.json
 		publish-manifest.json = publish-manifest.json
 		publish.cmd = publish.cmd
 	EndProjectSection

@@ -1,0 +1,14 @@
+{
+  "commands": {
+    "publish": {
+      "fileName": "cmd.exe",
+      "workingDirectory": ".",
+      "arguments": "/c publish.cmd"
+    },
+    "serve": {
+      "fileName": "mkdocs",
+      "workingDirectory": ".",
+      "arguments": "serve --dev-addr=127.0.0.1:8004"
+    }
+  }
+}

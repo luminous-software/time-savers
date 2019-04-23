@@ -15,6 +15,9 @@ namespace Luminous.TimeSavers
         public const string PackageString = "6359da17-6477-4e9c-8e73-7d05ea8a33a1";
         public static Guid Package = new Guid(PackageString);
 
+        public const string SingleProjectOrMultipleProjectsString = "8f38aaa7-8fa5-423b-a1a6-4dd4daf436a3";
+        public static Guid SingleProjectOrMultipleProjects = new Guid(SingleProjectOrMultipleProjectsString);
+
         public const string PackageCommandSetString = "4eac4e23-4909-4dac-9d6e-819bdc861480";
         public static Guid PackageCommandSet = new Guid(PackageCommandSetString);
     }

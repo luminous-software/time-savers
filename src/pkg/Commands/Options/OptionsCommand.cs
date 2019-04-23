@@ -8,9 +8,9 @@
         private OptionsDialogPage _options;
 
         protected OptionsDialogPage Options
-            => _options ?? (_options = PackageBase.GetDialogPage<OptionsDialogPage>());
+            => _options ?? (_options = AsyncPackageBase.GetDialogPage<OptionsDialogPage>());
 
-        protected OptionsCommand(PackageBase package, int id) : base(package, id)
+        protected OptionsCommand(AsyncPackageBase package, int id) : base(package, id)
         { }
 
         protected override bool CanExecute

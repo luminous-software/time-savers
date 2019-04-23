@@ -1,18 +1,21 @@
-﻿using System;
-using System.Runtime.InteropServices;
+﻿using Luminous.Code.VisualStudio.Packages;
 using Microsoft.VisualStudio.Shell;
+using System;
+using System.Runtime.InteropServices;
+using System.Threading;
+using static Microsoft.VisualStudio.VSConstants.UICONTEXT;
+using Tasks = System.Threading.Tasks;
 
 namespace Luminous.TimeSavers
 {
-    using Luminous.Code.VisualStudio.Packages;
-    using Commands.Insert;
     using Commands.Build;
-    using Commands.VisualStudio;
-    using Commands.Restart;
-    using Commands.Options;
-    using Commands.SolutionNode;
-    using Commands.ProjectNode;
     using Commands.Developer;
+    using Commands.Insert;
+    using Commands.Options;
+    using Commands.ProjectNode;
+    using Commands.Restart;
+    using Commands.SolutionNode;
+    using Commands.VisualStudio;
     using Options.Pages;
 
     using static Core.Constants;
@@ -22,12 +25,21 @@ namespace Luminous.TimeSavers
     [InstalledProductRegistration(Name, Description, Version, IconResourceID = 400)]
     [Guid(PackageString)]
 
-    [ProvideOptionPage(typeof(GeneralDialogPage), Name, General, 0, 0, supportsAutomation: false)]
-    [ProvideOptionPage(typeof(BuildDialogPage), Name, Build, 0, 0, supportsAutomation: false)]
-    [ProvideOptionPage(typeof(DeveloperDialogPage), Name, Developer, 0, 0, supportsAutomation: false)]
-    [ProvideOptionPage(typeof(VisualStudioDialogPage), Name, VisualStudio, 0, 0, supportsAutomation: false)]
+    [ProvideOptionPage(typeof(GeneralDialogPage), Name, General, 0, 0, supportsAutomation: true)]
+    [ProvideOptionPage(typeof(BuildDialogPage), Name, Build, 0, 0, supportsAutomation: true)]
+    [ProvideOptionPage(typeof(DeveloperDialogPage), Name, Developer, 0, 0, supportsAutomation: true)]
+    [ProvideOptionPage(typeof(VisualStudioDialogPage), Name, VisualStudio, 0, 0, supportsAutomation: true)]
 
-    public sealed class PackageClass : PackageBase
+    [ProvideAutoLoad(SingleProjectOrMultipleProjectsString, PackageAutoLoadFlags.BackgroundLoad)]
+    [ProvideUIContextRule(SingleProjectOrMultipleProjectsString,
+        name: "Solution Has One or More Projects",
+        expression: "SingleProject | MultipleProjects",
+        termNames: new[] { "SingleProject", "MultipleProjects" },
+        termValues: new[] { SolutionHasSingleProject_string, SolutionHasMultipleProjects_string })]
+
+    [ProvideAutoLoad(SingleProjectOrMultipleProjectsString, PackageAutoLoadFlags.BackgroundLoad)]
+
+    public sealed class PackageClass : AsyncPackageBase
     {
         private BuildDialogPage _buildOptions;
         private VisualStudioDialogPage _visualStudioOptions;
@@ -41,71 +53,73 @@ namespace Luminous.TimeSavers
         public PackageClass() : base(PackageCommandSet, Name, Description)
         { }
 
-        protected override void Initialize()
+        protected override async Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
         {
-            base.Initialize();
+            await base.InitializeAsync(cancellationToken, progress);
 
-            InstantiateInsertCommands();
-            InstantiateGeneralCommands();
-            InstantiateBuildCommands();
-            InstantiateDeveloperCommands();
-            InstantiateVisualStudioCommands();
-            InstantiateRestartCommands();
-            InstantiateOptionsCommands();
-            InstantiateSolutionCommands();
-            InstantiateProjectCommands();
+            await InstantiateInsertCommandsAsync();
+            await InstantiateGeneralCommandsAsync();
+            await InstantiateBuildCommandsAsync();
+            await InstantiateDeveloperCommandsAsync();
+            await InstantiateVisualStudioCommandsAsync();
+            await InstantiateRestartCommandsAsync();
+            await InstantiateOptionsCommandsAsync();
+            await InstantiateSolutionCommandsAsync();
+            await InstantiateProjectCommandsAsync();
+
+            ActivityLog.LogInformation("Time Savers", "Commands have been instantiated");
         }
 
-        private void InstantiateProjectCommands()
+        private async Tasks.Task InstantiateProjectCommandsAsync()
         {
-            EditProjectCommand.Instantiate(this);
+            await EditProjectCommand.InstantiateAsync(this);
         }
 
-        private void InstantiateSolutionCommands()
+        private async Tasks.Task InstantiateSolutionCommandsAsync()
         {
-            EditSolutionCommand.Instantiate(this);
-            CloseSolutionCommand.Instantiate(this);
+            await EditSolutionCommand.InstantiateAsync(this);
+            await CloseSolutionCommand.InstantiateAsync(this);
         }
 
-        private void InstantiateOptionsCommands()
+        private async Tasks.Task InstantiateOptionsCommandsAsync()
         {
-            KeyboardOptionsCommand.Instantiate(this);
-            TimeSaversOptionsCommand.Instantiate(this);
+            await KeyboardOptionsCommand.InstantiateAsync(this);
+            await TimeSaversOptionsCommand.InstantiateAsync(this);
         }
 
-        private void InstantiateRestartCommands()
+        private async Tasks.Task InstantiateRestartCommandsAsync()
         {
-            RestartNormalCommand.Instantiate(this);
-            RestartElevatedCommand.Instantiate(this);
+            await RestartNormalCommand.InstantiateAsync(this);
+            await RestartElevatedCommand.InstantiateAsync(this);
         }
 
-        private void InstantiateVisualStudioCommands()
+        private async Tasks.Task InstantiateVisualStudioCommandsAsync()
         {
-            ManageExtensionsCommand.Instantiate(this);
+            await ManageExtensionsCommand.InstantiateAsync(this);
         }
 
-        private void InstantiateDeveloperCommands()
+        private async Tasks.Task InstantiateDeveloperCommandsAsync()
         {
-            ActivityLogCommand.Instantiate(this);
-            DiagnosticLogCommand.Instantiate(this);
-            PathVariablesCommand.Instantiate(this);
+            await ActivityLogCommand.InstantiateAsync(this);
+            await DiagnosticLogCommand.InstantiateAsync(this);
+            await PathVariablesCommand.InstantiateAsync(this);
         }
 
-        private void InstantiateGeneralCommands()
+        private async Tasks.Task InstantiateGeneralCommandsAsync()
         {
-            BrowserWindowCommand.Instantiate(this);
+            await BrowserWindowCommand.InstantiateAsync(this);
         }
 
-        private void InstantiateBuildCommands()
+        private async Tasks.Task InstantiateBuildCommandsAsync()
         {
-            RebuildProjectCommand.Instantiate(this);
-            RebuildSolutionCommand.Instantiate(this);
-            CancelBuildCommand.Instantiate(this);
+            await RebuildProjectCommand.InstantiateAsync(this);
+            await RebuildSolutionCommand.InstantiateAsync(this);
+            await CancelBuildCommand.InstantiateAsync(this);
         }
 
-        private void InstantiateInsertCommands()
+        private async Tasks.Task InstantiateInsertCommandsAsync()
         {
-            InsertGuidCommand.Instantiate(this);
+            await InsertGuidCommand.InstantiateAsync(this);
         }
     }
 }

@@ -1,7 +1,7 @@
-﻿using System;
-using Microsoft.VisualStudio.Shell;
-
+﻿using Microsoft.VisualStudio.Shell;
+using System;
 using static System.Environment;
+using Tasks = System.Threading.Tasks;
 
 //FEATURE: 392 Path Variables Window
 
@@ -13,12 +13,12 @@ namespace Luminous.TimeSavers.Commands.Developer
 
     internal sealed class PathVariablesCommand : DeveloperCommand
     {
-        private PathVariablesCommand(PackageBase package)
+        private PathVariablesCommand(AsyncPackageBase package)
             : base(package, PackageIds.PathVariablesCommand)
         { }
 
-        public static void Instantiate(PackageBase package)
-            => Instantiate(new PathVariablesCommand(package));
+        public async static Tasks.Task InstantiateAsync(AsyncPackageBase package)
+            => await InstantiateAsync(new PathVariablesCommand(package));
 
         protected override bool CanExecute
             => base.CanExecute && DeveloperOptions.PathVariablesCommandEnabled;
@@ -34,12 +34,11 @@ namespace Luminous.TimeSavers.Commands.Developer
         {
             try
             {
-                ThreadHelper.ThrowIfNotOnUIThread(nameof(ExecuteCommand));
+                ThreadHelper.ThrowIfNotOnUIThread();
 
                 //var threadingService = Package?.GetService<IProjectThreadingService>();
 
                 const string semi_colon = ";";
-                var pane = Package?.PackageOutputPane;
                 var colonNewline = semi_colon + NewLine;
                 var expanded = ExpandEnvironmentVariables("%path%");
                 var text = expanded.Replace(semi_colon, colonNewline);
@@ -47,11 +46,12 @@ namespace Luminous.TimeSavers.Commands.Developer
                 text += colonNewline;
 
                 var result = Package?.ActivateOutputWindow();
-                if (!result.Succeeded)
-                    return result;
+                if (!result.Succeeded) return result;
 
                 //if (!threadingService.IsOnMainThread)
                 //    return new ProblemResult("Cannot execute command (not on main thread)");
+
+                var pane = Package?.PackageOutputPane;
 
                 pane?.Activate();
                 pane?.Clear();

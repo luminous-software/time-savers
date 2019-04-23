@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.Shell;
+using Tasks = System.Threading.Tasks;
 
 namespace Luminous.TimeSavers.Commands.SolutionNode
 {
@@ -7,18 +8,11 @@ namespace Luminous.TimeSavers.Commands.SolutionNode
 
     internal sealed class CloseSolutionCommand : TimeSaversCommand
     {
-        //***
-        //!!!
-
-        private CloseSolutionCommand(PackageBase package) : base(package, PackageIds.CloseSolutionCommand)
+        private CloseSolutionCommand(AsyncPackageBase package) : base(package, PackageIds.CloseSolutionCommand)
         { }
 
-        //!!!
-
-        public static void Instantiate(PackageBase package)
-            => Instantiate(new CloseSolutionCommand(package));
-
-        //---
+        public async static Tasks.Task InstantiateAsync(AsyncPackageBase package)
+            => await InstantiateAsync(new CloseSolutionCommand(package));
 
         //protected override bool IsActive
         //    => base.IsActive && ;
@@ -28,11 +22,7 @@ namespace Luminous.TimeSavers.Commands.SolutionNode
                 .ShowProblem()
                 .ShowInformation();
 
-        //---
-
         private CommandResult ExecuteCommand()
             => Package?.CloseSolution(problem: $"Unable to close solution");
-
-        //***
     }
 }

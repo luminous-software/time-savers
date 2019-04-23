@@ -1,5 +1,6 @@
-﻿using System;
-using Microsoft.VisualStudio.Shell;
+﻿using Microsoft.VisualStudio.Shell;
+using System;
+using Tasks = System.Threading.Tasks;
 
 namespace Luminous.TimeSavers.Commands.Insert
 {
@@ -8,14 +9,14 @@ namespace Luminous.TimeSavers.Commands.Insert
 
     internal sealed class InsertGuidCommand : InsertCommand
     {
-        private InsertGuidCommand(PackageBase package) : base(package, PackageIds.InsertGuidCommand)
+        private InsertGuidCommand(AsyncPackageBase package) : base(package, PackageIds.InsertGuidCommand)
         { }
 
-        public static void Instantiate(PackageBase package)
-            => Instantiate(new InsertGuidCommand(package));
+        public async static Tasks.Task InstantiateAsync(AsyncPackageBase package)
+            => await InstantiateAsync(new InsertGuidCommand(package));
 
         protected override bool CanExecute
-            => base.CanExecute; //&& InsertOptions.InsertCommandEnabled;
+            => base.CanExecute; //&& ContextIsActive(CodeWindow); //&& InsertOptions.InsertCommandEnabled;
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()
@@ -23,9 +24,6 @@ namespace Luminous.TimeSavers.Commands.Insert
                 .ShowInformation();
 
         private CommandResult ExecuteCommand()
-        {
-            return Package?.ReplaceSelectedText(() => Guid.NewGuid().ToString(),
-                problem: "Unable to insert guid");
-        }
+            => Package?.ReplaceSelectedText(() => Guid.NewGuid().ToString(), problem: "Unable to insert guid");
     }
 }

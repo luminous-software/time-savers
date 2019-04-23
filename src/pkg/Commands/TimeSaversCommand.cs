@@ -2,47 +2,29 @@
 
 namespace Luminous.TimeSavers.Commands
 {
-    using Luminous.Code.VisualStudio.Commands;
-    using Luminous.Code.VisualStudio.Packages;
+    using Code.VisualStudio.Commands;
+    using Code.VisualStudio.Packages;
+    using TimeSavers.Options.Pages;
 
-    using Luminous.TimeSavers.Options.Pages;
-
-    internal abstract class TimeSaversCommand : DynamicCommand, IDisposable
+    internal abstract class TimeSaversCommand : AsyncDynamicCommand, IDisposable
     {
         private GeneralDialogPage _generalOptions;
 
-        protected GeneralDialogPage TimeSaversOptions
-            => _generalOptions ?? (_generalOptions = PackageBase.GetDialogPage<GeneralDialogPage>());
+        protected GeneralDialogPage GeneralOptions
+            => _generalOptions ?? (_generalOptions = AsyncPackageBase.GetDialogPage<GeneralDialogPage>());
 
-        protected TimeSaversCommand(PackageBase package, int id) : base(package, id)
+        protected TimeSaversCommand(AsyncPackageBase package, int id) : base(package, id)
         { }
 
         protected override bool CanExecute
-            => TimeSaversOptions.TimeSaversEnabled;
+            => GeneralOptions.TimeSaversEnabled;
 
-        #region IDisposable Support
-
-        private bool disposed;
-
-        protected virtual void Dispose(bool disposing)
+        protected override void OnDisposeManaged(AsyncDynamicCommand command)
         {
-            if (!disposed)
-            {
-                if (disposing)
-                {
-                    _generalOptions.Dispose();
-                    _generalOptions = null;
-                }
+            base.OnDisposeManaged(command);
 
-                disposed = true;
-            }
+            _generalOptions.Dispose();
+            _generalOptions = null;
         }
-
-        public void Dispose()
-        {
-            Dispose(true);
-        }
-
-        #endregion IDisposable Support
     }
 }

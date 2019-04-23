@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.Shell;
+using Tasks = System.Threading.Tasks;
 
 //FEATURE:   445 Browser Window
 //WORK_ITEM: 446 Create Browser Window ToolWindow
@@ -7,18 +8,17 @@ namespace Luminous.TimeSavers.Commands.Developer
 {
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
-    using Luminous.TimeSavers.Options.Pages;
 
     //using Luminous.TimeSavers.UI.BrowserWindow;
 
     internal sealed class BrowserWindowCommand : TimeSaversCommand
     {
-        private BrowserWindowCommand(PackageBase package)
+        private BrowserWindowCommand(AsyncPackageBase package)
             : base(package, PackageIds.BrowserWindowCommand)
         { }
 
-        public static void Instantiate(PackageBase package)
-            => Instantiate(new BrowserWindowCommand(package));
+        public async static Tasks.Task InstantiateAsync(AsyncPackageBase package)
+            => await InstantiateAsync(new BrowserWindowCommand(package));
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()

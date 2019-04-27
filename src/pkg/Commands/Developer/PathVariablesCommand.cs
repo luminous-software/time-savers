@@ -7,7 +7,7 @@ using Tasks = System.Threading.Tasks;
 
 namespace Luminous.TimeSavers.Commands.Developer
 {
-    using Luminous.Code.Exceptions.ExceptionExtensions;
+    using Luminous.Code.Extensions.ExceptionExtensions;
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
 

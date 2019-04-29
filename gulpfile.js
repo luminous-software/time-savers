@@ -81,5 +81,3 @@ gulp.task('serve', function (cb) {
     });
     opn('http://' + address);
 });
-
-gulp.task('default', ['build', 'deploy']);

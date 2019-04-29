@@ -4,7 +4,7 @@
 
     internal abstract class InsertCommand : TimeSaversCommand
     {
-        protected InsertCommand(PackageBase package, int id) : base(package, id)
+        protected InsertCommand(AsyncPackageBase package, int id) : base(package, id)
         { }
 
         protected override bool CanExecute

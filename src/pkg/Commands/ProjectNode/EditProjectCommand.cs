@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.Shell;
+using Tasks = System.Threading.Tasks;
 
 namespace Luminous.TimeSavers.Commands.ProjectNode
 {
@@ -7,22 +8,14 @@ namespace Luminous.TimeSavers.Commands.ProjectNode
 
     internal sealed class EditProjectCommand : TimeSaversCommand
     {
-        //***
-
         private static int CommandId
             => PackageIds.EditProjectCommand;
 
-        //---M
-
-        private EditProjectCommand(PackageBase package) : base(package, CommandId)
+        private EditProjectCommand(AsyncPackageBase package) : base(package, CommandId)
         { }
 
-        //---M
-
-        public static void Instantiate(PackageBase package)
-            => Instantiate(new EditProjectCommand(package));
-
-        //---
+        public async static Tasks.Task InstantiateAsync(AsyncPackageBase package)
+            => await InstantiateAsync(new EditProjectCommand(package));
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()
@@ -37,11 +30,7 @@ namespace Luminous.TimeSavers.Commands.ProjectNode
             }
         }
 
-        //---
-
         private CommandResult ExecuteCommand()
             => Package?.EditSelectedProject();
-
-        //***
     }
 }

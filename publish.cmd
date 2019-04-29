@@ -1,1 +1,1 @@
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VSSDK\VisualStudioIntegration\Tools\Bin\vsixpublisher.exe" login -publishername "Yann Duran" -personalaccesstoken
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VSSDK\VisualStudioIntegration\Tools\Bin\vsixpublisher.exe" login -publishername "YannDuran" -personalaccesstoken "w4cylwwlpeq67x6uvzxwzoezq5df4q7z6hp22vjbai4obahxr6ma"

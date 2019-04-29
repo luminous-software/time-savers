@@ -6,17 +6,6 @@
   <Include href="KnownImageIds.vsct" />
 
   <Commands package="Package">
-    <!--
-    <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />
-    <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN" />
-    <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNNODE" />
-    <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNFOLDER" />
-    <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_SOLUTION_BUILD" />
-    <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
-    <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_FOLDERNODE" />
-    <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE" />
-    -->
-
     <Menus>
       <!--~~~ Toolbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -140,8 +129,6 @@
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <CommandName>EditSolution</CommandName>
-          <CanonicalName>EditSolution</CanonicalName>
-          <LocCanonicalName>EditSolution</LocCanonicalName>
           <ButtonText>Edit Solution</ButtonText>
         </Strings>
       </Button>
@@ -153,8 +140,6 @@
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <CommandName>CloseSolution</CommandName>
-          <CanonicalName>CloseSolution</CanonicalName>
-          <LocCanonicalName>CloseSolution</LocCanonicalName>
           <ButtonText>Close Solution</ButtonText>
         </Strings>
       </Button>
@@ -168,42 +153,11 @@
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <CommandName>EditProject</CommandName>
-          <CanonicalName>EditProject</CanonicalName>
-          <LocCanonicalName>EditProject</LocCanonicalName>
           <ButtonText>Edit Project</ButtonText>
         </Strings>
       </Button>
 
       <!--~~~ General ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-      <!--
-      <Button guid="PackageCommandSet" id="BrowserWindowCommand" type="Button" priority="0x0010">
-        <Parent guid="PackageCommandSet" id="GeneralGroup" />
-        <Icon guid="ImageCatalogGuid" id="ActiveEnvironment" />
-        <CommandFlag>IconIsMoniker</CommandFlag>
-        <Strings>
-          <CommandName>BrowserWindow</CommandName>
-          <CanonicalName>BrowserWindow</CanonicalName>
-          <LocCanonicalName>BrowserWindow</LocCanonicalName>
-          <ButtonText>Browser Window</ButtonText>
-        </Strings>
-      </Button>
-      -->
-
-      <Button guid="PackageCommandSet" id="InsertGuidCommand" type="Button" priority="0x0020">
-        <Parent guid="PackageCommandSet" id="GeneralGroup" />
-        <Icon guid="ImageCatalogGuid" id="InsertSpan" />
-        <CommandFlag>IconIsMoniker</CommandFlag>
-        <CommandFlag>DynamicVisibility</CommandFlag>
-        <CommandFlag>DontCache</CommandFlag>
-        <CommandFlag>DefaultDisabled</CommandFlag>
-        <Strings>
-          <CommandName>InsertGuid</CommandName>
-          <CanonicalName>InsertGuid</CanonicalName>
-          <LocCanonicalName>InsertGuid</LocCanonicalName>
-          <ButtonText>Insert Guid</ButtonText>
-        </Strings>
-      </Button>
 
       <!--~~~ Build ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -212,11 +166,11 @@
         <Icon guid="ImageCatalogGuid" id="BuildSelection" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
-        <CommandFlag>DontCache</CommandFlag>
         <CommandFlag>DefaultDisabled</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DontCache</CommandFlag>
         <Strings>
           <CommandName>RebuildProject</CommandName>
-          <CanonicalName>RebuildProject</CanonicalName>
           <ButtonText>Rebuild Project</ButtonText>
         </Strings>
       </Button>
@@ -226,11 +180,11 @@
         <Icon guid="ImageCatalogGuid" id="BuildSolution" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
-        <CommandFlag>DontCache</CommandFlag>
         <CommandFlag>DefaultDisabled</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DontCache</CommandFlag>
         <Strings>
           <CommandName>RebuildSolution</CommandName>
-          <CanonicalName>RebuildSolution</CanonicalName>
           <ButtonText>Rebuild Solution</ButtonText>
         </Strings>
       </Button>
@@ -240,11 +194,11 @@
         <Icon guid="ImageCatalogGuid" id="CancelBuild" />
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
-        <CommandFlag>DontCache</CommandFlag>
         <CommandFlag>DefaultDisabled</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DontCache</CommandFlag>
         <Strings>
           <CommandName>CancelBuild</CommandName>
-          <CanonicalName>CancelBuild</CanonicalName>
           <ButtonText>Cancel Build</ButtonText>
         </Strings>
       </Button>
@@ -259,8 +213,6 @@
         <CommandFlag>FixMenuController</CommandFlag>
         <Strings>
           <CommandName>ActivityLog</CommandName>
-          <CanonicalName>ActivityLog</CanonicalName>
-          <LocCanonicalName>ActivityLog</LocCanonicalName>
           <ButtonText>Activity Log</ButtonText>
         </Strings>
       </Button>
@@ -272,8 +224,6 @@
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <CommandName>DiagnosticLog</CommandName>
-          <CanonicalName>DiagnosticLog</CanonicalName>
-          <LocCanonicalName>DiagnosticLog</LocCanonicalName>
           <ButtonText>Diagnostic Log</ButtonText>
         </Strings>
       </Button>
@@ -285,8 +235,6 @@
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <CommandName>PathVariables</CommandName>
-          <CanonicalName>PathVariables</CanonicalName>
-          <LocCanonicalName>PathVariables</LocCanonicalName>
           <ButtonText>Path Variables</ButtonText>
         </Strings>
       </Button>
@@ -300,8 +248,6 @@
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <CommandName>ManageExtensions</CommandName>
-          <CanonicalName>ManageExtensions</CanonicalName>
-          <LocCanonicalName>ManageExtensions</LocCanonicalName>
           <ButtonText>Manage Extensions</ButtonText>
         </Strings>
       </Button>
@@ -316,7 +262,6 @@
         <CommandFlag>FixMenuController</CommandFlag>
         <Strings>
           <CommandName>RestartVisualStudio</CommandName>
-          <CanonicalName>RestartVisualStudio</CanonicalName>
           <ButtonText>Restart Visual Studio</ButtonText>
         </Strings>
       </Button>
@@ -327,9 +272,8 @@
         <CommandFlag>IconIsMoniker</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
-          <CommandName>RestartVisualStudioAsAdministrator</CommandName>
-          <CanonicalName>RestartVisualStudioAsAdministrator</CanonicalName>
-          <ButtonText>Restart Visual Studio As Administrator</ButtonText>
+          <CommandName>RestartAsAdministrator</CommandName>
+          <ButtonText>Restart As Administrator</ButtonText>
         </Strings>
       </Button>
 
@@ -343,8 +287,6 @@
         <CommandFlag>FixMenuController</CommandFlag>
         <Strings>
           <CommandName>TimeSaversOptions</CommandName>
-          <CanonicalName>TimeSaversOptions</CanonicalName>
-          <LocCanonicalName>TimeSaversOptions</LocCanonicalName>
           <ButtonText>Time Savers Options</ButtonText>
         </Strings>
       </Button>
@@ -356,8 +298,6 @@
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <CommandName>KeyboardOptions</CommandName>
-          <CanonicalName>KeyboardOptions</CanonicalName>
-          <LocCanonicalName>KeyboardOptions</LocCanonicalName>
           <ButtonText>Keyboard Options</ButtonText>
         </Strings>
       </Button>
@@ -456,6 +396,7 @@
 
   <Symbols>
     <GuidSymbol name="Package" value="{6359DA17-6477-4E9C-8E73-7D05EA8A33A1}" />
+    <GuidSymbol name="SingleProjectOrMultipleProjects" value="{8F38AAA7-8FA5-423B-A1A6-4DD4DAF436A3}" />
 
     <GuidSymbol name="PackageCommandSet" value="{4EAC4E23-4909-4DAC-9D6E-819BDC861480}">
       <IDSymbol name="PackageToolbar" value="0xA001" />

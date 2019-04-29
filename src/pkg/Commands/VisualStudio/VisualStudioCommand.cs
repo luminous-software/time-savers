@@ -8,9 +8,9 @@
         private VisualStudioDialogPage _visualStudioOptions;
 
         protected VisualStudioDialogPage VisualStudioOptions
-            => _visualStudioOptions ?? (_visualStudioOptions = PackageBase.GetDialogPage<VisualStudioDialogPage>());
+            => _visualStudioOptions ?? (_visualStudioOptions = AsyncPackageBase.GetDialogPage<VisualStudioDialogPage>());
 
-        protected VisualStudioCommand(PackageBase package, int id) : base(package, id)
+        protected VisualStudioCommand(AsyncPackageBase package, int id) : base(package, id)
         { }
 
         protected override bool CanExecute

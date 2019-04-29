@@ -8,9 +8,9 @@
         private DeveloperDialogPage _developerOptions;
 
         protected DeveloperDialogPage DeveloperOptions
-            => _developerOptions ?? (_developerOptions = PackageBase.GetDialogPage<DeveloperDialogPage>());
+            => _developerOptions ?? (_developerOptions = AsyncPackageBase.GetDialogPage<DeveloperDialogPage>());
 
-        protected DeveloperCommand(PackageBase package, int id) : base(package, id)
+        protected DeveloperCommand(AsyncPackageBase package, int id) : base(package, id)
         { }
 
         protected override bool CanExecute

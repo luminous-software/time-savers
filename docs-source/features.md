@@ -7,14 +7,6 @@ allows you to temporarily disable all _Time Savers_ features with one simple set
 
 This may come in handy if you ever need to suspend _Time Savers_ for whatever reason.
 
-### Insert Guid
-
-The `Insert Guid` feature adds a toolbar button, to provide a **one-click** way to to insert a **single guid**,
-or **multiple guids**, directly into your code without the need for any external tool. It also adds a keyboard
-shortcut (`CTRL-ALT-I`, `CTRL-ALT-G`).
-
-You can either use the toolbar button, or the keyboard shortcut, to insert your guid(s).
-
 ## Solution Features
 
 ### Close Solution

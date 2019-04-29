@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.Shell;
+using Tasks = System.Threading.Tasks;
 
 namespace Luminous.TimeSavers.Commands.Build
 {
@@ -7,11 +8,11 @@ namespace Luminous.TimeSavers.Commands.Build
 
     internal sealed class CancelBuildCommand : BuildCommand
     {
-        private CancelBuildCommand(PackageBase package) : base(package, PackageIds.CancelBuildCommand)
+        private CancelBuildCommand(AsyncPackageBase package) : base(package, PackageIds.CancelBuildCommand)
         { }
 
-        public static void Instantiate(PackageBase package)
-            => Instantiate(new CancelBuildCommand(package));
+        public async static Tasks.Task InstantiateAsync(AsyncPackageBase package)
+            => await InstantiateAsync(new CancelBuildCommand(package));
 
         protected override bool CanExecute
         => base.CanExecute && BuildOptions.CancelBuildCommandEnabled;

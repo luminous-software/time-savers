@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.Shell;
+using Tasks = System.Threading.Tasks;
 
 namespace Luminous.TimeSavers.Commands.Restart
 {
@@ -7,29 +8,18 @@ namespace Luminous.TimeSavers.Commands.Restart
 
     internal sealed class RestartNormalCommand : TimeSaversCommand
     {
-        //***
-        //!!!
-
-        private RestartNormalCommand(PackageBase package) : base(package, PackageIds.RestartNormalCommand)
+        private RestartNormalCommand(AsyncPackageBase package) : base(package, PackageIds.RestartNormalCommand)
         { }
 
-        //!!!
-
-        public static void Instantiate(PackageBase package)
-            => Instantiate(new RestartNormalCommand(package));
-
-        //---
+        public async static Tasks.Task InstantiateAsync(AsyncPackageBase package)
+            => await InstantiateAsync(new RestartNormalCommand(package));
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()
                 .ShowProblem()
                 .ShowInformation();
 
-        //---
-
         private CommandResult ExecuteCommand()
             => Package?.RestartVisualStudio();
-
-        //***
     }
 }

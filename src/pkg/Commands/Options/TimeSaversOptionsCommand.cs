@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.Shell;
+using Tasks = System.Threading.Tasks;
 
 namespace Luminous.TimeSavers.Commands.Options
 {
@@ -8,11 +9,11 @@ namespace Luminous.TimeSavers.Commands.Options
 
     internal sealed class TimeSaversOptionsCommand : OptionsCommand
     {
-        private TimeSaversOptionsCommand(PackageBase package) : base(package, PackageIds.TimeSaversOptionsCommand)
+        private TimeSaversOptionsCommand(AsyncPackageBase package) : base(package, PackageIds.TimeSaversOptionsCommand)
         { }
 
-        public static void Instantiate(PackageBase package)
-            => Instantiate(new TimeSaversOptionsCommand(package));
+        public async static Tasks.Task InstantiateAsync(AsyncPackageBase package)
+            => await InstantiateAsync(new TimeSaversOptionsCommand(package));
 
         protected override bool CanExecute
             => base.CanExecute && Options.TimeSaversOptionsCommandEnabled;

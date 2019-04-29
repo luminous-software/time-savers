@@ -1,28 +1,26 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.Shell;
+using System;
 using System.IO;
 using System.Linq;
-using Microsoft.VisualStudio.Shell;
-
 using static System.IO.Path;
+using Tasks = System.Threading.Tasks;
 
 namespace Luminous.TimeSavers.Commands.Developer
 {
-    using Luminous.Code.Exceptions.ExceptionExtensions;
+    using Luminous.Code.Extensions.ExceptionExtensions;
     using Luminous.Code.VisualStudio.Commands;
     using Luminous.Code.VisualStudio.Packages;
-
-    using static Luminous.Code.VisualStudio.Commands.CommandKeys;
 
     internal sealed class DiagnosticLogCommand : DeveloperCommand
     {
         private static int CommandId
             => PackageIds.DiagnosticLogCommand;
 
-        private DiagnosticLogCommand(PackageBase package) : base(package, CommandId)
+        private DiagnosticLogCommand(AsyncPackageBase package) : base(package, CommandId)
         { }
 
-        public static void Instantiate(PackageBase package)
-            => Instantiate(new DiagnosticLogCommand(package));
+        public async static Tasks.Task InstantiateAsync(AsyncPackageBase package)
+            => await InstantiateAsync(new DiagnosticLogCommand(package));
 
         protected override void OnExecute(OleMenuCommand command)
             => ExecuteCommand()

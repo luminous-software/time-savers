@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd" Version="2.4.0.1" Language="en-US" Publisher="Luminous Software Solutions" />
+        <Identity Id="049c7ac5-ba44-4a72-b4ee-7be7fb1b0edd" Version="2.4.0.3" Language="en-US" Publisher="Luminous Software Solutions" />
         <DisplayName>Time Savers</DisplayName>
         <Description xml:space="preserve">TimeSavers =&gt;  developerProductivity++; </Description>
         <MoreInfo>https://luminous-software.solutions/time-savers</MoreInfo>
@@ -10,7 +10,7 @@
         <ReleaseNotes>https://luminous-software.solutions/time-savers/changelog/</ReleaseNotes>
         <Icon>Resources\logo.png</Icon>
         <PreviewImage>Resources\preview.png</PreviewImage>
-        <Tags>luminous,time savers,time-savers,timesavers,visual studio,productivity,guid,guid generator,guid-generator,yannduran,yd</Tags>
+        <Tags>luminous,time savers,time-savers,timesavers,visual studio,productivity,yannduran,yd</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,17.0)" />

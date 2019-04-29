@@ -11,8 +11,8 @@ namespace Luminous.TimeSavers
         public const string Name = "Time Savers";
         public const string Description = @"TimeSavers =>  developerProductivity++; ";
         public const string Language = "en-US";
-        public const string Version = "2.4.0.1";
+        public const string Version = "2.4.0.3";
         public const string Author = "Luminous Software Solutions";
-        public const string Tags = "luminous,time savers,time-savers,timesavers,visual studio,productivity,guid,guid generator,guid-generator,yannduran,yd";
+        public const string Tags = "luminous,time savers,time-savers,timesavers,visual studio,productivity,yannduran,yd";
     }
 }

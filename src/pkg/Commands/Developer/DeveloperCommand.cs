@@ -15,9 +15,5 @@
 
         protected override bool CanExecute
             => base.CanExecute && DeveloperOptions.DeveloperCommandsEnabled;
-
-        protected override bool IsActive
-            => base.IsActive && InCodeWindow;
-
     }
 }

@@ -27,10 +27,21 @@ this extension adds a new toolbar to hold _Time Savers_' commands.
 
 ### Menu
 
-For those people who don't want to add yet another toolbar,
-this extension also adds a new _Time Savers_ menu to the _View_ menu.
+For those people who don't want to add yet another toolbar, this extension also adds a new top-level _Time Savers_ menu.
 
 ![Menu](assets/images/menu.png)
+
+#### VS 2019's New Extensions Menu
+
+>  Visual Studio has forced all extensions that add a top-level menu into a new menu called _Extensions_.
+>  
+>  If you don't like this new behavior,
+>  you can install an extension called [**Extensions in Main Menu**][extensions-in-main-menu-url],
+>  which will restore the VS 2017 behavior.
+>
+>  ![Extensions Menu](assets/images/extensions-menu.png)
+
+[extensions-in-main-menu-url]: https://marketplace.visualstudio.com/items?itemName=Evgeny.RestoreExtensions
 
 ### Context Menus
 

@@ -2,62 +2,72 @@
     "docs": [
         {
             "location": "/",
-            "text": "Enhance Your Productivity\n\u00b6\n\n\nEvery feature of \nTime Savers\n was created specifically to enhance development productivity by\n\nsaving you time\n.\n\n\n\n\nShare Your Time Savers Experience\n\n\nIf \nTime Savers\n has saved you time, please come back and show your support:\n\n\n\n\nyou could \nrate \nTime Savers\n (only takes a couple of seconds)\n\n\nor \nreview \nTime Savers\n (help others benefit from your experience)\n\n\nor \nshout me a coke\n (as I don't drink coffee lol)\n\n\n\n\n\n\nTime Savers Toolbar\n\u00b6\n\n\nThis extension adds a new toolbar that adds command buttons for most \nTime Savers\n features giving you a\n\none-click experience\n, saving you from having to go hunting for the command you want in a menu \nsomewhere\n.\n\n\nTo enable the toolbar, right-click in a blank spot on the toolbar area, and select \nTime Savers\n.\nLike all other Visual Studio toolbars, you can remove any commands that you feel you don't need,\nor even add existing Visual Studio commands to it.\n\n\nTime Savers Menu\n\u00b6\n\n\nFor people who prefer a menu to a toolbar this extension also adds a new menu to Visual Studio's main menu bar.\nAll \nTime Savers\n features are available via this menu giving you a simple\n\ntwo-click experience\n.\n\n\nContext Menus (right-click)\n\u00b6\n\n\nFor people who hate having to move their mouse from the code they're working on,\nanother menu has been added to the context menu of any code window, as well as to some nodes in \nSolution Explorer\n.\nMost \nTime Savers\n features are available via this context menu for a simple\n\nright-click experience\n, without having to your mouse from the code you're working on.\n\n\nThe commands have been grouped into their own \nTime Savers\n menu because most context menus\nare already pretty clogged up. And they're growing all the time,\nas Microsoft or 3rd-party extensions add more and more commands to them.\n\n\nUnfortunately that means that there's one more click involved than I'd ideally prefer.\nHowever I've found it much easier to find commands in a dedicated menu anyway, rather\nthan having to search through one gigantic menu of commands.\n\n\nKeyboard Shortcuts\n\u00b6\n\n\nSome of the \nTime Savers\n features that tend to be used frequently have also been assigned a keyboard shortcut for a\n\none or two keystroke experience\n.\nAnd of course you can add your own keyboard shortcut to any of the \nTime Savers\n features.",
-            "title": "Why Luminous Time Savers?"
+            "text": "TimeSavers => developerProductivity++;\n\n\n\n\n\n\n\n\n\n\nYou can download this extension \nfrom the Visual Studio Marketplace\n\n\n\n\nEnhance Your Productivity\n\u00b6\n\n\nEvery feature of \nTime Savers\n was created specifically to enhance development productivity by\n\nsaving you time\n.\n\n\nToolbar\n\u00b6\n\n\nFor those people who prefer their commands front-and-center, available all all times with a single click,\nthis extension adds a new toolbar to hold \nTime Savers\n' commands.\n\n\n\n\nMenu\n\u00b6\n\n\nFor those people who don't want to add yet another toolbar, this extension also adds a new top-level \nTime Savers\n menu.\n\n\n\n\n\n\nVS 2019's New Extensions Menu\n\n\nVisual Studio has forced all extensions that add a top-level menu into a new menu called \nExtensions\n.\n\n\nIf you don't like this new behavior,\nyou can install an extension called \nExtensions in Main Menu\n,\nwhich will restore the VS 2017 behavior.\n\n\n\n\n\n\nContext Menus\n\u00b6\n\n\nFor people who hate having to move their mouse from the code they're working on,\nanother menu has been added to the context menu of any code window, as well as to some nodes in \nSolution Explorer\n.\nMost \nTime Savers\n features are available via this context menu for a simple\n\nright-click experience\n, without having to your mouse from the code you're working on.\n\n\nThe commands have been grouped into their own \nTime Savers\n menu because most context menus\nare already pretty clogged up. And they're growing all the time,\nas Microsoft or 3rd-party extensions add more and more commands to them.\n\n\nUnfortunately that means that there's one more click involved than I'd ideally prefer.\nHowever I've found it much easier to find commands in a dedicated menu anyway, rather\nthan having to search through one gigantic menu of commands.\n\n\n\n\nShortcuts\n\u00b6\n\n\nSome of the \nTime Savers\n features that tend to be used frequently have also been assigned a keyboard shortcut for a\n\none or two keystroke experience\n.\nAnd of course you can add your own keyboard shortcut to any of the \nTime Savers\n features.\n\n\nMore Information\n\u00b6\n\n\nYou can read more about \nTime Savers\n on its website:\n\n\nOverview\n \n|\n \nGetting Started\n \n|\n \nFeatures\n \n|\n \nChangelog\n \n|\n \nRoadmap\n\n\nSupport the Project\n\u00b6\n\n\nIf \nTime Savers\n has saved you time, please come back and show your support:\n\n\n\n\nyou could \nrate \nTime Savers\n (only takes a couple of seconds)\n\n\nor \nreview \nTime Savers\n (help others benefit from your experience)\n\n\nor \nshout me a coke\n (as I don't drink coffee or beer lol)",
+            "title": "Overview"
         },
         {
             "location": "/#enhance-your-productivity",
-            "text": "Every feature of  Time Savers  was created specifically to enhance development productivity by saving you time .   Share Your Time Savers Experience  If  Time Savers  has saved you time, please come back and show your support:   you could  rate  Time Savers  (only takes a couple of seconds)  or  review  Time Savers  (help others benefit from your experience)  or  shout me a coke  (as I don't drink coffee lol)",
+            "text": "Every feature of  Time Savers  was created specifically to enhance development productivity by saving you time .",
             "title": "Enhance Your Productivity"
         },
         {
-            "location": "/#time-savers-toolbar",
-            "text": "This extension adds a new toolbar that adds command buttons for most  Time Savers  features giving you a one-click experience , saving you from having to go hunting for the command you want in a menu  somewhere .  To enable the toolbar, right-click in a blank spot on the toolbar area, and select  Time Savers .\nLike all other Visual Studio toolbars, you can remove any commands that you feel you don't need,\nor even add existing Visual Studio commands to it.",
-            "title": "Time Savers Toolbar"
+            "location": "/#toolbar",
+            "text": "For those people who prefer their commands front-and-center, available all all times with a single click,\nthis extension adds a new toolbar to hold  Time Savers ' commands.",
+            "title": "Toolbar"
         },
         {
-            "location": "/#time-savers-menu",
-            "text": "For people who prefer a menu to a toolbar this extension also adds a new menu to Visual Studio's main menu bar.\nAll  Time Savers  features are available via this menu giving you a simple two-click experience .",
-            "title": "Time Savers Menu"
+            "location": "/#menu",
+            "text": "For those people who don't want to add yet another toolbar, this extension also adds a new top-level  Time Savers  menu.    VS 2019's New Extensions Menu  Visual Studio has forced all extensions that add a top-level menu into a new menu called  Extensions .  If you don't like this new behavior,\nyou can install an extension called  Extensions in Main Menu ,\nwhich will restore the VS 2017 behavior.",
+            "title": "Menu"
         },
         {
-            "location": "/#context-menus-right-click",
+            "location": "/#context-menus",
             "text": "For people who hate having to move their mouse from the code they're working on,\nanother menu has been added to the context menu of any code window, as well as to some nodes in  Solution Explorer .\nMost  Time Savers  features are available via this context menu for a simple right-click experience , without having to your mouse from the code you're working on.  The commands have been grouped into their own  Time Savers  menu because most context menus\nare already pretty clogged up. And they're growing all the time,\nas Microsoft or 3rd-party extensions add more and more commands to them.  Unfortunately that means that there's one more click involved than I'd ideally prefer.\nHowever I've found it much easier to find commands in a dedicated menu anyway, rather\nthan having to search through one gigantic menu of commands.",
-            "title": "Context Menus (right-click)"
+            "title": "Context Menus"
         },
         {
-            "location": "/#keyboard-shortcuts",
+            "location": "/#shortcuts",
             "text": "Some of the  Time Savers  features that tend to be used frequently have also been assigned a keyboard shortcut for a one or two keystroke experience .\nAnd of course you can add your own keyboard shortcut to any of the  Time Savers  features.",
-            "title": "Keyboard Shortcuts"
+            "title": "Shortcuts"
+        },
+        {
+            "location": "/#more-information",
+            "text": "You can read more about  Time Savers  on its website:  Overview   |   Getting Started   |   Features   |   Changelog   |   Roadmap",
+            "title": "More Information"
+        },
+        {
+            "location": "/#support-the-project",
+            "text": "If  Time Savers  has saved you time, please come back and show your support:   you could  rate  Time Savers  (only takes a couple of seconds)  or  review  Time Savers  (help others benefit from your experience)  or  shout me a coke  (as I don't drink coffee or beer lol)",
+            "title": "Support the Project"
         },
         {
             "location": "/getting-started/",
-            "text": "How to Get Started\n\u00b6\n\n\nThere are three ways you can install \nTime Savers\n\n\n\n\nvia Visual Studio's \nExtensions and Updates\n dialog\n\n\nfrom the \nVisual Studio Marketplace\n website\n\n\ndownload the source code and compile the extension yourself\n\n\n\n\n\n\n\nInstall Via the Extensions and Updates Dialog\n\u00b6\n\n\n\n\nOpen the \nExtensions and Updates\n dialog in Visual Studio\n\n\nClick on the \nOnline\n tab\n\n\nType 'time savers' in the search box\n\n\nClick on \nLuminous Timer Savers\n in the list\n\n\nClick the download button\n\n\n\n\n\n\n\nInstall Via the Visual Studio Marketplace website\n\u00b6\n\n\n\n\nClick on \nthis link\n to open the \nVisual Studio Marketplace\n website\n\n\nClick the \ndownload\n button\n\n\n\n\n\n\n\nDownload the Source Code\n\u00b6\n\n\nYou can find the source code on \nGitHub\n, then fork it or clone it.",
-            "title": "How to Get Started"
+            "text": "Getting Started\n\u00b6\n\n\nThere are three ways you can install \nTime Savers\n:\n\n\n\n\nFrom inside Visual Studio\n\n\nDownload and install manually\n\n\nFrom the \nsource code\n\n\n\n\nOption 1 - From Inside Visual Studio\n\u00b6\n\n\n\n\nIn Visual Studio open the \nExtensions\n dialog\n\n\nVS 2017: \nExtensions and Updates\n\n\nVS 2019: \nManage Extensions\n \n\n\nClick on the \nOnline\n tab\n\n\nType \ntime savers\n in the search box\n\n\nClick on \nTimer Savers\n in the list\n\n\nClick the \nDownload\n button\n\n\n\n\nOption 2 - Download and Install Manually\n\u00b6\n\n\n\n\nClick on \nthis link\n to open the \nVisual Studio Marketplace\n website\n\n\nClick the \ndownload\n button\n\n\nInstall the downloaded VSIX file\n\n\n\n\nOption 3 - From the Source Code\n\u00b6\n\n\n\n\nFind the \nsource code\n on GitHub\n\n\nFork it or clone it\n\n\nCompile the solution\n\n\nInstall the compiled VSIX file",
+            "title": "Getting Started"
         },
         {
-            "location": "/getting-started/#how-to-get-started",
-            "text": "There are three ways you can install  Time Savers   via Visual Studio's  Extensions and Updates  dialog  from the  Visual Studio Marketplace  website  download the source code and compile the extension yourself",
-            "title": "How to Get Started"
+            "location": "/getting-started/#getting-started",
+            "text": "There are three ways you can install  Time Savers :   From inside Visual Studio  Download and install manually  From the  source code",
+            "title": "Getting Started"
         },
         {
-            "location": "/getting-started/#install-via-the-extensions-and-updates-dialog",
-            "text": "Open the  Extensions and Updates  dialog in Visual Studio  Click on the  Online  tab  Type 'time savers' in the search box  Click on  Luminous Timer Savers  in the list  Click the download button",
-            "title": "Install Via the Extensions and Updates Dialog"
+            "location": "/getting-started/#option-1-from-inside-visual-studio",
+            "text": "In Visual Studio open the  Extensions  dialog  VS 2017:  Extensions and Updates  VS 2019:  Manage Extensions    Click on the  Online  tab  Type  time savers  in the search box  Click on  Timer Savers  in the list  Click the  Download  button",
+            "title": "Option 1 - From Inside Visual Studio"
         },
         {
-            "location": "/getting-started/#install-via-the-visual-studio-marketplace-website",
-            "text": "Click on  this link  to open the  Visual Studio Marketplace  website  Click the  download  button",
-            "title": "Install Via the Visual Studio Marketplace website"
+            "location": "/getting-started/#option-2-download-and-install-manually",
+            "text": "Click on  this link  to open the  Visual Studio Marketplace  website  Click the  download  button  Install the downloaded VSIX file",
+            "title": "Option 2 - Download and Install Manually"
         },
         {
-            "location": "/getting-started/#download-the-source-code",
-            "text": "You can find the source code on  GitHub , then fork it or clone it.",
-            "title": "Download the Source Code"
+            "location": "/getting-started/#option-3-from-the-source-code",
+            "text": "Find the  source code  on GitHub  Fork it or clone it  Compile the solution  Install the compiled VSIX file",
+            "title": "Option 3 - From the Source Code"
         },
         {
             "location": "/features/",
-            "text": "General Features\n\u00b6\n\n\nEnable Time Savers\n\u00b6\n\n\nThe \nEnable Time Savers\n setting, found in \nTools | Options | Time Savers | General\n,\nallows you to temporarily disable all \nTime Savers\n features with one simple setting.\n\n\nThis may come in handy if you ever need to suspend \nTime Savers\n for whatever reason.\n\n\nInsert Guid\n\u00b6\n\n\nThe \nInsert Guid\n feature adds a toolbar button, to provide a \none-click\n way to to insert a \nsingle guid\n,\nor \nmultiple guids\n, directly into your code without the need for any external tool. It also adds a keyboard\nshortcut (\nCTRL-ALT-I\n, \nCTRL-ALT-G\n).\n\n\nYou can either use the toolbar button, or the keyboard shortcut, to insert your guid(s).\n\n\nSolution Features\n\u00b6\n\n\nClose Solution\n\u00b6\n\n\nThe \nClose Solution\n feature adds a context menu button, to provide an easy way to close the current solution\nwithout having to use \nFile | Close Solution\n.\n\n\nThis can be especially handy if you're already using the mouse in Solution Explorer.\n\n\n\n\nNote\n\n\nIf you're already using the keyboard, you can always use Visual Studio's built-in \nALT-F, L\n\nto close it that way too.\n\n\n\n\nEdit Solution\n\u00b6\n\n\nThe \nEdit Solution\n feature provides a context menu button, to provide a simple way to open the current solution's\n\n.sln\n file, to view or modify its contents.\n\n\nThe file is opened in a Visual Studio xml editor tab.\n\n\nRe-open Start Page\n\u00b6\n\n\nWhen enabled, the \nRe-open Start Page\n feature automatically re-opens the start page whenever the current\nsolution is closed.\nThis comes in handy if you use the pin multiple projects to the start page as your preferred method of\nopening projects.\n\n\nProject Features\n\u00b6\n\n\nEdit Project\n\u00b6\n\n\nThe \nEdit Project\n feature provides a context menu button, to provide a simple way to open a project's \n.csproj\n\nfile, to view or modify its contents.\n\n\nThe file is opened in a Visual Studio xml editor tab.\n\n\nBuild Features\n\u00b6\n\n\nRebuild Solution\n\u00b6\n\n\nThe \nRebuild Solution\n feature adds a toolbar button, to provide a convenient \none-click\n way to rebuild\nthe \nwhole solution\n.\n\n\nRebuild Project\n\u00b6\n\n\nThe \nRebuild Project\n feature adds a toolbar button, to provide a convenient \none-click\n way to rebuild\njust the \ncurrent project\n.\n\n\n\n\nNote\n\n\nThe current project is a \nselected project\n in Solution Explorer, the project that contains a \nselected\nfile/folder\n in Solution Explorer, or the project to which the \nactive code document\n belongs.\n\n\n\n\nCancel Build\n\u00b6\n\n\nThe \nCancel Build\n feature adds a toolbar button, to provide a convenient \none-click\n way to cancel\na running \nbuild/rebuild\n.\n\n\nDeveloper Features\n\u00b6\n\n\nActivity Log\n\u00b6\n\n\nThe \nActivity Log\n feature adds a toolbar button, to provide a convenient way to open Visual Studio's\n\nactivity log\n.\nThis is particularly useful if an extension is misbehaving, or if you get a message from Visual Studio\nto look at the file for more details.\n\n\n\n\nNote\n\n\nThe activity log file's path is \n%APPDATA%\\Microsoft\\VisualStudio\\version\\ActivityLog.xml\n, where:\n\n\n\n\n%APPDATA%\n represents the value in the \nAPPDATA\n environment variable\n\n\nversion\n represents the current Visual Studio version (ie 15.0 etc)\n\n\n\n\n\n\nDiagnostic Log\n\u00b6\n\n\nThe \nDiagnostic Log\n feature adds a toolbar button, to provide an easy way to open the \nmost recent\n MSBuild\n\ndiagnostic log\n file.\n\n\n\n\nNote\n\n\nThe diagnostic log file's path is: \n%LOCALAPPDATA%\\Temp\\MSBuild_guid.failure.txt\n, where:\n\n\n\n\n%LOCALAPPDATA%\n represents the value in the \nLOCALAPPDATA\n environment variable\n\n\nguid\n represents a random guid value\n\n\n\n\n\n\nPath Variables\n\u00b6\n\n\nThe \nPath Variables\n feature adds a toolbar button, to provide a convenient way to display the current set of\nWindows paths variable values without the need to open a commpand prompt.\n\n\nVisual Studio Features\n\u00b6\n\n\nExtensions and Updates\n\u00b6\n\n\nThe \nExtensions and Updates\n feature adds a toolbar button, to provide a convenient way \none-click\n way to\nopen the \nExtensions and Updates\n dialog.\n\n\nRestart Features\n\u00b6\n\n\nFrom time to time you may have seen a dialog box offering to restart Visual Studio. Yet there's never\nbeen a way to trigger this yourself. The two features explained below, allow you to unlock Visual Studio's\nbuilt-in ability to restart itself anytime that \nyou\n want, without manually closing and\nre-opening the application.\n\n\n\n\nNote\n\n\nVisual Studio will attempt to re-open the project that was open at the time of triggering the restart,\nwhereas manually closing and re-opening it may not depending on your\n\nTools | Options | Environment | Startup\n setting.\n\n\n\n\nRestart Visual Studio\n\u00b6\n\n\nThe \nRestart Visual Studio\n feature adds a toolbar button, that provides a \none-click\n way to restart\nVisual Studio.\n\n\n\n\nNote\n\n\nIf Visual Studio was opened \nas administrator\n, using this 2 restart Visual Studio, it will \nstill\n\nbe opened \nas administrator\n.\n\n\nThe only way to get a \nnormal\n session again is to close/re-open Visual Studio manually.\n\n\n\n\nRestart Visual Studio as Administrator\n\u00b6\n\n\nThe \nRestart Visual Studio as Administrator\n feature adds a toolbar button, that provides a \ntwo-click\n way to\nrestart Visual Studio as administrator (aka an \nelevated\n session).\n\n\nOptions Features\n\u00b6\n\n\nTime Savers Options\n\u00b6\n\n\nThe \nTime Savers Options\n feature adds a toolbar button, that provides a simple \none-click\n way to\nopen the \nTools | Options\n dialog with the \nTime Savers\n node expanded, and the \nGeneral\n option selected.\n\n\nKeyboard Options\n\u00b6\n\n\nThe \nKeyboard Options\n feature adds a toolbar button, that provides a \ntwo-click\n way to\nopen the \nTools | Options\n dialog with the \nEnvironment\n node expanded, and the \nKeyboard\n option selected.\n\n\nThis can save a lot of time when you add/test a number of keyboard shortcuts, or need to look up a keyboard.\nshortcut",
+            "text": "General Features\n\u00b6\n\n\nEnable Time Savers\n\u00b6\n\n\nThe \nEnable Time Savers\n setting, found in \nTools | Options | Time Savers | General\n,\nallows you to temporarily disable all \nTime Savers\n features with one simple setting.\n\n\nThis may come in handy if you ever need to suspend \nTime Savers\n for whatever reason.\n\n\nSolution Features\n\u00b6\n\n\nClose Solution\n\u00b6\n\n\nThe \nClose Solution\n feature adds a context menu button, to provide an easy way to close the current solution\nwithout having to use \nFile | Close Solution\n.\n\n\nThis can be especially handy if you're already using the mouse in Solution Explorer.\n\n\n\n\nNote\n\n\nIf you're already using the keyboard, you can always use Visual Studio's built-in \nALT-F, L\n\nto close it that way too.\n\n\n\n\nEdit Solution\n\u00b6\n\n\nThe \nEdit Solution\n feature provides a context menu button, to provide a simple way to open the current solution's\n\n.sln\n file, to view or modify its contents.\n\n\nThe file is opened in a Visual Studio xml editor tab.\n\n\nRe-open Start Page\n\u00b6\n\n\nWhen enabled, the \nRe-open Start Page\n feature automatically re-opens the start page whenever the current\nsolution is closed.\nThis comes in handy if you use the pin multiple projects to the start page as your preferred method of\nopening projects.\n\n\nProject Features\n\u00b6\n\n\nEdit Project\n\u00b6\n\n\nThe \nEdit Project\n feature provides a context menu button, to provide a simple way to open a project's \n.csproj\n\nfile, to view or modify its contents.\n\n\nThe file is opened in a Visual Studio xml editor tab.\n\n\nBuild Features\n\u00b6\n\n\nRebuild Solution\n\u00b6\n\n\nThe \nRebuild Solution\n feature adds a toolbar button, to provide a convenient \none-click\n way to rebuild\nthe \nwhole solution\n.\n\n\nRebuild Project\n\u00b6\n\n\nThe \nRebuild Project\n feature adds a toolbar button, to provide a convenient \none-click\n way to rebuild\njust the \ncurrent project\n.\n\n\n\n\nNote\n\n\nThe current project is a \nselected project\n in Solution Explorer, the project that contains a \nselected\nfile/folder\n in Solution Explorer, or the project to which the \nactive code document\n belongs.\n\n\n\n\nCancel Build\n\u00b6\n\n\nThe \nCancel Build\n feature adds a toolbar button, to provide a convenient \none-click\n way to cancel\na running \nbuild/rebuild\n.\n\n\nDeveloper Features\n\u00b6\n\n\nActivity Log\n\u00b6\n\n\nThe \nActivity Log\n feature adds a toolbar button, to provide a convenient way to open Visual Studio's\n\nactivity log\n.\nThis is particularly useful if an extension is misbehaving, or if you get a message from Visual Studio\nto look at the file for more details.\n\n\n\n\nNote\n\n\nThe activity log file's path is \n%APPDATA%\\Microsoft\\VisualStudio\\version\\ActivityLog.xml\n, where:\n\n\n\n\n%APPDATA%\n represents the value in the \nAPPDATA\n environment variable\n\n\nversion\n represents the current Visual Studio version (ie 15.0 etc)\n\n\n\n\n\n\nDiagnostic Log\n\u00b6\n\n\nThe \nDiagnostic Log\n feature adds a toolbar button, to provide an easy way to open the \nmost recent\n MSBuild\n\ndiagnostic log\n file.\n\n\n\n\nNote\n\n\nThe diagnostic log file's path is: \n%LOCALAPPDATA%\\Temp\\MSBuild_guid.failure.txt\n, where:\n\n\n\n\n%LOCALAPPDATA%\n represents the value in the \nLOCALAPPDATA\n environment variable\n\n\nguid\n represents a random guid value\n\n\n\n\n\n\nPath Variables\n\u00b6\n\n\nThe \nPath Variables\n feature adds a toolbar button, to provide a convenient way to display the current set of\nWindows paths variable values without the need to open a commpand prompt.\n\n\nVisual Studio Features\n\u00b6\n\n\nExtensions and Updates\n\u00b6\n\n\nThe \nExtensions and Updates\n feature adds a toolbar button, to provide a convenient way \none-click\n way to\nopen the \nExtensions and Updates\n dialog.\n\n\nRestart Features\n\u00b6\n\n\nFrom time to time you may have seen a dialog box offering to restart Visual Studio. Yet there's never\nbeen a way to trigger this yourself. The two features explained below, allow you to unlock Visual Studio's\nbuilt-in ability to restart itself anytime that \nyou\n want, without manually closing and\nre-opening the application.\n\n\n\n\nNote\n\n\nVisual Studio will attempt to re-open the project that was open at the time of triggering the restart,\nwhereas manually closing and re-opening it may not depending on your\n\nTools | Options | Environment | Startup\n setting.\n\n\n\n\nRestart Visual Studio\n\u00b6\n\n\nThe \nRestart Visual Studio\n feature adds a toolbar button, that provides a \none-click\n way to restart\nVisual Studio.\n\n\n\n\nNote\n\n\nIf Visual Studio was opened \nas administrator\n, using this 2 restart Visual Studio, it will \nstill\n\nbe opened \nas administrator\n.\n\n\nThe only way to get a \nnormal\n session again is to close/re-open Visual Studio manually.\n\n\n\n\nRestart Visual Studio as Administrator\n\u00b6\n\n\nThe \nRestart Visual Studio as Administrator\n feature adds a toolbar button, that provides a \ntwo-click\n way to\nrestart Visual Studio as administrator (aka an \nelevated\n session).\n\n\nOptions Features\n\u00b6\n\n\nTime Savers Options\n\u00b6\n\n\nThe \nTime Savers Options\n feature adds a toolbar button, that provides a simple \none-click\n way to\nopen the \nTools | Options\n dialog with the \nTime Savers\n node expanded, and the \nGeneral\n option selected.\n\n\nKeyboard Options\n\u00b6\n\n\nThe \nKeyboard Options\n feature adds a toolbar button, that provides a \ntwo-click\n way to\nopen the \nTools | Options\n dialog with the \nEnvironment\n node expanded, and the \nKeyboard\n option selected.\n\n\nThis can save a lot of time when you add/test a number of keyboard shortcuts, or need to look up a keyboard.\nshortcut",
             "title": "Features"
         },
         {
@@ -69,11 +79,6 @@
             "location": "/features/#enable-time-savers",
             "text": "The  Enable Time Savers  setting, found in  Tools | Options | Time Savers | General ,\nallows you to temporarily disable all  Time Savers  features with one simple setting.  This may come in handy if you ever need to suspend  Time Savers  for whatever reason.",
             "title": "Enable Time Savers"
-        },
-        {
-            "location": "/features/#insert-guid",
-            "text": "The  Insert Guid  feature adds a toolbar button, to provide a  one-click  way to to insert a  single guid ,\nor  multiple guids , directly into your code without the need for any external tool. It also adds a keyboard\nshortcut ( CTRL-ALT-I ,  CTRL-ALT-G ).  You can either use the toolbar button, or the keyboard shortcut, to insert your guid(s).",
-            "title": "Insert Guid"
         },
         {
             "location": "/features/#solution-features",
@@ -187,7 +192,7 @@
         },
         {
             "location": "/changelog/",
-            "text": "Public Releases\n\u00b6\n\n\nv2.2.1 - \n2018-03-12\n\u00b6\n\n\n\n\nAdded basic documentation to the website\n\n\nhttps://luminous-software.solutions/time-savers\n\n\n\n\n\n\n\n\nv2.2.0 - \n2017-02-13\n\u00b6\n\n\n\n\nRenamed extension\n\n\nfrom \nTime Savers\n\n\nto \nLuminous Time Savers\n\n\n\n\n\n\nChanged lower level code packages\n\n\nfrom YD.Code.Core, YD.Code.VisualStudio\n\n\nto Luminous Code.Core, LuminousCode.VisualStudio\n\n\n\n\n\n\n\n\nv2.0.0 - 2017-02-04\n\u00b6\n\n\n\n\nAdded VS 2017 support\n\n\n\n\nv1.1.0 - 2016-11-08\n\u00b6\n\n\n\n\nAdded \nReopen Start Page\n (when solution is closed)\n\n\nRenamed extension\n\n\nfrom \nVisual Studio Time Savers\n\n\nto just \nTime Savers\n\n\n\n\n\n\n\n\nv1.0.0 - 2016-10-15\n\u00b6\n\n\n\n\nReleased to VS Gallery\n\n\n\n\nBeta Releases\n\u00b6\n\n\nv0.7 - 2016-10-10\n\u00b6\n\n\n\n\nAdded \nTime Savers Options\n dialog pages (Tools | Options | Time Savers)\n\n\nAdded \nGeneral Options\n node\n\n\nAdded \nBuild Options\n node\n\n\nAdded \nDeveloper Options\n node\n\n\nAdded \nVisual Studio Options\n node\n\n\n\n\nv0.6 - 2016-09-30\n\u00b6\n\n\n\n\nAdded \nKeyboard Options\n\n\nAdded \nActivity Log\n\n\nAdded \nDiagnostic Log\n\n\nAdded \nPath Variables\n\n\n\n\nv0.5 - 2016-09-02\n\u00b6\n\n\n\n\nAdded \nEdit Project\n\n\nAdded \nInsert Guid\n\n\n\n\nv0.4 - 2016-09-02\n\u00b6\n\n\n\n\nAdded \nEdit Solution\n\n\nAdded \nClose Solution\n\n\nrenamed the extension\n\n\nfrom \nTime Savers\n\n\nto \nVisual Studio Time Savers\n\n\n\n\n\n\n\n\nv0.3 - 2016-08-30\n\u00b6\n\n\n\n\nAdded \nExtensions And Updates\n\n\n\n\nv0.2 - 2016-08-29\n\u00b6\n\n\n\n\nAdded \nRebuild Project\n\n\nAdded \nRebuild Solution\n\n\nAdded \nCancel Build\n\n\nAdded \nRestart Visual Studio\n\n\nAdded \nRestart VisualStudio as Admin\n\n\nAdded dynamic enable/disable to build commands\n\n\n\n\nv0.1 - 2016-08-28\n\u00b6\n\n\n\n\ninitial public availabilty\n\n\nopen-sourced this extension and the libraries it depends on\n\n\nrewrote the foundation of the extension from scratch\n\n\nrenamed the extension:\n\n\nfrom \nLuminous Essentials for VS\n (a closed-source extension)\n\n\nto \nTime Savers\n (now an open-source extension)",
+            "text": "Public Releases\n\u00b6\n\n\nv2.5 - 2019-04-29\n\u00b6\n\n\n\n\nconverted to async package (Luminous.Code.AsyncPackageBase)\n\n\nremoved \nInsert Guid\n (there are other single-purpose extensions for this)    \n\n\n\n\nv2.4 - 2019-03-24\n\u00b6\n\n\n\n\nadded Version Number to \nGeneral\n options page\n\n\nfixed commands not using options values\n\n\nfixed broken extensions command\n\n\nVS 2017: ExtensionsAndUpdates\n\n\nVS 2019: ManageExtensions\n\n\nadded VS 2019 support\n\n\nsimplified extension's name to just \nTime Savers\n (again)\n\n\n\n\nv2.3 - 2018-03-12\n\u00b6\n\n\n\n\nadded basic documentation to the \nwebsite\n\n\n\n\nv2.2 - 2017-02-13\n\u00b6\n\n\n\n\nrenamed extension to \nLuminous Time Savers\n\n\nupgraded Nuget packages to Luminous.Code.Core, Luminous.Code.VisualStudio\n\n\n\n\nv2.0 - 2017-02-04\n\u00b6\n\n\n\n\nadded VS 2017 support\n\n\n\n\nv1.1 - 2016-11-08\n\u00b6\n\n\n\n\nadded \nReopen Start Page\n (when solution is closed)\n\n\nrenamed extension to just \nTime Savers\n\n\n\n\nv1.0 - 2016-10-15\n\u00b6\n\n\n\n\nreleased to VS Gallery\n\n\n\n\nInternal Releases\n\u00b6\n\n\nv0.7 - 2016-10-10\n\u00b6\n\n\n\n\nadded \nTime Savers Options\n dialog pages (Tools | Options | Time Savers)\n\n\nadded \nGeneral Options\n node\n\n\nadded \nBuild Options\n node\n\n\nadded \nDeveloper Options\n node\n\n\nadded \nVisual Studio Options\n node\n\n\n\n\nv0.6 - 2016-09-30\n\u00b6\n\n\n\n\nadded \nKeyboard Options\n\n\nadded \nActivity Log\n\n\nadded \nDiagnostic Log\n\n\nadded \nPath Variables\n\n\n\n\nv0.5 - 2016-09-02\n\u00b6\n\n\n\n\nadded \nEdit Project\n\n\nadded \nInsert Guid\n\n\n\n\nv0.4 - 2016-09-02\n\u00b6\n\n\n\n\nadded \nEdit Solution\n\n\nadded \nClose Solution\n\n\nrenamed the extension \nVisual Studio Time Savers\n\n\n\n\nv0.3 - 2016-08-30\n\u00b6\n\n\n\n\nadded \nExtensions And Updates\n\n\n\n\nv0.2 - 2016-08-29\n\u00b6\n\n\n\n\nadded \nRebuild Project\n\n\nadded \nRebuild Solution\n\n\nadded \nCancel Build\n\n\nadded \nRestart Visual Studio\n\n\nadded \nRestart VisualStudio as Admin\n\n\nadded dynamic enable/disable to build commands\n\n\n\n\nv0.1 - 2016-08-28\n\u00b6\n\n\n\n\nopen-sourced this extension and the NuGet libraries it depends on\n\n\nrewrote the foundation of the extension from scratch\n\n\nrenamed the extension:\n\n\nfrom \nLuminous Essentials for VS\n (a closed-source extension)\n\n\nto \nTime Savers\n (now an open-source extension)",
             "title": "Change Log"
         },
         {
@@ -196,89 +201,94 @@
             "title": "Public Releases"
         },
         {
-            "location": "/changelog/#v221-2018-03-12",
-            "text": "Added basic documentation to the website  https://luminous-software.solutions/time-savers",
-            "title": "v2.2.1 - 2018-03-12"
+            "location": "/changelog/#v25-2019-04-29",
+            "text": "converted to async package (Luminous.Code.AsyncPackageBase)  removed  Insert Guid  (there are other single-purpose extensions for this)",
+            "title": "v2.5 - 2019-04-29"
         },
         {
-            "location": "/changelog/#v220-2017-02-13",
-            "text": "Renamed extension  from  Time Savers  to  Luminous Time Savers    Changed lower level code packages  from YD.Code.Core, YD.Code.VisualStudio  to Luminous Code.Core, LuminousCode.VisualStudio",
-            "title": "v2.2.0 - 2017-02-13"
+            "location": "/changelog/#v24-2019-03-24",
+            "text": "added Version Number to  General  options page  fixed commands not using options values  fixed broken extensions command  VS 2017: ExtensionsAndUpdates  VS 2019: ManageExtensions  added VS 2019 support  simplified extension's name to just  Time Savers  (again)",
+            "title": "v2.4 - 2019-03-24"
         },
         {
-            "location": "/changelog/#v200-2017-02-04",
-            "text": "Added VS 2017 support",
-            "title": "v2.0.0 - 2017-02-04"
+            "location": "/changelog/#v23-2018-03-12",
+            "text": "added basic documentation to the  website",
+            "title": "v2.3 - 2018-03-12"
         },
         {
-            "location": "/changelog/#v110-2016-11-08",
-            "text": "Added  Reopen Start Page  (when solution is closed)  Renamed extension  from  Visual Studio Time Savers  to just  Time Savers",
-            "title": "v1.1.0 - 2016-11-08"
+            "location": "/changelog/#v22-2017-02-13",
+            "text": "renamed extension to  Luminous Time Savers  upgraded Nuget packages to Luminous.Code.Core, Luminous.Code.VisualStudio",
+            "title": "v2.2 - 2017-02-13"
         },
         {
-            "location": "/changelog/#v100-2016-10-15",
-            "text": "Released to VS Gallery",
-            "title": "v1.0.0 - 2016-10-15"
+            "location": "/changelog/#v20-2017-02-04",
+            "text": "added VS 2017 support",
+            "title": "v2.0 - 2017-02-04"
         },
         {
-            "location": "/changelog/#beta-releases",
+            "location": "/changelog/#v11-2016-11-08",
+            "text": "added  Reopen Start Page  (when solution is closed)  renamed extension to just  Time Savers",
+            "title": "v1.1 - 2016-11-08"
+        },
+        {
+            "location": "/changelog/#v10-2016-10-15",
+            "text": "released to VS Gallery",
+            "title": "v1.0 - 2016-10-15"
+        },
+        {
+            "location": "/changelog/#internal-releases",
             "text": "",
-            "title": "Beta Releases"
+            "title": "Internal Releases"
         },
         {
             "location": "/changelog/#v07-2016-10-10",
-            "text": "Added  Time Savers Options  dialog pages (Tools | Options | Time Savers)  Added  General Options  node  Added  Build Options  node  Added  Developer Options  node  Added  Visual Studio Options  node",
+            "text": "added  Time Savers Options  dialog pages (Tools | Options | Time Savers)  added  General Options  node  added  Build Options  node  added  Developer Options  node  added  Visual Studio Options  node",
             "title": "v0.7 - 2016-10-10"
         },
         {
             "location": "/changelog/#v06-2016-09-30",
-            "text": "Added  Keyboard Options  Added  Activity Log  Added  Diagnostic Log  Added  Path Variables",
+            "text": "added  Keyboard Options  added  Activity Log  added  Diagnostic Log  added  Path Variables",
             "title": "v0.6 - 2016-09-30"
         },
         {
             "location": "/changelog/#v05-2016-09-02",
-            "text": "Added  Edit Project  Added  Insert Guid",
+            "text": "added  Edit Project  added  Insert Guid",
             "title": "v0.5 - 2016-09-02"
         },
         {
             "location": "/changelog/#v04-2016-09-02",
-            "text": "Added  Edit Solution  Added  Close Solution  renamed the extension  from  Time Savers  to  Visual Studio Time Savers",
+            "text": "added  Edit Solution  added  Close Solution  renamed the extension  Visual Studio Time Savers",
             "title": "v0.4 - 2016-09-02"
         },
         {
             "location": "/changelog/#v03-2016-08-30",
-            "text": "Added  Extensions And Updates",
+            "text": "added  Extensions And Updates",
             "title": "v0.3 - 2016-08-30"
         },
         {
             "location": "/changelog/#v02-2016-08-29",
-            "text": "Added  Rebuild Project  Added  Rebuild Solution  Added  Cancel Build  Added  Restart Visual Studio  Added  Restart VisualStudio as Admin  Added dynamic enable/disable to build commands",
+            "text": "added  Rebuild Project  added  Rebuild Solution  added  Cancel Build  added  Restart Visual Studio  added  Restart VisualStudio as Admin  added dynamic enable/disable to build commands",
             "title": "v0.2 - 2016-08-29"
         },
         {
             "location": "/changelog/#v01-2016-08-28",
-            "text": "initial public availabilty  open-sourced this extension and the libraries it depends on  rewrote the foundation of the extension from scratch  renamed the extension:  from  Luminous Essentials for VS  (a closed-source extension)  to  Time Savers  (now an open-source extension)",
+            "text": "open-sourced this extension and the NuGet libraries it depends on  rewrote the foundation of the extension from scratch  renamed the extension:  from  Luminous Essentials for VS  (a closed-source extension)  to  Time Savers  (now an open-source extension)",
             "title": "v0.1 - 2016-08-28"
         },
         {
             "location": "/roadmap/",
-            "text": "Feature Ideas\n\u00b6\n\n\nThe list below is a list of \npotential\n \nfeatures\n or \nenhancements\n (aka \nFI's\n).\nThese might be entirely \nnew features\n or \nenhancements to existing features\n.\nThey may, or may not, end up being added into \nTime Savers\n.\n\n\n\n\n Duplicate File (one operation, instead of copy/paste/rename)\n\n\n Copy Solution (copy the entire solution, with a new name)\n\n\n Delete Solution (delete the folder containing the solution)\n\n\n Reload Solution (last solution - ie first in MRU list)\n\n\n Copy Project (one operation, instead of copy/paste/rename)\n\n\n Delete Project (one operation, instead of remove/open folder/delete)\n\n\n Reload Project (one operation, instead of unload/reload)\n\n\n Edit Path Variables\n\n\n Edit Environment Variables\n\n\n Clean Experimental Hive (as in \nClean Hive and Debug for Extension Developers\n - John McBride)\n\n\n\n\nContributions\n\u00b6\n\n\nIf you'd like to implement one of the the \nFI's\n from the \nfeature backlog\n,\nfeel free to \nopen an \nIssue\n on GitHub\n (with the same name as the feature), \nand we can start a discussion there. We can then work toward developing a pull request,\nso the implemented feature can be incorporated into \nTime Savers\n.\n\n\nDon't forget to check out the \nContribution Guidelines\n.\n\n\nBeta Features\n\u00b6\n\n\nBeta features\n are \nFI's\n that have actually had code written for them,\nand are waiting for that code to be thoroughly tested. \nYou can participate in the testing phase by downloading the \nCI build\n mentioned below.\nYou can install it on your own machine, and confirm that it does what it's supposed to do.\nIf you do find a problem, you can create a \nBug Report on GitHub\n.\n\n\nOnce they've passed testing they'll be included in the \nnext public release\n of \nTime Savers\n.\n\n\n\n\nThere are no beta features that need testing at the moment\n\n\n\n\nBug Fixes\n\u00b6\n\n\nOnce bug fixes have been fully tested, they'll be included in the \nnext public release\n.\n\n\n\n\nThere are no bug fixes that need testing at the moment",
-            "title": "What's Coming"
+            "text": "Feature Ideas\n\u00b6\n\n\nThe list below is a list of \npotential\n \nfeatures\n or \nenhancements\n (aka \nFI's\n).\nThese might be entirely \nnew features\n or \nenhancements to existing features\n.\nThey may, or may not, end up being added into \nTime Savers\n.\n\n\n\n\n Duplicate File (one operation, instead of copy/paste/rename)\n\n\n Copy Solution (copy the entire solution, with a new name)\n\n\n Delete Solution (delete the folder containing the solution)\n\n\n Reload Solution (last solution - ie first in MRU list)\n\n\n Copy Project (one operation, instead of copy/paste/rename)\n\n\n Delete Project (one operation, instead of remove/open folder/delete)\n\n\n Reload Project (one operation, instead of unload/reload)\n\n\n Edit Path Variables\n\n\n Edit Environment Variables\n\n\n\n\nContributions\n\u00b6\n\n\nIf you'd like to implement one of the the \nFI's\n from the \nfeature backlog\n,\nfeel free to \nopen an \nIssue\n on GitHub\n (with the same name as the feature),\nand we can start a discussion there. We can then work toward developing a pull request,\nso the implemented feature can be incorporated into \nTime Savers\n.\n\n\nDon't forget to check out the \nContribution Guidelines\n.\n\n\nBug Fixes\n\u00b6\n\n\nOnce bug fixes have been fully tested, they'll be included in the \nnext public release\n.\n\n\n\n\nThere are no bug fixes that need testing at the moment",
+            "title": "Roadmap"
         },
         {
             "location": "/roadmap/#feature-ideas",
-            "text": "The list below is a list of  potential   features  or  enhancements  (aka  FI's ).\nThese might be entirely  new features  or  enhancements to existing features .\nThey may, or may not, end up being added into  Time Savers .    Duplicate File (one operation, instead of copy/paste/rename)   Copy Solution (copy the entire solution, with a new name)   Delete Solution (delete the folder containing the solution)   Reload Solution (last solution - ie first in MRU list)   Copy Project (one operation, instead of copy/paste/rename)   Delete Project (one operation, instead of remove/open folder/delete)   Reload Project (one operation, instead of unload/reload)   Edit Path Variables   Edit Environment Variables   Clean Experimental Hive (as in  Clean Hive and Debug for Extension Developers  - John McBride)",
+            "text": "The list below is a list of  potential   features  or  enhancements  (aka  FI's ).\nThese might be entirely  new features  or  enhancements to existing features .\nThey may, or may not, end up being added into  Time Savers .    Duplicate File (one operation, instead of copy/paste/rename)   Copy Solution (copy the entire solution, with a new name)   Delete Solution (delete the folder containing the solution)   Reload Solution (last solution - ie first in MRU list)   Copy Project (one operation, instead of copy/paste/rename)   Delete Project (one operation, instead of remove/open folder/delete)   Reload Project (one operation, instead of unload/reload)   Edit Path Variables   Edit Environment Variables",
             "title": "Feature Ideas"
         },
         {
             "location": "/roadmap/#contributions",
-            "text": "If you'd like to implement one of the the  FI's  from the  feature backlog ,\nfeel free to  open an  Issue  on GitHub  (with the same name as the feature), \nand we can start a discussion there. We can then work toward developing a pull request,\nso the implemented feature can be incorporated into  Time Savers .  Don't forget to check out the  Contribution Guidelines .",
+            "text": "If you'd like to implement one of the the  FI's  from the  feature backlog ,\nfeel free to  open an  Issue  on GitHub  (with the same name as the feature),\nand we can start a discussion there. We can then work toward developing a pull request,\nso the implemented feature can be incorporated into  Time Savers .  Don't forget to check out the  Contribution Guidelines .",
             "title": "Contributions"
-        },
-        {
-            "location": "/roadmap/#beta-features",
-            "text": "Beta features  are  FI's  that have actually had code written for them,\nand are waiting for that code to be thoroughly tested. \nYou can participate in the testing phase by downloading the  CI build  mentioned below.\nYou can install it on your own machine, and confirm that it does what it's supposed to do.\nIf you do find a problem, you can create a  Bug Report on GitHub .  Once they've passed testing they'll be included in the  next public release  of  Time Savers .   There are no beta features that need testing at the moment",
-            "title": "Beta Features"
         },
         {
             "location": "/roadmap/#bug-fixes",

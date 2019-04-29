@@ -1,6 +1,6 @@
 {
   "name": "time-savers",
-  "version": "2.3.0",
+  "version": "2.5.0",
   "repository": "github.com/luminous-software/time-savers",
   "license": "MIT",
   "devDependencies": {
